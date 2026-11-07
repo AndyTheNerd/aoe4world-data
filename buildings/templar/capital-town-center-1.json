@@ -49,6 +49,7 @@
   "hitpoints": 8000,
   "weapons": [
     {
+      "id": "bow",
       "name": "Bow",
       "type": "ranged",
       "damage": 8,
@@ -87,7 +88,8 @@
       "pbgid": 186511
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -125,7 +127,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -163,7 +166,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -201,7 +205,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -239,7 +244,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -277,7 +283,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -315,7 +322,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -353,7 +361,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -391,7 +400,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -429,7 +439,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -467,7 +478,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -505,7 +517,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -543,7 +556,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -581,7 +595,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -619,7 +634,8 @@
       "pbgid": 197092
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 6,
       "speed": 3.875,
@@ -657,6 +673,7 @@
       "pbgid": 197092
     },
     {
+      "id": "arbalest",
       "name": "Arbalest",
       "type": "ranged",
       "damage": 40,

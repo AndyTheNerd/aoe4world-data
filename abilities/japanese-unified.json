@@ -66,7 +66,10 @@
                   "prelate",
                   "shinto-priest",
                   "buddhist-monk",
-                  "shaolin-monk"
+                  "shaolin-monk",
+                  "kirkman",
+                  "volur",
+                  "ikko-ikki-monk"
                 ]
               },
               "effect": "change",
@@ -640,7 +643,7 @@
           "producedBy": [],
           "icon": "https://data.aoe4world.com/images/abilities/ability-shunshin-1.png",
           "active": "manual",
-          "auraRange": 4,
+          "auraRange": 5,
           "cooldown": 30,
           "effects": [
             {

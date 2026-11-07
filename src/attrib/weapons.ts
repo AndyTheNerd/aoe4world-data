@@ -1,10 +1,11 @@
 import path from "path";
 import fs from "fs";
 import { Weapon } from "../types/items";
-import { getTranslation } from "./translations";
-import { parseXmlFile } from "./xml";
+import { getTranslation, getTargetLocales, NO_TRANSLATION_FOUND } from "./translations";
+import { recordWeaponTranslation } from "./localize";
 import { damageMap } from "./parse";
 import { RunContext } from "./run";
+import { slugify } from "../lib/utils/string";
 
 export function parseWeapons(combat_ext: any, context: RunContext): Promise<Weapon[]> {
   const weaponList = (combat_ext?.hardpoints.flatMap((h) =>
@@ -27,11 +28,21 @@ export function parseWeapons(combat_ext: any, context: RunContext): Promise<Weap
   return oneWeaponPerType(weapons);
 }
 
-async function parseWeapon(file: string, context: RunContext): Promise<Weapon> {
+export async function parseWeapon(file: string, context: RunContext): Promise<Weapon> {
   const weapon: any = await context.getData(file, context);
   if (context.debug) fs.writeFileSync(path.join(__dirname, "/.temp", file.split("/").pop()! + ".json"), JSON.stringify(weapon ?? {}, null, 2));
 
-  const name = getTranslation(weapon.weapon_bag.ui_name);
+  const attribName = file.split("/").pop()!;
+  const nameId = weapon.weapon_bag?.ui_name;
+  const name = getTranslation(nameId);
+  const id = name && !name.startsWith(NO_TRANSLATION_FOUND) ? slugify(name) : slugify(attribName);
+
+  for (const locale of getTargetLocales()) {
+    const locName = getTranslation(nameId, [], locale);
+    if (locName && locName !== NO_TRANSLATION_FOUND && locName !== name) {
+      recordWeaponTranslation(id, locale, locName);
+    }
+  }
 
   const type = damageMap[weapon.weapon_bag.damage.damage_type];
 
@@ -70,6 +81,7 @@ async function parseWeapon(file: string, context: RunContext): Promise<Weapon> {
   };
 
   return {
+    id,
     name,
     type,
     damage,
@@ -78,7 +90,7 @@ async function parseWeapon(file: string, context: RunContext): Promise<Weapon> {
     modifiers,
     durations,
     burst,
-    attribName: file.split("/").pop()!,
+    attribName,
     pbgid: weapon.pbgid,
   };
 }

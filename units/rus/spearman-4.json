@@ -46,6 +46,7 @@
   "hitpoints": 140,
   "weapons": [
     {
+      "id": "spear",
       "name": "Spear",
       "type": "melee",
       "damage": 11,
@@ -107,10 +108,11 @@
         "teardown": 0,
         "cooldown": 0.75
       },
-      "attribName": "weapon_spearman_4_rus",
-      "pbgid": 133290
+      "attribName": "weapon_spearman_4",
+      "pbgid": 127827
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,

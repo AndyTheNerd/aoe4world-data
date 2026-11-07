@@ -59,6 +59,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -89,8 +90,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -174,6 +174,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -204,8 +205,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -289,6 +289,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -319,8 +320,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -404,6 +404,7 @@
       "hitpoints": 450,
       "weapons": [
         {
+          "id": "ballista",
           "name": "Ballista",
           "type": "ranged",
           "damage": 35,
@@ -514,9 +515,10 @@
         "siege-workshop"
       ],
       "icon": "https://data.aoe4world.com/images/units/battering-ram-3.png",
-      "hitpoints": 370,
+      "hitpoints": 410,
       "weapons": [
         {
+          "id": "ram",
           "name": "Ram",
           "type": "siege",
           "damage": 200,
@@ -631,6 +633,7 @@
       "hitpoints": 150,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 11,
@@ -747,6 +750,7 @@
       "hitpoints": 175,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 13,
@@ -863,6 +867,7 @@
       "hitpoints": 200,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 14,
@@ -980,6 +985,7 @@
       "hitpoints": 270,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -1030,6 +1036,7 @@
           "pbgid": 204178
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1116,6 +1123,7 @@
       "hitpoints": 320,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 16,
@@ -1166,6 +1174,7 @@
           "pbgid": 204181
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1246,6 +1255,7 @@
       "hitpoints": 140,
       "weapons": [
         {
+          "id": "trebuchet",
           "name": "Trebuchet",
           "type": "siege",
           "damage": 40,
@@ -1364,6 +1374,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -1463,6 +1474,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -1558,6 +1570,7 @@
       "hitpoints": 200,
       "weapons": [
         {
+          "id": "cannon",
           "name": "Cannon",
           "type": "siege",
           "damage": 40,
@@ -1700,6 +1713,7 @@
       "hitpoints": 300,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -1805,6 +1819,7 @@
       "hitpoints": 145,
       "weapons": [
         {
+          "id": "incendiaries",
           "name": "Incendiaries",
           "type": "siege",
           "damage": 95,
@@ -1973,6 +1988,7 @@
       "hitpoints": 195,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 10,
@@ -1996,6 +2012,7 @@
           "pbgid": 199547
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2090,6 +2107,7 @@
       "hitpoints": 225,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -2113,6 +2131,7 @@
           "pbgid": 199551
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2186,7 +2205,7 @@
         "ranged_infantry"
       ],
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "unique": false,
       "costs": {
@@ -2205,6 +2224,7 @@
       "hitpoints": 130,
       "weapons": [
         {
+          "id": "handcannon",
           "name": "Handcannon",
           "type": "ranged",
           "damage": 38,
@@ -2289,6 +2309,7 @@
       "hitpoints": 125,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 9,
@@ -2339,6 +2360,7 @@
           "pbgid": 109275
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2428,6 +2450,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 11,
@@ -2478,6 +2501,7 @@
           "pbgid": 127820
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2567,6 +2591,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 13,
@@ -2617,6 +2642,7 @@
           "pbgid": 127821
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2766,6 +2792,7 @@
       "hitpoints": 230,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 24,
@@ -2789,6 +2816,7 @@
           "pbgid": 106614
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2885,6 +2913,7 @@
       "hitpoints": 270,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 29,
@@ -2908,6 +2937,7 @@
           "pbgid": 127822
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2997,6 +3027,7 @@
       "hitpoints": 130,
       "weapons": [
         {
+          "id": "mangonel",
           "name": "Mangonel",
           "type": "siege",
           "damage": 10,
@@ -3064,6 +3095,7 @@
           "pbgid": 127503
         },
         {
+          "id": "incendiary",
           "name": "Incendiary",
           "type": "fire",
           "damage": 2,
@@ -3118,6 +3150,7 @@
           "pbgid": 127724
         },
         {
+          "id": "adjustable-crossbars",
           "name": "Adjustable Crossbars",
           "type": "siege",
           "damage": 10,
@@ -3255,6 +3288,7 @@
       "hitpoints": 110,
       "weapons": [
         {
+          "id": "short-sword",
           "name": "Short Sword",
           "type": "melee",
           "damage": 1,
@@ -3367,6 +3401,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 7,
@@ -3432,6 +3467,7 @@
           "pbgid": 106762
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3517,6 +3553,7 @@
       "hitpoints": 90,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 8,
@@ -3582,6 +3619,7 @@
           "pbgid": 127825
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3667,6 +3705,7 @@
       "hitpoints": 110,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 9,
@@ -3732,6 +3771,7 @@
           "pbgid": 127826
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3817,6 +3857,7 @@
       "hitpoints": 140,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 11,
@@ -3882,6 +3923,7 @@
           "pbgid": 127827
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3961,6 +4003,7 @@
       "hitpoints": 85,
       "weapons": [
         {
+          "id": "springald",
           "name": "Springald",
           "type": "ranged",
           "damage": 15,
@@ -4212,7 +4255,8 @@
           "siege",
           "monk",
           "khan",
-          "cavalry"
+          "cavalry",
+          "cattle"
         ]
       }
     },
@@ -4259,6 +4303,7 @@
       "hitpoints": 50,
       "weapons": [
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -4282,6 +4327,7 @@
           "pbgid": 123522
         },
         {
+          "id": "knife",
           "name": "Knife",
           "type": "melee",
           "damage": 6,
@@ -4365,6 +4411,7 @@
       "hitpoints": 700,
       "weapons": [
         {
+          "id": "cannon",
           "name": "Cannon",
           "type": "siege",
           "damage": 45,

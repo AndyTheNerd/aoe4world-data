@@ -20,6 +20,7 @@
     "mo",
     "ot",
     "ru",
+    "sco",
     "tug",
     "zx"
   ],
@@ -95,6 +96,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -194,6 +196,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -292,6 +295,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -391,6 +395,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -490,6 +495,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -590,6 +596,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -688,6 +695,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -787,6 +795,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -885,6 +894,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -984,6 +994,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -1086,6 +1097,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -1189,6 +1201,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -1287,6 +1300,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -1386,6 +1400,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -1484,6 +1499,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -1583,6 +1599,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -1681,6 +1698,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -1780,6 +1798,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -1878,6 +1897,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -1915,6 +1935,7 @@
           "pbgid": 108239
         },
         {
+          "id": "weapon-crossbow-3-library-upgrade-incendiary-chi-ha-01",
           "name": "(translation not found) (undefined)",
           "type": "ranged",
           "damage": 11,
@@ -2017,6 +2038,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -2115,6 +2137,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -2214,6 +2237,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -2314,6 +2338,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -2363,7 +2388,22 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "golden-horn-tower",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "silver": 0,
+            "time": 22.5,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "crossbowman-4",
@@ -2415,6 +2455,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -2464,7 +2505,22 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "golden-horn-tower",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "silver": 0,
+            "time": 22.5,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "crossbowman-3",
@@ -2513,6 +2569,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -2612,6 +2669,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -2712,6 +2770,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -2761,7 +2820,22 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 22.5,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "crossbowman-4",
@@ -2813,6 +2887,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -2862,7 +2937,22 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 22.5,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "crossbowman-3",
@@ -2911,6 +3001,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -3010,6 +3101,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -3066,6 +3158,205 @@
       "baseId": "crossbowman",
       "type": "unit",
       "name": "Crossbowman",
+      "pbgid": 2738475,
+      "attribName": "unit_crossbowman_3_sco",
+      "age": 3,
+      "civs": [
+        "sco"
+      ],
+      "description": "High damage ranged unit best against heavy targets.\n+ Anti-heavy specialist\n- Low health\n- Countered by Horsemen",
+      "classes": [
+        "annihilation_condition",
+        "crossbow_incendiary_3",
+        "crossbowman",
+        "find_non_siege_land_military",
+        "formational",
+        "human",
+        "included_by_military_hotkeys",
+        "infantry",
+        "infantry_light",
+        "land_military",
+        "military",
+        "ranged",
+        "ranged_infantry"
+      ],
+      "displayClasses": [
+        "Light Ranged Infantry"
+      ],
+      "unique": false,
+      "costs": {
+        "food": 80,
+        "wood": 0,
+        "stone": 0,
+        "gold": 40,
+        "total": 120,
+        "popcap": 1,
+        "time": 22.5
+      },
+      "producedBy": [
+        "archery-range"
+      ],
+      "icon": "https://data.aoe4world.com/images/units/crossbowman-3.png",
+      "hitpoints": 80,
+      "weapons": [
+        {
+          "id": "crossbow",
+          "name": "Crossbow",
+          "type": "ranged",
+          "damage": 11,
+          "speed": 2.125,
+          "range": {
+            "min": 0,
+            "max": 5
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "heavy"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 10,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0.25,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 1.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_crossbow_3",
+          "pbgid": 108239
+        }
+      ],
+      "armor": [],
+      "sight": {
+        "inner_height": 100,
+        "inner_radius": 16,
+        "outer_height": -15,
+        "outer_radius": 26.1,
+        "base": 24.782608695652176,
+        "line": 26.1,
+        "height": 100
+      },
+      "movement": {
+        "speed": 1.125
+      }
+    },
+    {
+      "id": "crossbowman-4",
+      "baseId": "crossbowman",
+      "type": "unit",
+      "name": "Elite Crossbowman",
+      "pbgid": 7203317,
+      "attribName": "unit_crossbowman_4_sco",
+      "age": 4,
+      "civs": [
+        "sco"
+      ],
+      "description": "High damage ranged unit best against heavy targets.\n+ Anti-heavy specialist\n- Low health\n- Countered by Horsemen",
+      "classes": [
+        "annihilation_condition",
+        "arbalest_animate",
+        "crossbow_incendiary_4",
+        "crossbowman",
+        "find_non_siege_land_military",
+        "formational",
+        "human",
+        "included_by_military_hotkeys",
+        "infantry",
+        "infantry_light",
+        "land_military",
+        "military",
+        "ranged",
+        "ranged_infantry"
+      ],
+      "displayClasses": [
+        "Light Ranged Infantry"
+      ],
+      "unique": false,
+      "costs": {
+        "food": 80,
+        "wood": 0,
+        "stone": 0,
+        "gold": 40,
+        "total": 120,
+        "popcap": 1,
+        "time": 22.5
+      },
+      "producedBy": [
+        "archery-range"
+      ],
+      "icon": "https://data.aoe4world.com/images/units/crossbowman-4.png",
+      "hitpoints": 95,
+      "weapons": [
+        {
+          "id": "crossbow",
+          "name": "Crossbow",
+          "type": "ranged",
+          "damage": 14,
+          "speed": 2.125,
+          "range": {
+            "min": 0,
+            "max": 5
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "heavy"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 12,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0.25,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 1.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_crossbow_4",
+          "pbgid": 127830
+        }
+      ],
+      "armor": [],
+      "sight": {
+        "inner_height": 100,
+        "inner_radius": 16,
+        "outer_height": -15,
+        "outer_radius": 26.1,
+        "base": 24.782608695652176,
+        "line": 26.1,
+        "height": 100
+      },
+      "movement": {
+        "speed": 1.125
+      }
+    },
+    {
+      "id": "crossbowman-3",
+      "baseId": "crossbowman",
+      "type": "unit",
+      "name": "Crossbowman",
       "pbgid": 5676717,
       "attribName": "unit_crossbowman_3_sul_ha_tug",
       "age": 3,
@@ -3108,6 +3399,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -3207,6 +3499,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -3305,6 +3598,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -3342,6 +3636,7 @@
           "pbgid": 108239
         },
         {
+          "id": "weapon-crossbow-3-library-upgrade-incendiary-chi-ha-01",
           "name": "(translation not found) (undefined)",
           "type": "ranged",
           "damage": 11,
@@ -3444,6 +3739,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,

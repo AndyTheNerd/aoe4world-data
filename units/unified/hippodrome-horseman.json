@@ -78,6 +78,7 @@
       "hitpoints": 200,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 13,
@@ -128,6 +129,7 @@
           "pbgid": 127821
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -172,7 +174,22 @@
       },
       "movement": {
         "speed": 1.875
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "imperial-hippodrome",
+          "costs": {
+            "food": 10,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "silver": 0,
+            "time": 20,
+            "popcap": 1,
+            "total": 10
+          }
+        }
+      ]
     }
   ]
 }

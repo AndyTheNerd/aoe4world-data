@@ -215,7 +215,7 @@
       "civs": [
         "mac"
       ],
-      "description": "Charges an ability used for boosting the work rate of military and research buildings. If used on a Mining Camp, Lumber Camp, or Farm, begin earning 160 Gold, Wood, or Food over 60 seconds.\nHolds 9 charges.",
+      "description": "Comes with 4 charges for an ability to boost the work rate of military and research buildings. If used on a Mining Camp, Lumber Camp, Mill, or Farm, begin earning 160 Gold, Wood, or Food over 60 seconds.\nRecharges every 60 seconds.",
       "classes": [
         "age2_landmark1",
         "audio_production_landmark",
@@ -498,6 +498,7 @@
       "hitpoints": 5000,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 30,
@@ -536,6 +537,7 @@
           "pbgid": 9004621
         },
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 30,
@@ -574,7 +576,8 @@
           "pbgid": 9004621
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -612,7 +615,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -650,7 +654,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -688,7 +693,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -726,7 +732,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -764,7 +771,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -802,7 +810,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -840,7 +849,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -878,7 +888,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -916,7 +927,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -954,7 +966,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -992,7 +1005,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1030,7 +1044,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1068,7 +1083,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1106,7 +1122,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1183,7 +1200,7 @@
       "civs": [
         "mac"
       ],
-      "description": "Acts as a Mill and Monastery. Villagers gather Food 30% faster when affected by its aura. Relics garrisoned generate Silver instead of Gold.",
+      "description": "Acts as a Mill and Monastery. Villagers gather Food 35% faster when affected by its aura. Relics garrisoned generate 100 Silver instead of Gold.",
       "classes": [
         "age1_landmark1",
         "building",
@@ -1400,6 +1417,7 @@
       "hitpoints": 5000,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 12,
@@ -2025,7 +2043,7 @@
       "civs": [
         "mac"
       ],
-      "description": "Carve a Runestone after defeating 5 military units to celebrate honorable victories in combat, enhancing Varangian ranged weapons by 1 tile, melee damage by 1, and move speed by 15%. Lasts 150 seconds.",
+      "description": "Carve a Runestone after defeating 10 military units to celebrate honorable victories in combat, enhancing Varangian ranged weapons by 1 tile, melee damage by 1, and move speed by 15%. Lasts 150 seconds.",
       "classes": [
         "runestone",
         "unchargeable"
@@ -2046,6 +2064,7 @@
       "producedBy": [
         "atgeirmadr",
         "bogmadr",
+        "hippodrome-riddari",
         "riddari",
         "varangian-guard"
       ],
@@ -2394,6 +2413,7 @@
         "land_food_deposit_4_by_4",
         "production_building",
         "resource_drop_off",
+        "scar_town_center",
         "siegeable",
         "town_bell_target",
         "town_center",
@@ -2412,7 +2432,7 @@
         "silver": 0,
         "total": 700,
         "popcap": 0,
-        "time": 150
+        "time": 165
       },
       "producedBy": [
         "villager"
@@ -2548,6 +2568,7 @@
       "hitpoints": 2000,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 10,
@@ -2614,7 +2635,7 @@
       "civs": [
         "mac"
       ],
-      "description": "Increases your maximum Population.\n \nAs the Empire suffers casualties in war, the emperor calls forth more Varangians. \nOnce enough troops are lost in battle, the selected Varangian is reinforced to the battlefield at no cost. If placed on shore near water, Attack Ships or Galleys become available as reinforcements.\n \nReinforcements cost 6 times their value in fallen warriors.",
+      "description": "Increases your maximum Population.\n \nAs the Empire suffers casualties in war, the emperor calls forth more Varangians. \nOnce enough troops are lost in battle, the selected Varangian is reinforced to the battlefield at no cost. If placed on shore near water, Attack Ships or Galleys become available as reinforcements.\n \nReinforcements cost 7 times their value in fallen warriors.",
       "classes": [
         "audio_production_landmark",
         "building",

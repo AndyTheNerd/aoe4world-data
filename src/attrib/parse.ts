@@ -1,9 +1,12 @@
-import { ITEM_TYPES } from "../lib/config";
-import { getTranslation, getTranslationFormatter, getTranslationRaw, NO_TRANSLATION_FOUND } from "./translations";
+import { existsSync, mkdirSync } from "fs";
+import fs from "fs/promises";
+import path from "path";
+import { ITEM_TYPES, ROOT_FOLDER } from "../lib/config";
+import { getTranslation, getTranslationFormatter, getTranslationRaw, getTargetLocales, resolveTranslationParam, NO_TRANSLATION_FOUND } from "./translations";
 import { parseWeapons } from "./weapons";
 import { ignoreForNow } from "./config";
-import { slugify } from "../lib/utils/string";
-import { Armor, Building, Item, ItemClass, ModifyableProperty, Technology, Unit, Upgrade, Ability, Resistance } from "../types/items";
+import { slugify, cleanDescription } from "../lib/utils/string";
+import { Armor, Building, Item, ItemClass, ItemSlug, ItemTranslation, ModifyableProperty, Technology, Unit, Upgrade, Ability, Resistance } from "../types/items";
 import { CivConfig } from "../types/civs";
 import { prepareIcon } from "./icons";
 import { technologyModifiers, abilityModifiers } from "./modifiers";
@@ -54,7 +57,8 @@ export async function parseItemFromAttribFile(file: string, data: any, civ: CivC
     if (!ui_ext && type === ITEM_TYPES.UNITS && ebpExts.ui_ext) ui_ext = ebpExts.ui_ext;
     if (!type_ext && ebpExts.type_ext) type_ext = ebpExts.type_ext;
 
-    let name = getTranslation(ui_ext?.ui_contextual_info?.screen_name ?? ui_ext?.screen_name ?? ui_ext.title);
+    const nameId = ui_ext?.ui_contextual_info?.screen_name ?? ui_ext?.screen_name ?? ui_ext?.title;
+    let name = getTranslation(nameId);
     if (name === NO_TRANSLATION_FOUND) name = file.split("/").pop()!;
     const description = parseDescription(ui_ext);
     const attribName = file.split("/").pop()!.replace(".xml", "").replace(".json", "");
@@ -66,7 +70,8 @@ export async function parseItemFromAttribFile(file: string, data: any, civ: CivC
     const baseId = getBasedId(name, type, description);
     const id = `${baseId}-${age}`;
 
-    const displayClasses = getTranslationFormatter(ui_ext.extra_text ?? ui_ext.extra_text_formatter)
+    const displayClassesFormatter = ui_ext?.extra_text ?? ui_ext?.extra_text_formatter;
+    const displayClasses = getTranslationFormatter(displayClassesFormatter)
       .split(",")
       .map((x) => x.trim());
 
@@ -90,6 +95,44 @@ export async function parseItemFromAttribFile(file: string, data: any, civ: CivC
     if (!icon) console.log(`undefined icon for ${file}`, ui_ext.icon_name ?? ui_ext.icon);
 
     const pbgid = data.pbgid;
+    const influences = type === ITEM_TYPES.BUILDINGS ? parseInfluences(ui_ext, "en") : undefined;
+
+    let translations: Record<string, ItemTranslation> | undefined;
+    const targetLocales = getTargetLocales();
+    if (targetLocales.length > 0) {
+      translations = {};
+      for (const locale of targetLocales) {
+        const patch: ItemTranslation = {};
+        if (nameId) {
+          const locName = getTranslation(nameId, [], locale);
+          if (locName && locName !== NO_TRANSLATION_FOUND && locName !== name) {
+            patch.name = locName;
+          }
+        }
+        const locDesc = parseDescription(ui_ext, locale);
+        if (locDesc && locDesc !== NO_TRANSLATION_FOUND && locDesc !== description) {
+          patch.description = locDesc;
+        }
+        if (displayClassesFormatter) {
+          const locDC = getTranslationFormatter(displayClassesFormatter, locale)
+            .split(",")
+            .map((x) => x.trim());
+          if (locDC.some((dc, i) => dc !== displayClasses[i])) {
+            patch.displayClasses = locDC;
+          }
+        }
+        if (type === ITEM_TYPES.BUILDINGS && influences && influences.length > 0) {
+          const locInf = parseInfluences(ui_ext, locale);
+          if (locInf && locInf.length > 0 && JSON.stringify(locInf) !== JSON.stringify(influences)) {
+            patch.influences = locInf;
+          }
+        }
+        if (Object.keys(patch).length > 0) {
+          translations[locale] = patch;
+        }
+      }
+      if (Object.keys(translations).length === 0) translations = undefined;
+    }
 
     let item: Item = {
       id: id,
@@ -108,6 +151,7 @@ export async function parseItemFromAttribFile(file: string, data: any, civ: CivC
       producedBy: [],
       icon_src,
       icon,
+      translations,
     };
 
     if (type === ITEM_TYPES.ABILITIES) {
@@ -149,8 +193,6 @@ export async function parseItemFromAttribFile(file: string, data: any, civ: CivC
     }
 
     if (type === ITEM_TYPES.BUILDINGS) {
-      let influences = parseInfluences(ui_ext);
-
       const building: Building = {
         ...item,
         type: "building",
@@ -232,6 +274,7 @@ export async function parseItemFromAttribFile(file: string, data: any, civ: CivC
           } else console.log("Unknown float property", id, value, item.attribName, item.id);
         }
       }
+
       const tech: Technology = {
         ...item,
         type: "technology",
@@ -259,13 +302,13 @@ export async function parseItemFromAttribFile(file: string, data: any, civ: CivC
 function guessType(file: string, data: any) {
   const fileName = file.split("/").pop()!;
   if (fileName.startsWith("building_")) return ITEM_TYPES.BUILDINGS;
-  if (fileName.startsWith("unit_")) return ITEM_TYPES.UNITS;
+  if (fileName.startsWith("unit_") || fileName.startsWith("highland_cattle_")) return ITEM_TYPES.UNITS;
   if (fileName.startsWith("herdable_")) return undefined;
   if (fileName.startsWith("gaia_")) return undefined;
 
   // below is too hacky for my taste, it filters out some wonky things we would call technologies like wheelbarrow and herbal medicine
   if (fileName.startsWith("upgrade_unit") && data?.upgrade_bag?.global_max_limit == 1 && data?.upgrade_bag?.requirements?.length) return ITEM_TYPES.UPGRADES;
-  if (fileName.startsWith("upgrade_")) return ITEM_TYPES.TECHNOLOGIES;
+  if (fileName.startsWith("upgrade_") || fileName.startsWith("muster_")) return ITEM_TYPES.TECHNOLOGIES;
   if (fileName.startsWith("merc_")) return ITEM_TYPES.TECHNOLOGIES;
   if (file.startsWith("abilities")) return ITEM_TYPES.ABILITIES;
   if (file.startsWith("info/buff_info")) return ITEM_TYPES.ABILITIES;
@@ -284,8 +327,8 @@ function findExt(data: any, key: string, value: string) {
   return data?.extensions?.find((x) => x[key] === value);
 }
 
-function parseDescription(ui_ext: any) {
-  if (!ui_ext) return `not-found-${Math.random()}`;
+function parseDescription(ui_ext: any, locale = "en") {
+  if (!ui_ext) return locale === "en" ? `not-found-${Math.random()}` : undefined;
 
   const { formatter, formatter_arguments } = !!ui_ext.help_text_formatter?.formatter
     ? ui_ext.help_text_formatter
@@ -297,11 +340,12 @@ function parseDescription(ui_ext: any) {
 
   const translation = getTranslation(
     formatter,
-    formatter_arguments.map((x) => (typeof x === "number" ? x : Object.values(x)[0] ?? x))
+    formatter_arguments.map((x) => resolveTranslationParam(x, locale)),
+    locale
   );
 
-  if (translation === NO_TRANSLATION_FOUND) return `not-found-${Math.random()}`; // throw new Error("No translation found for " + ui_ext.help_text);
-  return translation;
+  if (translation === NO_TRANSLATION_FOUND) return locale === "en" ? `not-found-${Math.random()}` : undefined;
+  return cleanDescription(translation);
 }
 
 function parseHitpoints(health_ext: any) {
@@ -309,12 +353,13 @@ function parseHitpoints(health_ext: any) {
 }
 
 function parseCosts(cost: any, time: any, civ: CivConfig, popcap = 0) {
-  const { food, wood, gold, stone, command: vizier, merc_byz: special } = cost as Record<"food" | "wood" | "gold" | "stone" | "popcap" | "merc_byz" | "command", number>;
+  const { food = 0, wood = 0, gold = 0, stone = 0, command: vizier, merc_byz: special = 0, action: muster_charge } = (cost ?? {}) as Record<"food" | "wood" | "gold" | "stone" | "popcap" | "merc_byz" | "command" | "action", number>;
   const costs = {
     food, wood, stone, gold,
     vizier: (civ.abbr === 'ot' || vizier) ? vizier : undefined,
     oliveoil: civ.abbr === 'by' ? special : undefined,
     silver: civ.abbr === 'mac' ? special : undefined,
+    muster_charge: (civ.abbr === 'sco' && muster_charge) ? muster_charge : undefined,
     total: food + wood + gold + stone + special,
     popcap,
     time
@@ -347,6 +392,7 @@ function parseAge(name: string, requirements: any, parent_pbg: string) {
   else if (requiredUpgrades.some((x) => x.endsWith("castle_age"))) age = 3;
   else if (requiredUpgrades.some((x) => x.endsWith("feudal_age"))) age = 2;
   else if (requiredUpgrades.some((x) => x.endsWith("dark_age"))) age = 1;
+  else if (requirements?.some((x) => x.key === "mustering_hall_level_sco")) age = 2;
   else {
     const nameParts = name!.split("/")!.shift()!.split("_")!;
     for (const p of nameParts.reverse()) {
@@ -430,14 +476,19 @@ function parseUnique(ui_ext: any) {
   return ui_ext.is_unique_to_race || ui_ext.is_unique || ["UniqueBuildingUpgradeDataTemplate", "BuildingImprovedUpgradeDataTemplate"].includes(ui_ext.tooltip_data_template);
 }
 
-function parseInfluences(ui_ext: any) {
-  if (ui_ext.ui_extra_infos)
-    return ui_ext.ui_extra_infos?.reduce((inf, x) => {
+function parseInfluences(ui_ext: any, locale = "en") {
+  if (ui_ext?.ui_extra_infos)
+    return ui_ext.ui_extra_infos?.reduce((inf: string[], x: any) => {
+      const formatter = x.description || x.description_formatter?.formatter;
+      if (!formatter) return inf;
       const str = getTranslation(
-        x.description || x.description_formatter.formatter,
-        x.description_formatter?.formatter_arguments?.map((x) => Object.values(x)[0] ?? x)
+        formatter,
+        x.description_formatter?.formatter_arguments?.map((arg: any) => resolveTranslationParam(arg, locale)),
+        locale
       );
-      if (["influence_buff", "influence_decorator"].includes(x.icon)) inf.push(str);
+      if (["influence_buff", "influence_decorator"].includes(x.icon) && str && str !== NO_TRANSLATION_FOUND) {
+        inf.push(str);
+      }
       return inf;
     }, [] as string[]);
 }
@@ -468,4 +519,13 @@ export function convertClasses(classes: string[]) {
   if (classes.includes("naval_unit")) classes.push("ship");
 
   return [...new Set(classes)].sort((a, b) => a.localeCompare(b));
+}
+
+export async function copyPatchHistory(targetDir?: string) {
+  const destDir = targetDir ?? path.join(ROOT_FOLDER, "overview");
+  if (!existsSync(destDir)) mkdirSync(destDir, { recursive: true });
+  const source = path.join(__dirname, "patch-history.json");
+  if (existsSync(source)) {
+    await fs.copyFile(source, path.join(destDir, "patch-history.json"));
+  }
 }

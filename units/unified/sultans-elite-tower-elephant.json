@@ -87,6 +87,7 @@
       "hitpoints": 600,
       "weapons": [
         {
+          "id": "tusks",
           "name": "Tusks",
           "type": "melee",
           "damage": 30,
@@ -124,6 +125,7 @@
           "pbgid": 2024371
         },
         {
+          "id": "handcannon",
           "name": "Handcannon",
           "type": "ranged",
           "damage": 38,
@@ -167,7 +169,21 @@
       },
       "movement": {
         "speed": 0.875
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "palace-of-the-sultan",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "time": 200,
+            "popcap": 3,
+            "total": 0
+          }
+        }
+      ]
     }
   ]
 }

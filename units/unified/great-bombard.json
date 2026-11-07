@@ -75,6 +75,7 @@
       "hitpoints": 250,
       "weapons": [
         {
+          "id": "great-bombard",
           "name": "Great Bombard",
           "type": "siege",
           "damage": 70,
@@ -166,7 +167,22 @@
           "infantry ranged",
           "monk"
         ]
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "mehmed-imperial-armory",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 60,
+            "popcap": 4,
+            "total": 0
+          }
+        }
+      ]
     }
   ]
 }

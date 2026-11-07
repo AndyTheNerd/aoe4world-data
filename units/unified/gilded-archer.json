@@ -79,6 +79,7 @@
       "hitpoints": 125,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -109,8 +110,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -194,6 +194,7 @@
       "hitpoints": 145,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -224,8 +225,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -309,6 +309,7 @@
       "hitpoints": 160,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 10,
@@ -339,8 +340,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },

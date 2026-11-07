@@ -3,8 +3,8 @@
   "baseId": "spearman",
   "type": "unit",
   "name": "Veteran Spearman",
-  "pbgid": 132303,
-  "attribName": "unit_spearman_3_fre",
+  "pbgid": 3058724,
+  "attribName": "unit_spearman_3_fre_ha_01",
   "age": 3,
   "civs": [
     "je"
@@ -46,6 +46,7 @@
   "hitpoints": 110,
   "weapons": [
     {
+      "id": "spear",
       "name": "Spear",
       "type": "melee",
       "damage": 9,
@@ -111,6 +112,7 @@
       "pbgid": 127826
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,

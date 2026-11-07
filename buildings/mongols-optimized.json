@@ -1141,7 +1141,7 @@
       ],
       "minAge": 1,
       "icon": "https://data.aoe4world.com/images/buildings/ovoo-1.png",
-      "description": "Must be built on a Stone Outcropping.\nHarvests 70/100/130/160 Stone per minute by Age. Houses unique Mongol technologies.\nConstructing a new Ovoo will destroy the prior one.",
+      "description": "Must be built on a Stone Outcropping.\nHarvests 70/100/140/170 Stone per minute by Age. Houses unique Mongol technologies.\nConstructing a new Ovoo will destroy the prior one.",
       "variations": [
         {
           "id": "ovoo-1",
@@ -1154,7 +1154,7 @@
           "civs": [
             "mo"
           ],
-          "description": "Must be built on a Stone Outcropping.\nHarvests 70/100/130/160 Stone per minute by Age. Houses unique Mongol technologies.\nConstructing a new Ovoo will destroy the prior one.",
+          "description": "Must be built on a Stone Outcropping.\nHarvests 70/100/140/170 Stone per minute by Age. Houses unique Mongol technologies.\nConstructing a new Ovoo will destroy the prior one.",
           "classes": [
             "building",
             "ovoo",
@@ -1319,8 +1319,8 @@
           "baseId": "prayer-tent",
           "type": "building",
           "name": "Prayer Tent",
-          "pbgid": 137157,
-          "attribName": "building_unit_religious_mon",
+          "pbgid": 2032510,
+          "attribName": "building_unit_religious_district_mon",
           "age": 3,
           "civs": [
             "mo"
@@ -1918,7 +1918,7 @@
             "gold": 0,
             "total": 750,
             "popcap": 0,
-            "time": 150
+            "time": 165
           },
           "producedBy": [
             "villager"

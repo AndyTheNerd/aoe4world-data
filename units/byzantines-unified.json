@@ -97,6 +97,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 11,
@@ -209,6 +210,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 14,
@@ -351,6 +353,7 @@
           "hitpoints": 70,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 5,
@@ -381,8 +384,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -467,6 +469,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 7,
@@ -497,8 +500,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -583,6 +585,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 8,
@@ -613,8 +616,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -725,6 +727,7 @@
           "hitpoints": 210,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 55,
@@ -910,6 +913,7 @@
           "hitpoints": 150,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 11,
@@ -1033,6 +1037,7 @@
           "hitpoints": 175,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 13,
@@ -1156,6 +1161,7 @@
           "hitpoints": 200,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 14,
@@ -1261,7 +1267,7 @@
       ],
       "minAge": 3,
       "icon": "https://data.aoe4world.com/images/units/camel-rider-3.png",
-      "description": "Highly mobile and durable melee unit effective against all cavalry.\n+Bonus damage to cavalry\n+Causes enemy cavalry to deal less damage\n-High cost\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Contract.",
+      "description": "Highly mobile and durable melee unit effective against all cavalry.\n+Bonus damage to cavalry\n+Causes enemy cavalry to deal less damage\n-High cost\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Mercenary Contract.",
       "variations": [
         {
           "id": "camel-rider-3",
@@ -1274,7 +1280,7 @@
           "civs": [
             "by"
           ],
-          "description": "Highly mobile and durable melee unit effective against all cavalry.\n+Bonus damage to cavalry\n+Causes enemy cavalry to deal less damage\n-High cost\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Contract.",
+          "description": "Highly mobile and durable melee unit effective against all cavalry.\n+Bonus damage to cavalry\n+Causes enemy cavalry to deal less damage\n-High cost\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Mercenary Contract.",
           "classes": [
             "annihilation_condition",
             "camel",
@@ -1316,6 +1322,7 @@
           "hitpoints": 270,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 14,
@@ -1366,6 +1373,7 @@
               "pbgid": 204178
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1418,7 +1426,7 @@
           "civs": [
             "by"
           ],
-          "description": "Highly mobile and durable melee unit effective against all cavalry.\n+Bonus damage to cavalry\n+Causes enemy cavalry to deal less damage\n-High cost\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Contract.",
+          "description": "Highly mobile and durable melee unit effective against all cavalry.\n+Bonus damage to cavalry\n+Causes enemy cavalry to deal less damage\n-High cost\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Mercenary Contract.",
           "classes": [
             "annihilation_condition",
             "camel",
@@ -1458,6 +1466,7 @@
           "hitpoints": 320,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 16,
@@ -1508,6 +1517,7 @@
               "pbgid": 204181
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1625,6 +1635,7 @@
           "hitpoints": 190,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 60,
@@ -1799,6 +1810,7 @@
           "hitpoints": 700,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 45,
@@ -1946,6 +1958,7 @@
           "hitpoints": 360,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 27,
@@ -1969,6 +1982,7 @@
               "pbgid": 2145240
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1992,6 +2006,7 @@
               "pbgid": 127935
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 36,
@@ -2036,7 +2051,22 @@
           },
           "movement": {
             "speed": 1.625
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "palatine-school",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "oliveoil": 0,
+                "time": 40,
+                "popcap": 1,
+                "total": 0
+              }
+            }
+          ]
         },
         {
           "id": "cataphract-4",
@@ -2091,6 +2121,7 @@
           "hitpoints": 405,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 32,
@@ -2114,6 +2145,7 @@
               "pbgid": 2145252
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2137,6 +2169,7 @@
               "pbgid": 127935
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 36,
@@ -2181,7 +2214,22 @@
           },
           "movement": {
             "speed": 1.625
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "palatine-school",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "oliveoil": 0,
+                "time": 40,
+                "popcap": 1,
+                "total": 0
+              }
+            }
+          ]
         }
       ]
     },
@@ -2255,9 +2303,10 @@
             "siege-workshop"
           ],
           "icon": "https://data.aoe4world.com/images/units/cheirosiphon-3.png",
-          "hitpoints": 310,
+          "hitpoints": 330,
           "weapons": [
             {
+              "id": "greek-fire",
               "name": "Greek Fire",
               "type": "siege",
               "damage": 10,
@@ -2325,7 +2374,22 @@
               "infantry ranged",
               "monk"
             ]
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "palatine-school",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "oliveoil": 0,
+                "time": 35,
+                "popcap": 1,
+                "total": 0
+              }
+            }
+          ]
         }
       ]
     },
@@ -2399,6 +2463,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "trebuchet",
               "name": "Trebuchet",
               "type": "siege",
               "damage": 40,
@@ -2450,6 +2515,7 @@
               "pbgid": 130952
             },
             {
+              "id": "greek-fire",
               "name": "Greek Fire",
               "type": "siege",
               "damage": 40,
@@ -2603,6 +2669,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 11,
@@ -2703,6 +2770,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 14,
@@ -2830,6 +2898,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "incendiaries",
               "name": "Incendiaries",
               "type": "siege",
               "damage": 95,
@@ -2981,6 +3050,7 @@
           "hitpoints": 120,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 13,
@@ -3018,6 +3088,7 @@
               "pbgid": 2135406
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3041,6 +3112,7 @@
               "pbgid": 127935
             },
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 7,
@@ -3138,6 +3210,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 15,
@@ -3175,6 +3248,7 @@
               "pbgid": 2135408
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3198,6 +3272,7 @@
               "pbgid": 127935
             },
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 9,
@@ -3295,6 +3370,7 @@
           "hitpoints": 175,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 19,
@@ -3332,6 +3408,7 @@
               "pbgid": 2135413
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3355,6 +3432,7 @@
               "pbgid": 127935
             },
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 11,
@@ -3411,7 +3489,7 @@
       ],
       "unique": true,
       "displayClasses": [
-        "Springald Ship"
+        "Massive Ship"
       ],
       "classes": [
         "annihilation_condition",
@@ -3460,7 +3538,7 @@
             "siegeable"
           ],
           "displayClasses": [
-            "Springald Ship"
+            "Massive Ship"
           ],
           "unique": true,
           "costs": {
@@ -3480,6 +3558,7 @@
           "hitpoints": 500,
           "weapons": [
             {
+              "id": "greek-fire",
               "name": "Greek Fire",
               "type": "siege",
               "damage": 7,
@@ -3713,6 +3792,7 @@
           "hitpoints": 300,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -3860,6 +3940,7 @@
           "hitpoints": 195,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 10,
@@ -3883,6 +3964,7 @@
               "pbgid": 199547
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3985,6 +4067,7 @@
           "hitpoints": 225,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 12,
@@ -4008,6 +4091,7 @@
               "pbgid": 199551
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4089,7 +4173,7 @@
       ],
       "minAge": 4,
       "icon": "https://data.aoe4world.com/images/units/grenadier-4.png",
-      "description": "Advanced ranged infantry with thrown explosive canisters that deal damage in a small area.\n+ Deals area damage\n- Low single target damage\n- Slow movement speed\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Contract.",
+      "description": "Advanced ranged infantry with thrown explosive canisters that deal damage in a small area.\n+ Deals area damage\n- Low single target damage\n- Slow movement speed\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Mercenary Contract.",
       "variations": [
         {
           "id": "grenadier-4",
@@ -4102,7 +4186,7 @@
           "civs": [
             "by"
           ],
-          "description": "Advanced ranged infantry with thrown explosive canisters that deal damage in a small area.\n+ Deals area damage\n- Low single target damage\n- Slow movement speed\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Contract.",
+          "description": "Advanced ranged infantry with thrown explosive canisters that deal damage in a small area.\n+ Deals area damage\n- Low single target damage\n- Slow movement speed\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Mercenary Contract.",
           "classes": [
             "annihilation_condition",
             "dynasty_unit",
@@ -4141,6 +4225,7 @@
           "hitpoints": 150,
           "weapons": [
             {
+              "id": "grenade",
               "name": "Grenade",
               "type": "siege",
               "damage": 12,
@@ -4207,7 +4292,7 @@
       ],
       "unique": false,
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "classes": [
         "annihilation_condition",
@@ -4254,7 +4339,7 @@
             "ranged_infantry"
           ],
           "displayClasses": [
-            "Ranged Gunpowder Infantry"
+            "Medium Gunpowder Infantry"
           ],
           "unique": false,
           "costs": {
@@ -4274,6 +4359,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 38,
@@ -4393,6 +4479,7 @@
           "hitpoints": 85,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 10,
@@ -4485,6 +4572,7 @@
           "hitpoints": 100,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 12,
@@ -4607,6 +4695,7 @@
           "hitpoints": 125,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -4657,6 +4746,7 @@
               "pbgid": 109275
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4748,6 +4838,7 @@
           "hitpoints": 155,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -4798,6 +4889,7 @@
               "pbgid": 127820
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4889,6 +4981,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 13,
@@ -4939,6 +5032,7 @@
               "pbgid": 127821
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5055,6 +5149,7 @@
           "hitpoints": 260,
           "weapons": [
             {
+              "id": "huihui-pao",
               "name": "Huihui Pao",
               "type": "siege",
               "damage": 75,
@@ -5106,6 +5201,7 @@
               "pbgid": 2117338
             },
             {
+              "id": "greek-fire",
               "name": "Greek Fire",
               "type": "siege",
               "damage": 75,
@@ -5261,6 +5357,7 @@
           "hitpoints": 70,
           "weapons": [
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 8,
@@ -5298,6 +5395,7 @@
               "pbgid": 2059094
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5389,6 +5487,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 10,
@@ -5426,6 +5525,7 @@
               "pbgid": 2059095
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5517,6 +5617,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 13,
@@ -5554,6 +5655,7 @@
               "pbgid": 2059096
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5687,6 +5789,7 @@
           "hitpoints": 150,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 15,
@@ -5710,6 +5813,7 @@
               "pbgid": 2131334
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5733,6 +5837,7 @@
               "pbgid": 2135368
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 23,
@@ -5836,6 +5941,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 19,
@@ -5859,6 +5965,7 @@
               "pbgid": 2131337
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5882,6 +5989,7 @@
               "pbgid": 2135368
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 29,
@@ -5985,6 +6093,7 @@
           "hitpoints": 215,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 23,
@@ -6008,6 +6117,7 @@
               "pbgid": 2131339
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6031,6 +6141,7 @@
               "pbgid": 2135368
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 35,
@@ -6111,7 +6222,7 @@
       ],
       "minAge": 3,
       "icon": "https://data.aoe4world.com/images/units/landsknecht-3.png",
-      "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 480 Olive Oil.\n\nRequires the Western Mercenary Contract.",
+      "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 450 Olive Oil.\n\nRequires the Western Mercenary Contract.",
       "variations": [
         {
           "id": "landsknecht-3",
@@ -6124,7 +6235,7 @@
           "civs": [
             "by"
           ],
-          "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 480 Olive Oil.\n\nRequires the Western Mercenary Contract.",
+          "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 450 Olive Oil.\n\nRequires the Western Mercenary Contract.",
           "classes": [
             "annihilation_condition",
             "armored",
@@ -6150,8 +6261,8 @@
             "wood": 0,
             "stone": 0,
             "gold": 0,
-            "oliveoil": 160,
-            "total": 160,
+            "oliveoil": 150,
+            "total": 150,
             "popcap": 1,
             "time": 80
           },
@@ -6163,6 +6274,7 @@
           "hitpoints": 90,
           "weapons": [
             {
+              "id": "zweihander",
               "name": "Zweihander",
               "type": "melee",
               "damage": 17,
@@ -6186,6 +6298,7 @@
               "pbgid": 136942
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6238,7 +6351,7 @@
           "civs": [
             "by"
           ],
-          "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 480 Olive Oil.\n\nRequires the Western Mercenary Contract.",
+          "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 450 Olive Oil.\n\nRequires the Western Mercenary Contract.",
           "classes": [
             "annihilation_condition",
             "armored",
@@ -6264,8 +6377,8 @@
             "wood": 0,
             "stone": 0,
             "gold": 0,
-            "oliveoil": 160,
-            "total": 160,
+            "oliveoil": 150,
+            "total": 150,
             "popcap": 1,
             "time": 80
           },
@@ -6277,6 +6390,7 @@
           "hitpoints": 105,
           "weapons": [
             {
+              "id": "zweihander",
               "name": "Zweihander",
               "type": "melee",
               "damage": 21,
@@ -6300,6 +6414,7 @@
               "pbgid": 184609
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6424,6 +6539,7 @@
           "hitpoints": 90,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 7,
@@ -6489,6 +6605,7 @@
               "pbgid": 2136366
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6524,7 +6641,22 @@
           },
           "movement": {
             "speed": 1.25
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "palatine-school",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "oliveoil": 0,
+                "time": 17,
+                "popcap": 1,
+                "total": 0
+              }
+            }
+          ]
         },
         {
           "id": "limitanei-2",
@@ -6573,9 +6705,10 @@
             "palatine-school"
           ],
           "icon": "https://data.aoe4world.com/images/units/limitanei-2.png",
-          "hitpoints": 100,
+          "hitpoints": 105,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 8,
@@ -6641,6 +6774,7 @@
               "pbgid": 2136368
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6676,7 +6810,22 @@
           },
           "movement": {
             "speed": 1.25
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "palatine-school",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "oliveoil": 0,
+                "time": 17,
+                "popcap": 1,
+                "total": 0
+              }
+            }
+          ]
         },
         {
           "id": "limitanei-3",
@@ -6728,6 +6877,7 @@
           "hitpoints": 120,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -6793,6 +6943,7 @@
               "pbgid": 2136370
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6828,7 +6979,22 @@
           },
           "movement": {
             "speed": 1.25
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "palatine-school",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "oliveoil": 0,
+                "time": 17,
+                "popcap": 1,
+                "total": 0
+              }
+            }
+          ]
         },
         {
           "id": "limitanei-4",
@@ -6880,6 +7046,7 @@
           "hitpoints": 150,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -6945,6 +7112,7 @@
               "pbgid": 2136372
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6980,7 +7148,22 @@
           },
           "movement": {
             "speed": 1.3
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "palatine-school",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "oliveoil": 0,
+                "time": 17,
+                "popcap": 1,
+                "total": 0
+              }
+            }
+          ]
         }
       ]
     },
@@ -7059,6 +7242,7 @@
           "hitpoints": 70,
           "weapons": [
             {
+              "id": "longbow",
               "name": "Longbow",
               "type": "ranged",
               "damage": 6,
@@ -7089,8 +7273,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -7177,6 +7360,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "longbow",
               "name": "Longbow",
               "type": "ranged",
               "damage": 8,
@@ -7207,8 +7391,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -7295,6 +7478,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "longbow",
               "name": "Longbow",
               "type": "ranged",
               "damage": 9,
@@ -7325,8 +7509,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -7438,6 +7621,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "mangonel",
               "name": "Mangonel",
               "type": "siege",
               "damage": 10,
@@ -7505,6 +7689,7 @@
               "pbgid": 127503
             },
             {
+              "id": "incendiary",
               "name": "Incendiary",
               "type": "fire",
               "damage": 2,
@@ -7559,6 +7744,7 @@
               "pbgid": 127724
             },
             {
+              "id": "adjustable-crossbars",
               "name": "Adjustable Crossbars",
               "type": "siege",
               "damage": 10,
@@ -7727,6 +7913,7 @@
           "hitpoints": 85,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 5,
@@ -7817,6 +8004,7 @@
           "hitpoints": 105,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -7907,6 +8095,7 @@
           "hitpoints": 120,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 8,
@@ -8119,6 +8308,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 8,
@@ -8156,6 +8346,7 @@
               "pbgid": 2072969
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -8248,6 +8439,7 @@
           "hitpoints": 115,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 9,
@@ -8285,6 +8477,7 @@
               "pbgid": 2072743
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -8377,6 +8570,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 12,
@@ -8414,6 +8608,7 @@
               "pbgid": 2072747
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -8530,6 +8725,7 @@
           "hitpoints": 120,
           "weapons": [
             {
+              "id": "rocket-arrow",
               "name": "Rocket Arrow",
               "type": "siege",
               "damage": 6,
@@ -8602,185 +8798,6 @@
           },
           "movement": {
             "speed": 0.8125
-          },
-          "unlockedBy": [
-            "buildings/foreign-engineering-company"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "royal-cannon",
-      "name": "Royal Cannon",
-      "type": "unit",
-      "civs": [
-        "by"
-      ],
-      "unique": false,
-      "displayClasses": [
-        "Siege",
-        "Gunpowder"
-      ],
-      "classes": [
-        "annihilation_condition",
-        "bombard_wheeled",
-        "find_non_siege_land_military",
-        "formational",
-        "gunpowder",
-        "included_by_military_hotkeys",
-        "land_military",
-        "military",
-        "royal_artillery",
-        "siege",
-        "siege_range"
-      ],
-      "minAge": 4,
-      "icon": "https://data.aoe4world.com/images/units/royal-cannon-4.png",
-      "description": "Most powerful siege cannon. Excellent against buildings or any stubborn targets.\n+ Bonus damage to buildings\n\nMercenary that can be purchased for 900 Olive Oil.",
-      "variations": [
-        {
-          "id": "royal-cannon-4",
-          "baseId": "royal-cannon",
-          "type": "unit",
-          "name": "Royal Cannon",
-          "pbgid": 2138874,
-          "attribName": "unit_cannon_4_royal_merc_byz",
-          "age": 4,
-          "civs": [
-            "by"
-          ],
-          "description": "Most powerful siege cannon. Excellent against buildings or any stubborn targets.\n+ Bonus damage to buildings\n\nMercenary that can be purchased for 900 Olive Oil.",
-          "classes": [
-            "annihilation_condition",
-            "bombard_wheeled",
-            "find_non_siege_land_military",
-            "formational",
-            "gunpowder",
-            "included_by_military_hotkeys",
-            "land_military",
-            "military",
-            "royal_artillery",
-            "siege",
-            "siege_range"
-          ],
-          "displayClasses": [
-            "Siege",
-            "Gunpowder"
-          ],
-          "unique": false,
-          "costs": {
-            "food": 0,
-            "wood": 0,
-            "stone": 0,
-            "gold": 0,
-            "oliveoil": 900,
-            "total": 900,
-            "popcap": 3,
-            "time": 45
-          },
-          "producedBy": [
-            "foreign-engineering-company"
-          ],
-          "icon": "https://data.aoe4world.com/images/units/royal-cannon-4.png",
-          "hitpoints": 190,
-          "weapons": [
-            {
-              "name": "Cannon",
-              "type": "siege",
-              "damage": 60,
-              "speed": 5.375,
-              "range": {
-                "min": 3.75,
-                "max": 10
-              },
-              "modifiers": [
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "naval",
-                        "unit"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 500,
-                  "type": "passive"
-                },
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "building"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 450,
-                  "type": "passive"
-                },
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "infantry"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 55,
-                  "type": "passive"
-                },
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "war",
-                        "elephant"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 55,
-                  "type": "passive"
-                }
-              ],
-              "durations": {
-                "aim": 0.5,
-                "windup": 0,
-                "attack": 0.125,
-                "winddown": 1.75,
-                "reload": 3,
-                "setup": 0.25,
-                "teardown": 0.25,
-                "cooldown": 0
-              },
-              "attribName": "weapon_cannon_4",
-              "pbgid": 165121
-            }
-          ],
-          "armor": [],
-          "resistance": [
-            {
-              "type": "ranged",
-              "value": 85
-            }
-          ],
-          "sight": {
-            "inner_height": 10,
-            "inner_radius": 32,
-            "outer_height": -15,
-            "outer_radius": 56,
-            "base": 41.6,
-            "line": 56,
-            "height": 10
-          },
-          "movement": {
-            "speed": 0.875
           },
           "unlockedBy": [
             "buildings/foreign-engineering-company"
@@ -8877,6 +8894,7 @@
           "hitpoints": 190,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 19,
@@ -8900,6 +8918,7 @@
               "pbgid": 129602
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -9003,6 +9022,7 @@
           "hitpoints": 230,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 24,
@@ -9026,6 +9046,7 @@
               "pbgid": 106614
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -9129,6 +9150,7 @@
           "hitpoints": 270,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 29,
@@ -9152,6 +9174,7 @@
               "pbgid": 127822
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -9286,6 +9309,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "short-sword",
               "name": "Short Sword",
               "type": "melee",
               "damage": 1,
@@ -9490,7 +9514,7 @@
       ],
       "minAge": 2,
       "icon": "https://data.aoe4world.com/images/units/sipahi-2.png",
-      "description": "Fast cavalry effective at raiding, flanking, and countering ranged units. Can gain attack speed at the cost of melee defense.\n+ High movement speed\n+ Strong against ranged units\n- Weak against melee units\n- Countered by Spearmen\n\nMercenary that can be purchased per 3 units for a total of 450 Olive Oil.\n\nThis Mercenary can only be purchased on Mercenary Houses built near a neutral Trade Post that list this unit. The chance of this unit being available on a Trade Post is 20%.",
+      "description": "Fast cavalry effective at raiding, flanking, and countering ranged units. Can gain attack speed at the cost of melee defense.\n+ High movement speed\n+ Strong against ranged units\n- Weak against melee units\n- Countered by Spearmen\n\nMercenary that can be purchased per 3 units for a total of 465 Olive Oil.\n\nThis Mercenary can only be purchased on Mercenary Houses built near a neutral Trade Post that list this unit. The chance of this unit being available on a Trade Post is 20%.",
       "variations": [
         {
           "id": "sipahi-2",
@@ -9503,7 +9527,7 @@
           "civs": [
             "by"
           ],
-          "description": "Fast cavalry effective at raiding, flanking, and countering ranged units. Can gain attack speed at the cost of melee defense.\n+ High movement speed\n+ Strong against ranged units\n- Weak against melee units\n- Countered by Spearmen\n\nMercenary that can be purchased per 3 units for a total of 450 Olive Oil.\n\nThis Mercenary can only be purchased on Mercenary Houses built near a neutral Trade Post that list this unit. The chance of this unit being available on a Trade Post is 20%.",
+          "description": "Fast cavalry effective at raiding, flanking, and countering ranged units. Can gain attack speed at the cost of melee defense.\n+ High movement speed\n+ Strong against ranged units\n- Weak against melee units\n- Countered by Spearmen\n\nMercenary that can be purchased per 3 units for a total of 465 Olive Oil.\n\nThis Mercenary can only be purchased on Mercenary Houses built near a neutral Trade Post that list this unit. The chance of this unit being available on a Trade Post is 20%.",
           "classes": [
             "annihilation_condition",
             "cavalry",
@@ -9527,8 +9551,8 @@
             "wood": 0,
             "stone": 0,
             "gold": 0,
-            "oliveoil": 150,
-            "total": 150,
+            "oliveoil": 155,
+            "total": 155,
             "popcap": 1,
             "time": 80
           },
@@ -9540,13 +9564,14 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 12,
               "speed": 1.75,
               "range": {
                 "min": 0,
-                "max": 0.75
+                "max": 0.6
               },
               "modifiers": [
                 {
@@ -9590,6 +9615,7 @@
               "pbgid": 2063077
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -9646,7 +9672,7 @@
           "civs": [
             "by"
           ],
-          "description": "Fast cavalry effective at raiding, flanking, and countering ranged units. Can gain attack speed at the cost of melee defense.\n+ High movement speed\n+ Strong against ranged units\n- Weak against melee units\n- Countered by Spearmen\n\nMercenary that can be purchased per 3 units for a total of 450 Olive Oil.\n\nThis Mercenary can only be purchased on Mercenary Houses built near a neutral Trade Post that list this unit. The chance of this unit being available on a Trade Post is 20%.",
+          "description": "Fast cavalry effective at raiding, flanking, and countering ranged units. Can gain attack speed at the cost of melee defense.\n+ High movement speed\n+ Strong against ranged units\n- Weak against melee units\n- Countered by Spearmen\n\nMercenary that can be purchased per 3 units for a total of 465 Olive Oil.\n\nThis Mercenary can only be purchased on Mercenary Houses built near a neutral Trade Post that list this unit. The chance of this unit being available on a Trade Post is 20%.",
           "classes": [
             "annihilation_condition",
             "cavalry",
@@ -9670,8 +9696,8 @@
             "wood": 0,
             "stone": 0,
             "gold": 0,
-            "oliveoil": 150,
-            "total": 150,
+            "oliveoil": 155,
+            "total": 155,
             "popcap": 1,
             "time": 80
           },
@@ -9683,13 +9709,14 @@
           "hitpoints": 175,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 15,
               "speed": 1.75,
               "range": {
                 "min": 0,
-                "max": 0.75
+                "max": 0.6
               },
               "modifiers": [
                 {
@@ -9733,6 +9760,7 @@
               "pbgid": 2063078
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -9789,7 +9817,7 @@
           "civs": [
             "by"
           ],
-          "description": "Fast cavalry effective at raiding, flanking, and countering ranged units. Can gain attack speed at the cost of melee defense.\n+ High movement speed\n+ Strong against ranged units\n- Weak against melee units\n- Countered by Spearmen\n\nMercenary that can be purchased per 3 units for a total of 450 Olive Oil.\n\nThis Mercenary can only be purchased on Mercenary Houses built near a neutral Trade Post that list this unit. The chance of this unit being available on a Trade Post is 20%.",
+          "description": "Fast cavalry effective at raiding, flanking, and countering ranged units. Can gain attack speed at the cost of melee defense.\n+ High movement speed\n+ Strong against ranged units\n- Weak against melee units\n- Countered by Spearmen\n\nMercenary that can be purchased per 3 units for a total of 465 Olive Oil.\n\nThis Mercenary can only be purchased on Mercenary Houses built near a neutral Trade Post that list this unit. The chance of this unit being available on a Trade Post is 20%.",
           "classes": [
             "annihilation_condition",
             "cavalry",
@@ -9813,8 +9841,8 @@
             "wood": 0,
             "stone": 0,
             "gold": 0,
-            "oliveoil": 150,
-            "total": 150,
+            "oliveoil": 155,
+            "total": 155,
             "popcap": 1,
             "time": 80
           },
@@ -9826,13 +9854,14 @@
           "hitpoints": 210,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 18,
               "speed": 1.75,
               "range": {
                 "min": 0,
-                "max": 0.75
+                "max": 0.6
               },
               "modifiers": [
                 {
@@ -9876,6 +9905,7 @@
               "pbgid": 2063079
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -9991,6 +10021,7 @@
           "hitpoints": 85,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 15,
@@ -10079,7 +10110,7 @@
       ],
       "unique": false,
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "classes": [
         "annihilation_condition",
@@ -10126,7 +10157,7 @@
             "streltsy"
           ],
           "displayClasses": [
-            "Ranged Gunpowder Infantry"
+            "Medium Gunpowder Infantry"
           ],
           "unique": false,
           "costs": {
@@ -10147,6 +10178,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 38,
@@ -10271,6 +10303,7 @@
           "hitpoints": 600,
           "weapons": [
             {
+              "id": "tusks",
               "name": "Tusks",
               "type": "melee",
               "damage": 30,
@@ -10308,6 +10341,7 @@
               "pbgid": 2024371
             },
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 15,
@@ -10331,6 +10365,7 @@
               "pbgid": 136204
             },
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 15,
@@ -10646,7 +10681,8 @@
               "siege",
               "monk",
               "khan",
-              "cavalry"
+              "cavalry",
+              "cattle"
             ]
           }
         }
@@ -10735,6 +10771,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 13,
@@ -10758,6 +10795,7 @@
               "pbgid": 2136350
             },
             {
+              "id": "ax",
               "name": "Ax",
               "type": "melee",
               "damage": 13,
@@ -10781,6 +10819,7 @@
               "pbgid": 2105268
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -10825,7 +10864,22 @@
           },
           "movement": {
             "speed": 1.125
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "palatine-school",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "oliveoil": 0,
+                "time": 22.5,
+                "popcap": 1,
+                "total": 0
+              }
+            }
+          ]
         },
         {
           "id": "varangian-guard-4",
@@ -10878,6 +10932,7 @@
           "hitpoints": 195,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 16,
@@ -10901,6 +10956,7 @@
               "pbgid": 2136352
             },
             {
+              "id": "ax",
               "name": "Ax",
               "type": "melee",
               "damage": 16,
@@ -10924,6 +10980,7 @@
               "pbgid": 2105270
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -10968,7 +11025,22 @@
           },
           "movement": {
             "speed": 1.125
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "palatine-school",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "oliveoil": 0,
+                "time": 22.5,
+                "popcap": 1,
+                "total": 0
+              }
+            }
+          ]
         }
       ]
     },
@@ -11039,6 +11111,7 @@
           "hitpoints": 50,
           "weapons": [
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -11062,6 +11135,7 @@
               "pbgid": 123522
             },
             {
+              "id": "knife",
               "name": "Knife",
               "type": "melee",
               "damage": 6,
@@ -11186,6 +11260,7 @@
           "hitpoints": 800,
           "weapons": [
             {
+              "id": "tusks",
               "name": "Tusks",
               "type": "melee",
               "damage": 50,
@@ -11223,6 +11298,7 @@
               "pbgid": 184643
             },
             {
+              "id": "charge",
               "name": "Charge",
               "type": "melee",
               "damage": 80,
@@ -11246,6 +11322,7 @@
               "pbgid": 184799
             },
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 25,
@@ -11415,6 +11492,7 @@
           "hitpoints": 70,
           "weapons": [
             {
+              "id": "repeater-crossbow",
               "name": "Repeater Crossbow",
               "type": "ranged",
               "damage": 4,
@@ -11505,6 +11583,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "repeater-crossbow",
               "name": "Repeater Crossbow",
               "type": "ranged",
               "damage": 5,
@@ -11595,6 +11674,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "repeater-crossbow",
               "name": "Repeater Crossbow",
               "type": "ranged",
               "damage": 6,

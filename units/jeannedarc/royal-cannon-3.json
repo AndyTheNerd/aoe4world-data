@@ -13,7 +13,6 @@
   "classes": [
     "annihilation_condition",
     "bombard_wheeled",
-    "find_non_siege_land_military",
     "formational",
     "gunpowder",
     "included_by_military_hotkeys",
@@ -32,8 +31,8 @@
     "food": 0,
     "wood": 300,
     "stone": 0,
-    "gold": 600,
-    "total": 900,
+    "gold": 450,
+    "total": 750,
     "popcap": 3,
     "time": 45
   },
@@ -44,6 +43,7 @@
   "hitpoints": 190,
   "weapons": [
     {
+      "id": "cannon",
       "name": "Cannon",
       "type": "siege",
       "damage": 60,

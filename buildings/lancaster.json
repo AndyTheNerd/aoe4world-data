@@ -232,6 +232,7 @@
       "hitpoints": 6500,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 14,
@@ -710,6 +711,7 @@
       "hitpoints": 5000,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 12,
@@ -863,6 +865,7 @@
         "landmark",
         "select_special_building",
         "siegeable",
+        "town_bell_target",
         "town_center_or_landmark",
         "wonder",
         "wonder_dark_age"
@@ -887,6 +890,7 @@
       "hitpoints": 5000,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 12,
@@ -923,6 +927,318 @@
           },
           "attribName": "weapon_castle_lancaster_arrow_lan",
           "pbgid": 9002024
+        },
+        {
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
+          "type": "ranged",
+          "damage": 6,
+          "speed": 3.875,
+          "range": {
+            "min": 0,
+            "max": 8
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 10,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 1.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 2
+          },
+          "attribName": "weapon_castle_lancaster_garrison_lan",
+          "pbgid": 9007498
+        },
+        {
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
+          "type": "ranged",
+          "damage": 6,
+          "speed": 3.875,
+          "range": {
+            "min": 0,
+            "max": 8
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 10,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 1.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 2
+          },
+          "attribName": "weapon_castle_lancaster_garrison_lan",
+          "pbgid": 9007498
+        },
+        {
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
+          "type": "ranged",
+          "damage": 6,
+          "speed": 3.875,
+          "range": {
+            "min": 0,
+            "max": 8
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 10,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 1.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 2
+          },
+          "attribName": "weapon_castle_lancaster_garrison_lan",
+          "pbgid": 9007498
+        },
+        {
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
+          "type": "ranged",
+          "damage": 6,
+          "speed": 3.875,
+          "range": {
+            "min": 0,
+            "max": 8
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 10,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 1.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 2
+          },
+          "attribName": "weapon_castle_lancaster_garrison_lan",
+          "pbgid": 9007498
+        },
+        {
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
+          "type": "ranged",
+          "damage": 6,
+          "speed": 3.875,
+          "range": {
+            "min": 0,
+            "max": 8
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 10,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 1.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 2
+          },
+          "attribName": "weapon_castle_lancaster_garrison_lan",
+          "pbgid": 9007498
+        },
+        {
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
+          "type": "ranged",
+          "damage": 6,
+          "speed": 3.875,
+          "range": {
+            "min": 0,
+            "max": 8
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 10,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 1.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 2
+          },
+          "attribName": "weapon_castle_lancaster_garrison_lan",
+          "pbgid": 9007498
+        },
+        {
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
+          "type": "ranged",
+          "damage": 6,
+          "speed": 3.875,
+          "range": {
+            "min": 0,
+            "max": 8
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 10,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 1.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 2
+          },
+          "attribName": "weapon_castle_lancaster_garrison_lan",
+          "pbgid": 9007498
+        },
+        {
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
+          "type": "ranged",
+          "damage": 6,
+          "speed": 3.875,
+          "range": {
+            "min": 0,
+            "max": 8
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 10,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 1.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 2
+          },
+          "attribName": "weapon_castle_lancaster_garrison_lan",
+          "pbgid": 9007498
         }
       ],
       "armor": [
@@ -939,6 +1255,16 @@
         "base": 41,
         "line": 41,
         "height": 8
+      },
+      "garrison": {
+        "capacity": 8,
+        "classes": [
+          "infantry",
+          "infantry ranged",
+          "villager",
+          "monk",
+          "cavalry"
+        ]
       },
       "influences": []
     },
@@ -1009,7 +1335,7 @@
       "civs": [
         "hl"
       ],
-      "description": "Acts as a drop off building for all resource types. Passively generates 10 wood and 30 food per minute. Generates an additional 4 food and 2 wood for each nearby villager. \nVillagers only affect one Manor at a time.\nIncreases your maximum Population by +10.",
+      "description": "Acts as a drop off building for all resource types. Passively generates 10 wood and 30 food per minute. Generates an additional 3 food and 2 wood for each nearby villager. \nVillagers only affect one Manor at a time.\nIncreases your maximum Population by +10.",
       "classes": [
         "building",
         "economy_building",
@@ -1038,6 +1364,7 @@
       "hitpoints": 750,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -1773,6 +2100,7 @@
       "hitpoints": 3000,
       "weapons": [
         {
+          "id": "springald",
           "name": "Springald",
           "type": "ranged",
           "damage": 60,
@@ -1874,6 +2202,7 @@
       "hitpoints": 5000,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 12,
@@ -1967,6 +2296,7 @@
         "land_food_deposit_4_by_4",
         "production_building",
         "resource_drop_off",
+        "scar_town_center",
         "siegeable",
         "town_bell_target",
         "town_center",
@@ -1984,7 +2314,7 @@
         "gold": 0,
         "total": 700,
         "popcap": 0,
-        "time": 150
+        "time": 165
       },
       "producedBy": [
         "villager"

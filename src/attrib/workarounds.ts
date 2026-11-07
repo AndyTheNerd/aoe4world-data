@@ -1,8 +1,10 @@
 import { CIVILIZATIONS } from "../lib/config/civs";
 import { captureCallContext } from "../lib/utils/processors";
 import { ItemSlug } from "../sdk/utils";
-import { Ability, Building, Item, ItemType, Modifier, Selector, Technology, Unit, Upgrade } from "../types/items";
+import { Ability, Building, Item, ItemType, Modifier, RecruitedUnit, Selector, Technology, Unit, Upgrade } from "../types/items";
 import { KHAGANTE_SPAWN_COUNTS } from "./config";
+import { setLocalized, copyLocalized, appendLocalized, transformLocalized, mutateLocalized, addDisplayClass, resolveOverride } from "./localize";
+import type { RunContext } from "./run";
 
 const workarounds = new Map<string, Override>();
 const NO_COSTS = { food: 0, wood: 0, stone: 0, gold: 0, vizier: undefined, oliveoil: undefined, silver: undefined, total: 0, time: 0, popcap: 0 };
@@ -99,10 +101,31 @@ workaround("Remove all garrison and emplacement weapons from the Japanese Castle
   },
 });
 
+workaround("Replace Great Wall Bastion generic bedcrossbow with 4 mounted landmark Bed Crossbows", {
+  predicate: (item) => item.baseId === "great-wall-bastion",
+  mutator: async (item, { context }) => {
+    item = item as Building;
+    const { parseWeapon } = await import("./weapons");
+    const bedCrossbow = await parseWeapon("weapon/weapon_landmark_bedcrossbow_jin", context!);
+    const bedCrossbows = Array(4)
+      .fill(null)
+      .map(() => structuredClone(bedCrossbow));
+    const idx = item.weapons.findIndex((w) => w.id === "bed-crossbow");
+    if (idx !== -1) {
+      item.weapons.splice(idx, 1, ...bedCrossbows);
+    } else {
+      item.weapons.push(...bedCrossbows);
+    }
+  },
+  validator: (item) =>
+    (item as Building).weapons.filter((w) => w.attribName === "weapon_landmark_bedcrossbow_jin").length === 4 &&
+    (item as Building).weapons.every((w) => w.attribName !== "weapon_keep_bedcrossbow_jin"),
+});
+
 workaround("Fix incorrect description from 'great bombard' used on regular cannon emplacements", {
   predicate: (item) => item.baseId === "cannon-emplacement" && item.description.includes("Great Bombard"),
   mutator: (item) => {
-    item.description = "Add a defensive cannon emplacement to this structure.";
+    setLocalized(item, "description", 11205517);
   },
 });
 
@@ -276,8 +299,8 @@ workaround("Make Food Festival available in Imperial Age", {
   ...overrideAge(["ability-food-festival"], 4, ["ma"]),
 });
 
-workaround("Make Military Festival available in Imperial Age", {
-  ...overrideAge(["ability-military-festival"], 4, ["ma"]),
+workaround("Make Military/Production Festival available in Imperial Age", {
+  ...overrideAge(["ability-military-festival", "ability-production-festival"], 4, ["ma"]),
 });
 
 workaround("Make Siege Festival available in Imperial Age", {
@@ -315,13 +338,13 @@ workaround("Fix age and add ability props for great_wall_buff", {
 
 workaround("Fix age and add missing info for spirit_way", {
   predicate: (item) => item.type === "ability" && item.attribName === "spirit_way",
-  mutator: (item) => {
+  mutator: (item, { getItem, parent }) => {
     item = item as Ability;
     item.age = 4;
     item.baseId = "ability-spirit-way";
     item.id = `${item.baseId}-${item.age}`;
-    item.name = "Spirit Way Ancestors";
-    item.description = "When a dynasty unit is killed, nearby units receive +20% attack speed and +20 health over 10 seconds.";
+    setLocalized(item, "name", 11186220);
+    setLocalized(item, "description", { key: "spirit_way_ancestors_desc", args: [20, 20, 10] });
     item.icon_src = undefined;
     item.icon = "buildings/spirit-way-3.png";
     item.unlockedBy = ["buildings/spirit-way"];
@@ -355,12 +378,12 @@ workaround("Add Gallop requirements", {
 
 workaround("Fix age and add missing info for kurultai_healing_aura_mon", {
   predicate: (item) => item.type === "ability" && item.attribName === "kurultai_healing_aura_mon",
-  mutator: (item) => {
+  mutator: (item, { parent }) => {
     item.age = 3;
     item.baseId = "ability-kurultai-aura";
     item.id = `${item.baseId}-${item.age}`;
-    item.name = "Kurultai Aura";
-    item.description = "Nearby units within its aura heal +1 health every 1 second and gain an additional +20% damage.";
+    setLocalized(item, "name", 11197236);
+    copyLocalized(parent, item, "description");
     item.icon_src = undefined;
     item.icon = "buildings/kurultai-2.png";
   },
@@ -371,7 +394,7 @@ workaround("Fix age and add missing info for Keshik", {
   mutator: (item) => {
     item.age = 2;
     item.id = `${item.baseId}-${item.age}`;
-    item.name = "Keshik Healing";
+    setLocalized(item, "name", { key: "keshik_healing" });
   },
 });
 
@@ -394,6 +417,14 @@ workaround("Set Prosteletize conditions", {
 
 workaround("Add Artillery Shot requirements", {
   predicate: (item) => item.type === "ability" && item.baseId === "ability-artillery-shot",
+  mutator: (item) => {
+    item = item as Ability;
+    item.unlockedBy = ["buildings/college-of-artillery"];
+  },
+});
+
+workaround("Add Fortify Ribauldequin requirements", {
+  predicate: (item) => item.type === "ability" && item.baseId === "ability-fortify-ribauldequin",
   mutator: (item) => {
     item = item as Ability;
     item.unlockedBy = ["buildings/college-of-artillery"];
@@ -427,10 +458,10 @@ workaround("Fix age and add missing info for Yam Network", {
     item.baseId = "ability-yam-network-improved";
     item.age = 2;
     item.id = `${item.baseId}-${item.age}`;
-    item.name = "Yam Network (Improved)";
+    setLocalized(item, "name", 11252413);
     item.auraRange = 12.5;
     item.active = "always";
-    item.description = "Yam speed aura applies to all units instead of just Traders and cavalry units. Does not apply to siege engines.";
+    setLocalized(item, "description", 11226345);
     item.costs = { ...NO_COSTS, popcap: 0 };
     item.activatedOn = ["buildings/outpost"];
     item.unlockedBy = ["technologies/yam-network-improved"];
@@ -454,7 +485,8 @@ workaround("Add ability info to Mehter speed formation", {
     item.id = `${item.baseId}-${item.age}`;
     item.auraRange = 6;
     item.active = "always";
-    item.description = "Units move +15% faster when in formation.";
+    setLocalized(item, "name", 11217971);
+    setLocalized(item, "description", { key: "formation_speed_bonus", args: [15] });
     item.costs = { ...NO_COSTS, popcap: 0 };
     item.activatedOn = ["units/mehter"];
     item.unlockedBy = ["technologies/mehter-drums"];
@@ -467,7 +499,7 @@ workaround("Change names of Mehter abilities", {
     item = item as Ability;
     item.baseId = item.baseId.replace("-off", "");
     item.id = `${item.baseId}-${item.age}`;
-    item.name = item.name.replace(" (Off)", "");
+    mutateLocalized(item, "name", (name) => name.replace(/\s*[\(\uff08][^\)\uff09]*[\)\uff09]$/, ""));
     item.activatedOn = ["units/mehter"];
   },
 });
@@ -478,7 +510,8 @@ workaround("Fix inaccurate ability info lancer_charge_bonus_damage", {
     item = item as Ability;
     item.age = 2;
     item.id = `${item.baseId}-${item.age}`;
-    item.description = "Gain +3 melee attack damage for 5 seconds after charging.";
+    setLocalized(item, "name", 11201593);
+    setLocalized(item, "description", { key: "royal_knight_charge_damage_desc", args: [3, 5] });
     item.active = "always";
     item.costs = { ...NO_COSTS, popcap: 0 };
   },
@@ -491,7 +524,7 @@ workaround("Fix inaccurate ability info First Strike", {
     item.baseId = "ability-first-strike";
     item.age = 4;
     item.id = `${item.baseId}-${item.age}`;
-    item.description = "Musofadi Warriors and Musofadi Gunners deal double damage on their first attack when breaking stealth.";
+    setLocalized(item, "description", { key: "musofadi_stealth_double_damage" });
     item.active = "always";
     item.costs = { ...NO_COSTS, popcap: 0 };
     item.activatedOn = ["units/musofadi-warrior", "units/musofadi-gunner"];
@@ -530,7 +563,7 @@ workaround("Fix inaccurate ability info inspired_infantry_hre", {
     item.baseId = "ability-inspired-warriors";
     item.age = 3;
     item.id = `${item.baseId}-${item.age}`;
-    item.name = "Inspired Warriors";
+    setLocalized(item, "name", 11182577);
     item.activatedOn = ["units/prelate"];
   },
 });
@@ -550,7 +583,7 @@ workaround("Fix id ability on dock garrison bonus", {
     item.baseId = "ability-relic-garrisoned-dock";
     item.age = 3;
     item.id = `${item.baseId}-${item.age}`;
-    item.name = "Relic Garrisoned in Docks";
+    setLocalized(item, "name", { key: "relic_garrisoned_docks" });
     // ability-relic-garrisoned contains both effects for Dock and Defensive structures, this splits them up
     item.effects = item.effects?.filter((e) => e.property === "attackSpeed");
   },
@@ -563,7 +596,7 @@ workaround("Fix id ability on land garrison bonus", {
     item.baseId = "ability-relic-garrisoned-keep";
     item.age = 3;
     item.id = `${item.baseId}-${item.age}`;
-    item.name = "Relic Garrisoned in Defensive Structures";
+    setLocalized(item, "name", { key: "relic_garrisoned_defense" });
     // ability-relic-garrisoned contains both effects for Dock and Defensive structures, this splits them up
     item.effects = item.effects?.filter((e) => e.property !== "attackSpeed");
   },
@@ -578,7 +611,7 @@ workaround("Split French Town Center Production Bonus", {
     item.baseId = `ability-town-center-production-speed-${ageName.toLowerCase()}-age`;
     item.age = age;
     item.id = `${item.baseId}-${age}`;
-    item.name = `${ageName} Age Town Center Production Speed`;
+    setLocalized(item, "name", { key: `${ageName.toLowerCase()}_age_tc_prod_speed` });
     item.icon_src = undefined;
     item.icon = `buildings/town-center.png`;
   },
@@ -617,41 +650,24 @@ workaround("Add requirements to Mill Influence", {
   },
 });
 
-workaround("Fix missing info Golden Age Tier 1", {
-  predicate: (item) => item.type === "ability" && item.attribName === "golden_age_tier_1",
+workaround("Fix missing info Abbasid Golden Age Tiers", {
+  predicate: (item) => item.type === "ability" && item.civs[0] === "ab" && item.attribName?.startsWith("golden_age_tier_")!,
   mutator: (item) => {
-    item.baseId = "ability-golden-age-tier-1";
-    item.id = `${item.baseId}-${item.age}`;
-    item.description = "+15% Resource Gathering Rate";
-    item.name = "Golden Age Tier 1";
-    item.icon_src = undefined;
-    item.icon = "abilities/ability-golden-age-tier-1.png";
-  },
-});
+    item = item as Ability;
+    const tier = parseInt(item.attribName?.match(/tier_(\d)/)?.[1] || "1");
+    const tierCounts = [10, 20, 30, 50, 75];
+    const tierDescIds = [11258340, 11274103, 11274102, 11274100, 11274101];
+    const count = tierCounts[tier - 1] ?? 10;
+    const descId = tierDescIds[tier - 1] ?? 11258340;
 
-workaround("Fix missing info Golden Age Tier 2", {
-  predicate: (item) => item.type === "ability" && item.attribName === "golden_age_tier_2",
-  mutator: (item) => {
     item.age = 1;
-    item.baseId = "ability-golden-age-tier-2";
+    item.baseId = `ability-golden-age-tier-${tier}`;
     item.id = `${item.baseId}-${item.age}`;
-    item.description = "+15% Research Speed";
-    item.name = "Golden Age Tier 2";
+    setLocalized(item, "name", { key: "golden_age_tier", args: [tier] });
+    setLocalized(item, "description", { key: "structures_count_prefix", args: [count, descId] });
+    item.unlockedBy = ["buildings/house-of-wisdom"];
     item.icon_src = undefined;
-    item.icon = "abilities/ability-golden-age-tier-2.png";
-  },
-});
-
-workaround("Fix missing info Golden Age Tier 3", {
-  predicate: (item) => item.type === "ability" && item.attribName === "golden_age_tier_3",
-  mutator: (item) => {
-    item.age = 1;
-    item.baseId = "ability-golden-age-tier-3";
-    item.id = `${item.baseId}-${item.age}`;
-    item.description = "+20% Production Speed, additional +5% Research Speed, additional +5% Resource Gathering Rate";
-    item.name = "Golden Age Tier 3";
-    item.icon_src = undefined;
-    item.icon = "abilities/ability-golden-age-tier-3.png";
+    item.icon = `abilities/ability-golden-age-tier-${tier}.png`;
   },
 });
 
@@ -660,7 +676,7 @@ workaround("Set Medical Center requirements", {
   mutator: (item) => {
     item = item as Ability;
     item.unlockedBy = ["technologies/medical-centers"];
-    item.description = "Heals nearby units for +2 health every 1 second";
+    setLocalized(item, "description", { id: 11263628, args: [1, 1] });
   },
 });
 
@@ -711,13 +727,6 @@ workaround("Add 'Hero' class to Jeanne heroes", {
   },
 });
 
-workaround("Fix bad info in Coastal Navigation where this is only place where location string is used instead of integer in formatter_arguments", {
-  predicate: (item) => item.type === "ability" && item.attribName === "docks_speed_bonus_mal",
-  mutator: (item) => {
-    item.description = "Ships near a Docks get +15% speed for 25 seconds.";
-  },
-});
-
 workaround("Mark Consecrate as manual ability", {
   predicate: (item) => item.type === "ability" && item.baseId === "ability-consecrate",
   mutator: (item) => {
@@ -748,9 +757,21 @@ workaround("Change Jeanne d'Arc Level Choices to Technology", {
     const level = jeanneLevels.findIndex((x) => x.includes(item.baseId)) + 2;
     item.age = 0;
     item.baseId = item.baseId.replace("ability-", `level-${level}-`);
-    item.displayClasses = ["Hero Level Up Choice"];
+    item.displayClasses = [];
     item.classes = ["hero", "level-up-choice"]; // Abilities don't have default classes
-    item.description = `Level ${level} option\n\n${item.description}\n\nRequires 500XP`;
+    addDisplayClass(item, { key: "hero_level_up_choice" });
+    const levelOptEn = resolveOverride("level_option", [level], "en")!;
+    const reqXpEn = resolveOverride("requires_experience", [500], "en")!;
+    item.description = `${levelOptEn}\n\n${item.description}\n\n${reqXpEn}`;
+    if (item.translations) {
+      for (const [locale, t] of Object.entries(item.translations)) {
+        if (t.description) {
+          const levelOptLoc = resolveOverride("level_option", [level], locale) ?? levelOptEn;
+          const reqXpLoc = resolveOverride("requires_experience", [500], locale) ?? reqXpEn;
+          t.description = `${levelOptLoc}\n\n${t.description}\n\n${reqXpLoc}`;
+        }
+      }
+    }
     item.id = `${item.baseId}-${item.age}`;
   },
 });
@@ -799,7 +820,7 @@ workaround("Merge Elite Rider", {
 workaround("Add auto upgrade info to companions", {
   predicate: (item) => item.type === "unit" && ["jeannes-champion", "jeannes-rider"].includes(item.baseId),
   mutator: (item) => {
-    item.description += `\n\nUpgrades to Elite when Jeanne reaches level 4.`;
+    appendLocalized(item, "description", { key: "jeanne_elite_level_4" });
   },
 });
 
@@ -834,20 +855,25 @@ workaround("Fix missing info Ayyubid Golden Age Tiers", {
         type: "ability",
       },
     ];
-    const tier = item.attribName?.match(/tier_(\d)/)?.[1] ?? 1;
+    const tier = parseInt(item.attribName?.match(/tier_(\d)/)?.[1] || "1");
+    const tierCounts = [10, 20, 30, 50, 75];
+    const tierDescIds = [11184077, 11184078, 11184079, 11255808, 11255809];
+    const count = tierCounts[tier - 1] ?? 10;
+    const descId = tierDescIds[tier - 1] ?? 11184077;
+
     const tiers = {
-      1: { description: "10 Structures: Villager gathering rate +10% for all resources.", effects: createEffects("gatherRate", 1.1, { id: ["villager"] }) },
-      2: { description: "20 Structures: Research Speeds +50%", effects: createEffects("researchSpeed", 1.5, { class: [["building"]] }) },
-      3: { description: "30 Structures: Production Speeds +20%", effects: createEffects("productionSpeed", 1.2, { class: [["building"]] }) },
-      4: { description: "50 Structures: Siege units cost 20% less resources to produce.", effects: createEffects("cost", 0.8, { class: [["siege"]] }) },
-      5: { description: "75 Structures: Camel units attack 20% faster.", effects: createEffects("attackSpeed", 0.83, { id: ["camel-lancer", "desert-raider"] }) },
+      1: { effects: createEffects("gatherRate", 1.1, { id: ["villager"] }) },
+      2: { effects: createEffects("researchSpeed", 1.5, { class: [["building"]] }) },
+      3: { effects: createEffects("productionSpeed", 1.2, { class: [["building"]] }) },
+      4: { effects: createEffects("cost", 0.8, { class: [["siege"]] }) },
+      5: { effects: createEffects("attackSpeed", 0.83, { id: ["camel-lancer", "desert-raider"] }) },
     } as const;
 
-    item.name = `Golden Age Tier ${tier}`;
     item.baseId = `ability-golden-age-tier-${tier}`;
     item.id = `${item.baseId}-${item.age}`;
-    item.description = tiers[tier].description;
-    item.effects = tiers[tier].effects;
+    setLocalized(item, "name", { key: "golden_age_tier", args: [tier] });
+    setLocalized(item, "description", { key: "structures_count_prefix", args: [count, descId] });
+    item.effects = tiers[tier as keyof typeof tiers]?.effects ?? [];
     item.unlockedBy = ["buildings/house-of-wisdom"];
     item.icon_src = undefined;
     item.icon = `abilities/ability-golden-age-tier-${tier}.png`;
@@ -883,7 +909,7 @@ workaround("Set Bedouin units requirements", {
   mutator: (item) => {
     item = item as Unit;
     item.unlockedBy = ["technologies/feudal-trade-wing-bazaar", "technologies/castle-trade-wing-bazaar", "technologies/imperial-trade-wing-bazaar"];
-    item.description += `\n\nRequires the Trade Wing - Bazaar`;
+    appendLocalized(item, "description", { key: "requires_trade_wing_bazaar" });
   },
 });
 
@@ -895,8 +921,20 @@ workaround("Ayyubid House of Wisdom Wings", {
     if (item.classes.includes("scar_castle_age_upgrade")) item.age = 3;
     if (item.classes.includes("scar_imperial_age_upgrade")) item.age = 4;
     item.baseId = ["", "feudal-", "castle-", "imperial-", "bonus-"][item.age] + item.baseId;
-    const [wing, name] = item.name.split(": ");
-    item.name = `${name}\n(${["", "Feudal", "Castle", "Imperial", "Bonus"][item.age]} ${wing})`;
+    const ageKey = ["", "feudal", "castle", "imperial", "bonus"][item.age];
+    const [wingEn, nameEn] = item.name.split(/\s*[:：]\s*/);
+    item.name = resolveOverride(`${ageKey}_wing`, [nameEn, wingEn], "en") ?? `${nameEn}\n(${["", "Feudal", "Castle", "Imperial", "Bonus"][item.age]} ${wingEn})`;
+    if (item.translations) {
+      for (const [locale, t] of Object.entries(item.translations)) {
+        if (t.name) {
+          const parts = t.name.split(/\s*[:：]\s*/);
+          if (parts.length >= 2) {
+            const [locWing, locName] = parts;
+            t.name = resolveOverride(`${ageKey}_wing`, [locName, locWing], locale) ?? t.name;
+          }
+        }
+      }
+    }
     item.id = `${item.baseId}-${item.age}`;
   },
 });
@@ -930,7 +968,7 @@ workaround("Add requirements to Imperial Guard and Yuan Raider", {
   predicate: (item) => item.type === "unit" && ["imperial-guard", "yuan-raider"].includes(item.baseId),
   mutator: (item) => {
     item = item as Unit;
-    item.description += `\n\nRequires Dynastic Protectors researched at Zhu Xi's Library.`;
+    appendLocalized(item, "description", { key: "requires_dynastic_protectors" });
   },
 });
 
@@ -973,7 +1011,7 @@ workaround("Set Automatic Pilgrim Flask requirements", {
   predicate: (item) => item.type === "ability" && item.baseId === "ability-automatic-pilgrim-flask-off",
   mutator: (item) => {
     item = item as Ability;
-    item.name = item.name.split(" (")[0];
+    mutateLocalized(item, "name", (name) => name.replace(/\s*[\(\uff08][^\)\uff09]*[\)\uff09]$/, ""));
     item.activatedOn = ["buildings/cistern-of-the-first-hill"];
     item.baseId = "ability-automatic-pilgrim-flask";
     item.id = `${item.baseId}-${item.age}`;
@@ -985,7 +1023,7 @@ workaround("Set Pilgrim Flask requirements", {
   predicate: (item) => item.type === "ability" && item.baseId === "ability-pilgrim-flask",
   mutator: (item) => {
     item = item as Ability;
-    item.description = item.description.split("\n")[0];
+    mutateLocalized(item, "description", (desc) => desc.split("\n")[0]);
     item.unlockedBy = ["buildings/cistern-of-the-first-hill"];
   },
 });
@@ -1005,7 +1043,6 @@ workaround("Set Triumph requirements", {
   mutator: (item) => {
     item = item as Ability;
     item.activatedOn = ["buildings/imperial-hippodrome"];
-    item.description = item.description.replace("damage by +25%", "damage by +4");
     item.auraRange = 0;
   },
 });
@@ -1036,7 +1073,8 @@ workaround("Set Irrigated requirements", {
   mutator: (item) => {
     item = item as Ability;
     item.activatedOn = ["buildings/cistern", "buildings/cistern-of-the-first-hill"];
-    item.description = `Villager gathering rate increased by 5/10/15/20/25% (depening on water level)`;
+    setLocalized(item, "name", 11255066);
+    setLocalized(item, "description", { key: "byzantine_irrigated_desc", args: ["10/14/18/22/26"] });
   },
 });
 
@@ -1063,8 +1101,7 @@ workaround("Set Oil Harvest description to all modes", {
   predicate: (item) => item.type === "ability" && item.baseId === "ability-oil-harvest",
   mutator: (item) => {
     item = item as Ability;
-    item.description =
-      "Villagers generate +50% Olive Oil when gathering Food from Berry Bushes, +20% from Olive Groves, and +10% from Shore Fish. Fishing Boats generate +20% Olive Oil from fish.";
+    setLocalized(item, "description", { id: 11251700, args: [50, 20, 10, 20, 20] });
   },
 });
 
@@ -1073,7 +1110,7 @@ workaround("Set Oil Commerce description ", {
   predicate: (item) => item.type === "ability" && item.baseId === "ability-oil-commerce",
   mutator: (item) => {
     item = item as Ability;
-    item.description = "Traders provide +20% Olive Oil on trades.";
+    setLocalized(item, "description", { key: "byzantine_oil_commerce_desc", args: [20] });
   },
 });
 
@@ -1093,13 +1130,6 @@ workaround("Add Mercenary Contracts to mercenary House", {
   mutator: (item) => {
     item = item as Technology;
     item.producedBy = ["mercenary-house", "golden-horn-tower"];
-  },
-});
-
-workaround("Fix Trapezites description", {
-  predicate: (item) => item.type === "technology" && item.baseId === "trapezites",
-  mutator: (item) => {
-    item.description = "Scouts enhance the torch damage of nearby units by 25%";
   },
 });
 
@@ -1150,13 +1180,13 @@ workaround("Set Mercenary requirements", {
     item.unlockedBy = unlockedBy;
     // item.costs.popcap = item.costs.popcap! * count;
     // item.costs.oliveoil = item.costs.oliveoil! * count;
-    if (count > 1) item.description += `\n\nMercenary that can be purchased per ${count} units for a total of ${item.costs.oliveoil! * count} Olive Oil.`;
-    else item.description += `\n\nMercenary that can be purchased for ${item.costs.oliveoil!} Olive Oil.`;
-    if (unlockedBy.includes("technologies/silk-road-contract")) item.description += `\n\nRequires the Silk Road Contract.`;
-    else if (unlockedBy.includes("technologies/eastern-mercenary-contract")) item.description += `\n\nRequires the Eastern Mercenary Contract.`;
-    else if (unlockedBy.includes("technologies/western-mercenary-contract")) item.description += `\n\nRequires the Western Mercenary Contract.`;
+    if (count > 1) appendLocalized(item, "description", { key: "mercenary_purchased_units_oil", args: [count, item.costs.oliveoil! * count] });
+    else appendLocalized(item, "description", { key: "mercenary_purchased_oil", args: [item.costs.oliveoil!] });
+    if (unlockedBy.includes("technologies/silk-road-contract")) appendLocalized(item, "description", { key: "requires_silk_road_contract" });
+    else if (unlockedBy.includes("technologies/eastern-mercenary-contract")) appendLocalized(item, "description", { key: "requires_eastern_mercenary_contract" });
+    else if (unlockedBy.includes("technologies/western-mercenary-contract")) appendLocalized(item, "description", { key: "requires_western_mercenary_contract" });
     if (unlockedBy.includes("buildings/trade-post"))
-      item.description += `\n\nThis Mercenary can only be purchased on Mercenary Houses built near a neutral Trade Post that list this unit. The chance of this unit being available on a Trade Post is 20%.`;
+      appendLocalized(item, "description", { key: "mercenary_post_chance_desc", args: [20] });
   },
 });
 
@@ -1166,8 +1196,8 @@ workaround("Split up Macedonian Techs since it's two techs per age", {
     const level = parseInt(item.attribName?.match(/\d+/)?.at(0) || "1");
     const code = (level % 2) ? "a" : "b";
     
-    item.description = item.description + "\n\nCan be researched twice in Feudal, Castle and Imperial Age, for a total of 6 times.";
-    item.name = item.name += ` (${level}/6)`;
+    appendLocalized(item, "description", { key: "can_be_researched_twice" });
+    mutateLocalized(item, "name", (name) => `${name} (${level}/6)`);
     item.id = item.id.replace(/-(\d+)$/, `-tier${level}-\$1`);
     item.baseId = item.baseId + `-tier${level}`;
     item.icon = item.icon?.replace(/-(\d+)/, `-tier${level}-\$1`);
@@ -1351,26 +1381,27 @@ workaround("Deduplicating unit weapons with the same name, keeping the first", {
 workaround("Modify King scaling to be more descriptive", {
   predicate: (item) => item.attribName?.startsWith("upgrade_abbey_king_") || false,
   mutator: (item) => {
+    const isCastle = item.attribName?.includes("_castle");
+    const age = isCastle ? 3 : 4;
+    const ageId = isCastle ? 11181808 : 11181809;
     const base: Partial<Item> = {
-      classes: ["king", "scaling", "technology"], // TODO: Check this with classes vs ebpClasses
-      displayClasses: ["King Scaling Technology"],
+      id: `upgrade-king-${age}`,
+      baseId: `upgrade-king-${age}`,
+      age,
+      classes: [
+        "english_upgrade",
+        "military_upgrade",
+        isCastle ? "scar_castle_age_upgrade" : "scar_imperial_age_upgrade",
+        "scar_tiered_upgrade",
+        "scar_unit_upgrade",
+      ],
       icon: "units/king-2.png",
     };
-    const castle: Partial<Item> = {
-      id: "upgrade-king-3",
-      baseId: "upgrade-king-3",
-      name: "Castle Age King",
-      description: "Increases the health, attack and armor of the King when reaching Castle Age.",
-      age: 3,
-    };
-    const imperial: Partial<Item> = {
-      id: "upgrade-king-4",
-      baseId: "upgrade-king-4",
-      name: "Imperial Age King",
-      description: "Increases the health, attack and armor of the King when reaching Imperial Age.",
-      age: 4,
-    };
-    Object.assign(item, base, item.attribName?.includes("_castle") ? castle : imperial);
+    Object.assign(item, base);
+    item.displayClasses = [];
+    addDisplayClass(item, { key: "king_scaling_technology" });
+    setLocalized(item, "name", { key: "unit_age_name", args: [11159580, ageId] });
+    setLocalized(item, "description", { key: "unit_age_buff_desc", args: [11159580, ageId] });
     (item as Technology).effects?.forEach((e) => (e.select = { id: ["king"], class: [] }));
   },
 });
@@ -1385,24 +1416,26 @@ workaround("Modify Militia cost to 20", {
 workaround("Modify Militia scaling to be more descriptive", {
   predicate: (item) => item.attribName?.startsWith("upgrade_militia_") || false,
   mutator: (item) => {
+    const isCastle = item.age == 3;
+    const age = isCastle ? 3 : 4;
+    const ageId = isCastle ? 11181808 : 11181809;
     const base: Partial<Item> = {
-      classes: ["Militia", "scaling", "technology"], // TODO: Check this with classes vs ebpClasses
-      displayClasses: ["Militia Scaling Technology"],
+      id: `upgrade-militia-${age}`,
+      baseId: `upgrade-militia-${age}`,
+      classes: [
+        "military_upgrade",
+        "rus_upgrade",
+        isCastle ? "scar_castle_age_upgrade" : "scar_imperial_age_upgrade",
+        "scar_tiered_upgrade",
+        "scar_unit_upgrade",
+      ],
       icon: "units/militia-2.png",
     };
-    const castle: Partial<Item> = {
-      id: "upgrade-militia-3",
-      baseId: "upgrade-miltia-3",
-      name: "Castle Age Militia",
-      description: "Increases the health, attack and armor of Militia when reaching Castle Age.",
-    };
-    const imperial: Partial<Item> = {
-      id: "upgrade-militia-4",
-      baseId: "upgrade-militia-4",
-      name: "Imperial Age Militia",
-      description: "Increases the health, attack and armor of Militia when reaching Imperial Age.",
-    };
-    Object.assign(item, base, item.age == 3 ? castle : imperial);
+    Object.assign(item, base);
+    item.displayClasses = [];
+    addDisplayClass(item, { key: "militia_scaling_technology" });
+    setLocalized(item, "name", { key: "unit_age_name", args: [11246217, ageId] });
+    setLocalized(item, "description", { key: "unit_age_buff_desc", args: [11246217, ageId] });
     (item as Technology).effects = (item as Technology).effects
       ?.filter((e) => ["meleeAttack", "hitpoints", "fireAttack"].includes(e.property))
       .map((e) => ({ ...e, select: { id: ["militia"] } }));
@@ -1413,15 +1446,19 @@ workaround("Highlight Khaganate units", {
   predicate: (item) => item.type === "unit" && item.civs[0] == "mo" && item.attribName?.startsWith("unit_khaganate")!,
   mutator: (item) => {
     const spawnCount = KHAGANTE_SPAWN_COUNTS[item.baseId];
-    item.description = `${item.description}\n\nRandomly spawns ${spawnCount > 1 ? `${spawnCount} at the time ` : ""}from the Khaganate Palace.`;
+    if (spawnCount > 1) {
+      appendLocalized(item, "description", { key: "khaganate_spawns_count", args: [spawnCount] });
+    } else {
+      appendLocalized(item, "description", { key: "khaganate_spawns" });
+    }
     item.age = 4;
     if (item.baseId != "huihui-pao") {
-      item.name = `Khaganate ${item.name}`;
+      transformLocalized(item, "name", { key: "khaganate_prefix" });
       item.id = `khaganate-${item.id}`;
       item.baseId = `khaganate-${item.baseId}`;
     }
     if (spawnCount > 1) (item as Unit).costs.popcap = spawnCount;
-    item.displayClasses.push("Khaganate Unit");
+    addDisplayClass(item, { key: "khaganate_unit" });
   },
 });
 
@@ -1476,31 +1513,34 @@ workaround("Mention Shinobi heal passively in description", {
   predicate: (item) => item.type === "unit" && item.baseId === "shinobi",
   mutator: (item) => {
     item = item as Unit;
-    item.description += `\n\nHeals passively.`;
+    appendLocalized(item, "description", { key: "heals_passively" });
   },
 });
 
 workaround("Modify Shinobi scaling to be more descriptive", {
   predicate: (item) => item.attribName?.startsWith("upgrade_unit_shinobi_") || false,
   mutator: (item) => {
+    const isCastle = item.age == 3;
+    const age = isCastle ? 3 : 4;
+    const ageId = isCastle ? 11181808 : 11181809;
     const base: Partial<Item> = {
-      classes: ["shinobi", "scaling", "technology"], // TODO: Check this with classes vs ebpClasses
-      displayClasses: ["Shinobi Scaling Technology"],
+      id: `upgrade-shinobi-${age}`,
+      baseId: `upgrade-shinobi-${age}`,
+      classes: [
+        "japanese_ha_sen_upgrade",
+        "japanese_upgrade",
+        "military_upgrade",
+        isCastle ? "scar_castle_age_upgrade" : "scar_imperial_age_upgrade",
+        "scar_tiered_upgrade",
+        "scar_unit_upgrade",
+      ],
       icon: "units/shinobi-2.png",
     };
-    const castle: Partial<Item> = {
-      id: "upgrade-shinobi-3",
-      baseId: "upgrade-shinobi-3",
-      name: "Castle Age Shinobi",
-      description: "Increases the health and damage of Shinobi when reaching Castle Age.",
-    };
-    const imperial: Partial<Item> = {
-      id: "upgrade-shinobi-4",
-      baseId: "upgrade-shinobi-4",
-      name: "Imperial Age Shinobi",
-      description: "Increases the health and damage of of Shinobi when reaching Imperial Age.",
-    };
-    Object.assign(item, base, item.age == 3 ? castle : imperial);
+    Object.assign(item, base);
+    item.displayClasses = [];
+    addDisplayClass(item, { key: "shinobi_scaling_technology" });
+    setLocalized(item, "name", { key: "unit_age_name", args: [11247500, ageId] });
+    setLocalized(item, "description", { key: "unit_age_damage_buff_desc", args: [11247500, ageId] });
     (item as Technology).effects = (item as Technology).effects
       ?.filter((e) => ["meleeAttack", "hitpoints", "fireAttack"].includes(e.property))
       .map((e) => ({ ...e, select: { id: ["shinobi"] } }));
@@ -1536,7 +1576,7 @@ workaround("Change Mongol Improved Superior Mobility type from upgrade to techno
 workaround("Give capital town centers unique id and clear name", {
   predicate: (item) => item.attribName!.startsWith("building_town_center_capital_"),
   mutator: (item) => {
-    item.name = "Capital Town Center";
+    setLocalized(item, "name", { key: "capital_town_center" });
     item.costs = NO_COSTS;
     item.baseId = "capital-town-center";
     item.id = "capital-town-center-1";
@@ -1603,13 +1643,14 @@ workaround("English Civ Bonus: 'Naval units are 10% cheaper.'", {
   },
 });
 
+/* Removed workaround, coz devs changes the base values.
 workaround("Chinese Civ Bonus: 'Villagers construct defenses 50% faster and all other buildings 100% faster.'", {
   predicate: (item) => item.civs.includes("ch") && item.attribName!.startsWith("building_") && !["stone-wall", "palisade-wall", "keep", "outpost"].includes(item.baseId), // walls have a custom balanced build time set
   mutator(item) {
     if (item.attribName!.startsWith("building_defense_")) item.costs.time = Math.ceil(item.costs.time / (1 + 0.5));
     else item.costs.time = Math.ceil(item.costs.time / (1 + 1));
   },
-});
+});*/
 
 workaround("Chinese Civ Bonus: 'Docks work 20% faster.'", {
   predicate: (item) => item.civs.includes("ch") && item.attribName!.startsWith("unit_naval_"),
@@ -1643,6 +1684,380 @@ workaround("Fixup Malian Scout icon", {
 
 workaround("Fixup Villager icon", {
   ...overrideCivUniqueIcon((item) => item.type === "unit" && item.baseId === "villager" && !item.icon_src.includes("\\common\\")),
+});
+
+const scotHighlandPassives: Record<string, { age: 1 | 2 | 3 | 4; landmark: string; ageStringId: number; descId: number }> = {
+  highland_landmark_1_sco: { age: 1, landmark: "abbey-of-the-isles", ageStringId: 11181807, descId: 11274737 },
+  highland_landmark_2_sco: { age: 2, landmark: "tower-of-skye", ageStringId: 11181808, descId: 11274745 },
+  highland_landmark_3_sco: { age: 3, landmark: "three-loch-lookout", ageStringId: 11181809, descId: 11274745 },
+};
+
+workaround("Scot Highland Landmark Passives", {
+  predicate: (item) => item.type === "ability" && !!item.attribName && item.attribName in scotHighlandPassives,
+  mutator: (item) => {
+    item = item as Ability;
+    const config = scotHighlandPassives[item.attribName!];
+    setLocalized(item, "name", { key: "unit_age_name", args: [11274738, config.ageStringId] });
+    setLocalized(item, "description", { id: config.descId, args: [50] });
+    item.baseId = `ability-highland-landmark-${config.age}`;
+    item.age = config.age;
+    item.id = `${item.baseId}-${item.age}`;
+    item.producedBy = [config.landmark];
+    item.generatedBy = [`buildings/${config.landmark}`];
+    item.costs = { ...NO_COSTS, popcap: 0 };
+    item.active = "always";
+    item.effects = [
+      {
+        property: "unknown",
+        select: {
+          id: [config.landmark, "mustering-hall"],
+        },
+        effect: "change",
+        value: 0,
+        type: "ability",
+      },
+    ];
+  },
+});
+
+const scotLowlandPassives: Record<string, { age: 1 | 2 | 3 | 4; landmark: string; ageStringId: number; descId: number }> = {
+  lowland_landmark_1_sco: { age: 1, landmark: "stone-of-destiny", ageStringId: 11181807, descId: 11274734 },
+  lowland_landmark_2_sco: { age: 2, landmark: "snowdoun-gate", ageStringId: 11181808, descId: 11274739 },
+  lowland_landmark_3_sco: { age: 3, landmark: "dhun-eideann", ageStringId: 11181809, descId: 11274739 },
+};
+
+workaround("Scot Lowland Landmark Passives", {
+  predicate: (item) => item.type === "ability" && !!item.attribName && item.attribName in scotLowlandPassives,
+  mutator: (item) => {
+    item = item as Ability;
+    const config = scotLowlandPassives[item.attribName!];
+    setLocalized(item, "name", { key: "unit_age_name", args: [11274736, config.ageStringId] });
+    setLocalized(item, "description", { id: config.descId, args: [50] });
+    item.baseId = `ability-lowland-landmark-${config.age}`;
+    item.age = config.age;
+    item.id = `${item.baseId}-${item.age}`;
+    item.producedBy = [config.landmark];
+    item.generatedBy = [`buildings/${config.landmark}`];
+    item.costs = { ...NO_COSTS, popcap: 0 };
+    item.active = "always";
+    item.effects = [
+      {
+        property: "unknown",
+        select: {
+          id: [config.landmark, "mustering-hall"],
+        },
+        effect: "change",
+        value: 0,
+        type: "ability",
+      },
+    ];
+  },
+});
+
+workaround("Add Tower House to Emplacements", {
+  predicate: (item) => item.type === "technology" && (item.baseId === "springald-emplacement" || item.baseId === "cannon-emplacement") && item.civs.includes("sco"),
+  mutator: (item) => {
+    item.producedBy ??= [];
+    if (!item.producedBy.includes("tower-house")) {
+      item.producedBy.push("tower-house");
+      item.producedBy.sort((a, b) => a.localeCompare(b));
+    }
+  },
+});
+
+const scotHighlanderUnitIds = [
+  "highland-archer",
+  "gallowglass",
+  "cateran",
+  "tacksman",
+];
+
+workaround("Configure Tacksman Fear-Taic Aura", {
+  predicate: (item) => item.type === "ability" && item.attribName === "tacksmen_damage_bonus_sco",
+  mutator: (item) => {
+    item = item as Ability;
+    item.producedBy = ["tacksman"];
+    item.generatedBy = ["units/tacksman"];
+    item.active = "always";
+    item.auraRange = 20;
+    item.effects = [
+      {
+        property: "meleeAttack",
+        select: {
+          id: scotHighlanderUnitIds,
+        },
+        effect: "change",
+        value: 1,
+        type: "ability",
+      },
+      {
+        property: "rangedAttack",
+        select: {
+          id: scotHighlanderUnitIds,
+        },
+        effect: "change",
+        value: 1,
+        type: "ability",
+      },
+    ];
+  },
+});
+
+workaround("Configure Ghillie Stealth Ability", {
+  predicate: (item) => item.type === "ability" && item.attribName === "activate_ghillie_stealth_sco",
+  mutator: (item) => {
+    item = item as Ability;
+    setLocalized(item, "name", 11273657);
+    setLocalized(item, "description", 11273656);
+    item.producedBy = ["scout"];
+    item.active = "toggle";
+    item.effects = [
+      {
+        property: "unknown",
+        select: { id: ["scout"] },
+        effect: "change",
+        value: 0,
+        type: "ability",
+      },
+    ];
+  },
+});
+
+workaround("Configure Stone of Destiny Kings Blessing Aura", {
+  predicate: (item) => item.type === "ability" && item.attribName === "stone_of_destiny_bonus_sco",
+  mutator: (item) => {
+    item = item as Ability;
+    setLocalized(item, "name", 11273638);
+    setLocalized(item, "description", { id: 11273637, args: [15] });
+    item.producedBy = ["stone-of-destiny"];
+    item.generatedBy = ["buildings/stone-of-destiny"];
+    item.active = "always";
+    item.effects = [
+      {
+        property: "attackSpeed",
+        select: { class: [["infantry"]] },
+        effect: "change",
+        value: 15,
+        type: "ability",
+      },
+      {
+        property: "unknown",
+        select: { id: ["stone-of-destiny"] },
+        effect: "change",
+        value: 0,
+        type: "ability",
+      },
+    ];
+  },
+});
+
+workaround("Configure Abbey of the Isles Saint's Relic Abilities", {
+  predicate: (item) =>
+    item.type === "ability" &&
+    (item.attribName === "abbey_of_the_isles_healing_aura_sco" || item.attribName === "abbey_of_the_isles_relic_mover_sco"),
+  mutator: (item) => {
+    item = item as Ability;
+    item.generatedBy = ["buildings/abbey-of-the-isles"];
+    item.effects = [
+      {
+        property: "unknown",
+        select: { id: ["abbey-of-the-isles"] },
+        effect: "change",
+        value: 0,
+        type: "ability",
+      },
+    ];
+  },
+});
+
+const scotMusteringHallUnits = [
+  "kirkman",
+  "tacksman",
+  "cateran",
+  "highland-archer",
+  "pikeman",
+  "gallowglass",
+  "border-reiver",
+  "mangonel",
+];
+
+workaround("Add Mustering Hall to Scots Units producedBy", {
+  predicate: (item) => item.type === "unit" && scotMusteringHallUnits.includes(item.baseId) && item.civs.includes("sco"),
+  mutator: (item) => {
+    item.producedBy ??= [];
+    if (!item.producedBy.includes("mustering-hall")) {
+      item.producedBy.push("mustering-hall");
+      item.producedBy.sort((a, b) => a.localeCompare(b));
+    }
+  },
+});
+
+workaround("Configure Fishpond Relocate Ability", {
+  predicate: (item) => item.type === "ability" && item.attribName === "fish_pond_relocate_sco",
+  mutator: (item) => {
+    item = item as Ability;
+    item.producedBy = ["fishpond"];
+    item.effects = [
+      {
+        property: "unknown",
+        select: { id: ["fishpond"] },
+        effect: "change",
+        value: 0,
+        type: "ability",
+      },
+    ];
+  },
+});
+
+const vikingInfantryUnitIds = [
+  "archer",
+  "berserker",
+  "crossbowman",
+  "handcannoneer",
+  "man-at-arms",
+  "shield-maiden",
+  "spearman",
+];
+
+workaround("Configure Viking Living Off The Land Ability", {
+  predicate: (item) => item.type === "ability" && item.attribName === "living_off_land_vik",
+  mutator: (item) => {
+    item = item as Ability;
+    setLocalized(item, "name", 11273148);
+    setLocalized(item, "description", { id: 11273149, args: [1, 3, 0.4] });
+    item.producedBy = vikingInfantryUnitIds;
+    item.active = "manual";
+    item.effects = [
+      {
+        property: "unknown",
+        select: {
+          id: vikingInfantryUnitIds,
+          class: [["infantry"]],
+        },
+        effect: "change",
+        value: 0,
+        type: "ability",
+      },
+    ];
+  },
+});
+
+workaround("Configure Rikets Nyckel Castle Passive Ability", {
+  predicate: (item) => item.type === "ability" && item.attribName === "rikets_castle_behavior_vik",
+  mutator: (item) => {
+    item = item as Ability;
+    setLocalized(item, "name", 11273289);
+    setLocalized(item, "description", { id: 11273321, args: [10, 50, 10] });
+    item.baseId = "ability-rikets-nyckel-castle";
+    item.age = 3;
+    item.id = `${item.baseId}-${item.age}`;
+    item.icon_src = undefined;
+    item.icon = "buildings/rikets-nyckel-castle-3.png";
+    item.producedBy = ["rikets-nyckel-castle"];
+    item.active = "always";
+    item.effects = [
+      {
+        property: "unknown",
+        select: { id: ["rikets-nyckel-castle"] },
+        effect: "change",
+        value: 0,
+        type: "ability",
+      },
+    ];
+  },
+});
+
+workaround("Configure Baugr Fort Production Ability", {
+  predicate: (item) => item.type === "ability" && item.attribName === "baugr_fort_production_vik",
+  mutator: (item) => {
+    item = item as Ability;
+    setLocalized(item, "name", 11273291);
+    setLocalized(item, "description", { id: 11273292, args: [25] });
+    item.producedBy = ["baugr-fort"];
+    item.active = "always";
+    item.effects = [
+      {
+        property: "unknown",
+        select: { id: ["baugr-fort"] },
+        effect: "change",
+        value: 0,
+        type: "ability",
+      },
+    ];
+  },
+});
+
+const vikingDamageArmorTechs: Record<string, { age: 1 | 2 | 3 | 4 }> = {
+  damage_1_vik: { age: 2 },
+  damage_2_vik: { age: 3 },
+  damage_3_vik: { age: 4 },
+  armor_1_vik: { age: 2 },
+  armor_2_vik: { age: 3 },
+  armor_3_vik: { age: 4 },
+};
+
+workaround("Change Viking Damage and Armor to Technology", {
+  predicate: (item) => item.type === "ability" && !!item.attribName && item.attribName in vikingDamageArmorTechs,
+  mutator: (item) => {
+    const config = vikingDamageArmorTechs[item.attribName!];
+    item.type = "technology";
+    item.baseId = item.baseId.replace(/^ability-/, "");
+    item.age = config.age;
+    item.id = `${item.baseId}-${item.age}`;
+    item.producedBy = ["longhouse"];
+    item.classes = ["technology", "blacksmith"];
+    item.displayClasses = [];
+    addDisplayClass(item, "Blacksmith Technology");
+  },
+});
+
+workaround("Change Viking Sagas to Technology", {
+  predicate: (item) =>
+    item.type === "ability" &&
+    !!item.attribName &&
+    item.attribName.startsWith("saga_") &&
+    item.attribName.endsWith("_info_vik"),
+  mutator: async (item, { context }) => {
+    item.type = "technology";
+    item.baseId = item.baseId.replace(/^ability-/, "");
+    if (!item.baseId.endsWith("-saga")) item.baseId += "-saga";
+    item.id = `${item.baseId}-1`;
+    item.age = 1;
+    item.producedBy = ["saga-pillars"];
+    item.classes = ["technology", "saga"];
+    item.displayClasses = [];
+    addDisplayClass(item, "Saga");
+    item.costs = { ...NO_COSTS, popcap: 0 };
+
+    // Dynamically copy completion requirements and reward description from the unlock ability's help_text_formatter
+    const unlockAttribName = item.attribName!.replace(/^saga_/, "unlock_").replace(/_info_vik$/, "_saga_vik");
+    const unlockFile = `abilities/timed_abilities/vikings/sagas/${unlockAttribName}`;
+    try {
+      if (context) {
+        const unlockData = await context.getData(unlockFile, context);
+        const htf = unlockData?.extensions?.[0]?.ui_info?.help_text_formatter;
+        if (htf?.formatter) {
+          setLocalized(item, "description", {
+            id: htf.formatter,
+            args: htf.formatter_arguments ?? [],
+          });
+        }
+      }
+    } catch {
+      // Keep existing description if unlock file not found
+    }
+  },
+});
+
+workaround("Add Valdemar Castle to Danevirke", {
+  predicate: (item) => item.type === "technology" && item.baseId === "danevirke",
+  mutator: (item) => {
+    item.producedBy ??= [];
+    if (!item.producedBy.includes("valdemar-castle")) {
+      item.producedBy.push("valdemar-castle");
+      item.producedBy.sort((a, b) => a.localeCompare(b));
+    }
+  },
 });
 
 const MILITIA_COSTS = generateCosts({ food: 20 });
@@ -1695,9 +2110,51 @@ function overrideCivUniqueIcon(ids_or_pred: string[] | Function) {
   }
 }
 
+const scotMusterUnitMapping: Record<string, string[]> = {
+  muster_lowlanders_age2_sco: ["units/pikeman"],
+  muster_highlanders_age2_sco: ["units/cateran"],
+  muster_highlanders_age4_sco: ["units/highland-archer"],
+  muster_highlanders_age3_sco: ["units/gallowglass"],
+  muster_reivers_sco: ["units/border-reiver"],
+  muster_mangonel_sco: ["units/mangonel"],
+  muster_tacksmen_sco: ["units/tacksman"],
+  muster_navy_age4_sco: ["units/galley", "units/hulk", "units/carrack"],
+};
+
+workaround("Configure Scots Royal Summons at Three Loch Lookout", {
+  predicate: (item) => item.type === "technology" && !!item.attribName && item.attribName in scotMusterUnitMapping,
+  mutator: async (item, { context }) => {
+    const unitItems = scotMusterUnitMapping[item.attribName!];
+    const data: any = await context?.getData(`upgrade/${item.attribName!}`, context);
+    const args: number[] = data?.upgrade_bag?.ui_info?.help_text_formatter?.formatter_arguments ?? [];
+    item.recruits = unitItems.map((unitItem, index) => ({
+      item: unitItem,
+      count: args[index] ?? 1,
+    }));
+
+    item.producedBy ??= [];
+    if (item.attribName !== "muster_navy_age4_sco" && !item.producedBy.includes("mustering-hall")) {
+      item.producedBy.push("mustering-hall");
+    }
+    if (!item.producedBy.includes("three-loch-lookout")) {
+      item.producedBy.push("three-loch-lookout");
+    }
+    item.producedBy.sort((a, b) => a.localeCompare(b));
+
+    item.displayClasses = ["Royal Summon"];
+    item.classes = ["technology", "summon"];
+  },
+});
+
+export type WorkaroundContext = {
+  parent?: Item;
+  getItem?: (query: string) => Item | undefined;
+  context?: RunContext;
+};
+
 interface Override {
   predicate: (item: ItemType) => boolean;
-  mutator: (item: ItemType) => void;
+  mutator: (item: ItemType, context: WorkaroundContext) => any;
   validator?: (item: ItemType) => boolean;
   callContext?: string;
 }

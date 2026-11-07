@@ -493,7 +493,7 @@
       ],
       "minAge": 3,
       "icon": "https://data.aoe4world.com/images/buildings/college-of-artillery-3.png",
-      "description": "Produces the Royal Artillery versions of the Cannon, Ribauldequin, and Culverin, which do +30% more damage.\nUnlocks the Artillery ability for all Cannons.\nContains Siege and Gunpowder Technologies, trains units and researches technologies 50% faster.",
+      "description": "Produces the Royal versions of the Cannon and Ribauldequin, which do +30% more damage and cost -25% gold.\nRoyal Cannons gain the Artillery Shot ability and Royal Ribauldequins gain the Fortify ability.\nContains Siege and Gunpowder technologies, trains units and researches technologies 50% faster.",
       "variations": [
         {
           "id": "college-of-artillery-3",
@@ -506,7 +506,7 @@
           "civs": [
             "je"
           ],
-          "description": "Produces the Royal Artillery versions of the Cannon, Ribauldequin, and Culverin, which do +30% more damage.\nUnlocks the Artillery ability for all Cannons.\nContains Siege and Gunpowder Technologies, trains units and researches technologies 50% faster.",
+          "description": "Produces the Royal versions of the Cannon and Ribauldequin, which do +30% more damage and cost -25% gold.\nRoyal Cannons gain the Artillery Shot ability and Royal Ribauldequins gain the Fortify ability.\nContains Siege and Gunpowder technologies, trains units and researches technologies 50% faster.",
           "classes": [
             "age3_landmark2",
             "audio_production_landmark",
@@ -975,6 +975,7 @@
           "hitpoints": 5000,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 12,
@@ -1897,6 +1898,7 @@
           "hitpoints": 5000,
           "weapons": [
             {
+              "id": "arbalest",
               "name": "Arbalest",
               "type": "ranged",
               "damage": 60,
@@ -2551,6 +2553,7 @@
           "hitpoints": 3000,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 60,
@@ -2678,7 +2681,7 @@
             "gold": 0,
             "total": 700,
             "popcap": 0,
-            "time": 150
+            "time": 165
           },
           "producedBy": [
             "jeanne-darc-peasant",

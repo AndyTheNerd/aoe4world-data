@@ -114,7 +114,7 @@
         "gold": 0,
         "total": 100,
         "popcap": 0,
-        "time": 30
+        "time": 15
       },
       "producedBy": [
         "villager"
@@ -123,6 +123,7 @@
       "hitpoints": 1500,
       "weapons": [
         {
+          "id": "handcannon",
           "name": "Handcannon",
           "type": "ranged",
           "damage": 25,

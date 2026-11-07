@@ -78,9 +78,10 @@
             "siege-workshop"
           ],
           "icon": "https://data.aoe4world.com/images/units/battering-ram-3.png",
-          "hitpoints": 370,
+          "hitpoints": 410,
           "weapons": [
             {
+              "id": "ram",
               "name": "Ram",
               "type": "siege",
               "damage": 200,
@@ -225,6 +226,7 @@
           "hitpoints": 700,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 45,
@@ -356,6 +358,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "trebuchet",
               "name": "Trebuchet",
               "type": "siege",
               "damage": 40,
@@ -501,6 +504,7 @@
           "hitpoints": 200,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 40,
@@ -675,6 +679,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "incendiaries",
               "name": "Incendiaries",
               "type": "siege",
               "damage": 95,
@@ -898,6 +903,7 @@
           "hitpoints": 300,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -1049,6 +1055,7 @@
           "description": "Ranged infantry with good damage vs. unarmored targets and increased fire rate and longer weapon range than standard Archers.\n+ Increased weapon range\n+ Faster attack speed\n- Weak against armored targets\n- Countered by Horsemen",
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -1079,8 +1086,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -1128,6 +1134,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 8,
@@ -1158,8 +1165,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -1207,6 +1213,7 @@
           "hitpoints": 160,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 10,
@@ -1237,8 +1244,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -1345,6 +1351,7 @@
           "name": "Gilded Crossbowman",
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 15,
@@ -1382,6 +1389,7 @@
               "pbgid": 2127088
             },
             {
+              "id": "weapon-crossbow-incendiary-siege-damage-hre-ha-01",
               "name": "(translation not found) (undefined)",
               "type": "ranged",
               "damage": 15,
@@ -1458,6 +1466,7 @@
           "hitpoints": 170,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 18,
@@ -1509,7 +1518,7 @@
       ],
       "unique": true,
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "classes": [
         "annihilation_condition",
@@ -1556,7 +1565,7 @@
             "ranged_infantry"
           ],
           "displayClasses": [
-            "Ranged Gunpowder Infantry"
+            "Medium Gunpowder Infantry"
           ],
           "unique": true,
           "costs": {
@@ -1575,6 +1584,7 @@
           "hitpoints": 250,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 41,
@@ -1702,6 +1712,7 @@
           "name": "Gilded Horseman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 15,
@@ -1752,6 +1763,7 @@
               "pbgid": 2126997
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -1790,6 +1802,7 @@
           "hitpoints": 310,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 18,
@@ -1840,6 +1853,7 @@
               "pbgid": 2126999
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -1878,6 +1892,7 @@
           "hitpoints": 360,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 20,
@@ -1928,6 +1943,7 @@
               "pbgid": 2127001
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -2043,6 +2059,7 @@
           "name": "Gilded Knight",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 36,
@@ -2066,6 +2083,7 @@
               "pbgid": 2127044
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -2089,6 +2107,7 @@
               "pbgid": 2127046
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 45,
@@ -2132,6 +2151,7 @@
           "hitpoints": 460,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 42,
@@ -2155,6 +2175,7 @@
               "pbgid": 2127047
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -2178,6 +2199,7 @@
               "pbgid": 2127046
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 57,
@@ -2267,11 +2289,11 @@
       "baseId": "gilded-landsknecht",
       "age": 3,
       "costs": {
-        "food": 120,
+        "food": 100,
         "wood": 0,
         "stone": 0,
         "gold": 200,
-        "total": 320,
+        "total": 300,
         "popcap": 2,
         "time": 27
       },
@@ -2297,6 +2319,7 @@
           "name": "Gilded Landsknecht",
           "weapons": [
             {
+              "id": "zweihander",
               "name": "Zweihander",
               "type": "melee",
               "damage": 21,
@@ -2320,6 +2343,7 @@
               "pbgid": 2127093
             },
             {
+              "id": "halberd",
               "name": "Halberd",
               "type": "melee",
               "damage": 21,
@@ -2343,6 +2367,7 @@
               "pbgid": 2140617
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -2376,6 +2401,7 @@
           "hitpoints": 225,
           "weapons": [
             {
+              "id": "zweihander",
               "name": "Zweihander",
               "type": "melee",
               "damage": 25,
@@ -2399,6 +2425,7 @@
               "pbgid": 2127095
             },
             {
+              "id": "halberd",
               "name": "Halberd",
               "type": "melee",
               "damage": 25,
@@ -2422,6 +2449,7 @@
               "pbgid": 2140660
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -2539,6 +2567,7 @@
           "name": "Early Gilded Man-at-Arms",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 14,
@@ -2562,6 +2591,7 @@
               "pbgid": 2127003
             },
             {
+              "id": "ax",
               "name": "Ax",
               "type": "melee",
               "damage": 15,
@@ -2585,6 +2615,7 @@
               "pbgid": 2127007
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -2627,6 +2658,7 @@
           "hitpoints": 290,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 17,
@@ -2650,6 +2682,7 @@
               "pbgid": 2127011
             },
             {
+              "id": "mace",
               "name": "Mace",
               "type": "melee",
               "damage": 18,
@@ -2687,6 +2720,7 @@
               "pbgid": 2127013
             },
             {
+              "id": "ax",
               "name": "Ax",
               "type": "melee",
               "damage": 18,
@@ -2710,6 +2744,7 @@
               "pbgid": 2127015
             },
             {
+              "id": "bludgeon",
               "name": "Bludgeon",
               "type": "melee",
               "damage": 18,
@@ -2747,6 +2782,7 @@
               "pbgid": 2127017
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -2789,6 +2825,7 @@
           "hitpoints": 340,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 21,
@@ -2812,6 +2849,7 @@
               "pbgid": 2127019
             },
             {
+              "id": "ax",
               "name": "Ax",
               "type": "melee",
               "damage": 22,
@@ -2835,6 +2873,7 @@
               "pbgid": 2127023
             },
             {
+              "id": "bludgeon",
               "name": "Bludgeon",
               "type": "melee",
               "damage": 22,
@@ -2872,6 +2911,7 @@
               "pbgid": 2127025
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -3006,6 +3046,7 @@
           "name": "Gilded Spearman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 10,
@@ -3071,6 +3112,7 @@
               "pbgid": 2126956
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -3109,6 +3151,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 12,
@@ -3174,6 +3217,7 @@
               "pbgid": 2126958
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -3212,6 +3256,7 @@
           "hitpoints": 220,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 14,
@@ -3277,6 +3322,7 @@
               "pbgid": 2126960
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -3315,6 +3361,7 @@
           "hitpoints": 280,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 18,
@@ -3380,6 +3427,7 @@
               "pbgid": 2126962
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 18,
@@ -3438,7 +3486,7 @@
       ],
       "minAge": 1,
       "icon": "https://data.aoe4world.com/images/units/gilded-villager-1.png",
-      "description": "Gathers Wood, Food, Stone, and Gold. Builds and repairs buildings and can repair siege engines and naval units. Gathers resources 28% quicker and builds and repairs 20% faster than regular Villagers.\n- Weak in combat",
+      "description": "Gathers Wood, Food, Stone, and Gold. Builds and repairs buildings and can repair siege engines and naval units. Gathers resources 27% quicker and builds and repairs 20% faster than regular Villagers.\n- Weak in combat",
       "variations": [
         {
           "id": "gilded-villager-1",
@@ -3451,7 +3499,7 @@
           "civs": [
             "od"
           ],
-          "description": "Gathers Wood, Food, Stone, and Gold. Builds and repairs buildings and can repair siege engines and naval units. Gathers resources 28% quicker and builds and repairs 20% faster than regular Villagers.\n- Weak in combat",
+          "description": "Gathers Wood, Food, Stone, and Gold. Builds and repairs buildings and can repair siege engines and naval units. Gathers resources 27% quicker and builds and repairs 20% faster than regular Villagers.\n- Weak in combat",
           "classes": [
             "annihilation_condition",
             "builder",
@@ -3483,6 +3531,7 @@
           "hitpoints": 65,
           "weapons": [
             {
+              "id": "knife",
               "name": "Knife",
               "type": "melee",
               "damage": 7,
@@ -3506,6 +3555,7 @@
               "pbgid": 2141048
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3529,6 +3579,7 @@
               "pbgid": 123522
             },
             {
+              "id": "hunting-bow",
               "name": "Hunting Bow",
               "type": "ranged",
               "damage": 3,
@@ -3552,6 +3603,7 @@
               "pbgid": 173519
             },
             {
+              "id": "crook",
               "name": "Crook",
               "type": "melee",
               "damage": 12,
@@ -3575,6 +3627,7 @@
               "pbgid": 173518
             },
             {
+              "id": "hunting-spear",
               "name": "Hunting Spear",
               "type": "melee",
               "damage": 12,
@@ -3692,6 +3745,7 @@
           "hitpoints": 450,
           "weapons": [
             {
+              "id": "ballista",
               "name": "Ballista",
               "type": "ranged",
               "damage": 35,
@@ -3834,6 +3888,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "mangonel",
               "name": "Mangonel",
               "type": "siege",
               "damage": 10,
@@ -3901,6 +3956,7 @@
               "pbgid": 127503
             },
             {
+              "id": "incendiary",
               "name": "Incendiary",
               "type": "fire",
               "damage": 2,
@@ -3955,6 +4011,7 @@
               "pbgid": 127724
             },
             {
+              "id": "adjustable-crossbars",
               "name": "Adjustable Crossbars",
               "type": "siege",
               "damage": 10,
@@ -4218,6 +4275,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "short-sword",
               "name": "Short Sword",
               "type": "melee",
               "damage": 1,
@@ -4455,6 +4513,7 @@
           "hitpoints": 85,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 15,
@@ -4787,7 +4846,8 @@
               "siege",
               "monk",
               "khan",
-              "cavalry"
+              "cavalry",
+              "cattle"
             ]
           }
         }

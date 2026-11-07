@@ -25,7 +25,7 @@
     "streltsy"
   ],
   "displayClasses": [
-    "Ranged Gunpowder Infantry"
+    "Medium Gunpowder Infantry"
   ],
   "unique": false,
   "costs": {
@@ -46,6 +46,7 @@
   "hitpoints": 130,
   "weapons": [
     {
+      "id": "handcannon",
       "name": "Handcannon",
       "type": "ranged",
       "damage": 38,

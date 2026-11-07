@@ -44,16 +44,16 @@
       "variations": [
         {
           "id": "arbaletrier-3",
-          "pbgid": 132231,
-          "attribName": "unit_crossbowman_3_fre",
+          "pbgid": 2775102,
+          "attribName": "unit_crossbowman_3_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "arbaletrier-4",
-          "pbgid": 132273,
-          "attribName": "unit_crossbowman_4_fre",
+          "pbgid": 3411385,
+          "attribName": "unit_crossbowman_4_fre_ha_01",
           "civs": [
             "je"
           ]
@@ -91,6 +91,7 @@
           "name": "Arbalétrier",
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 11,
@@ -159,6 +160,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 14,
@@ -238,24 +240,24 @@
       "variations": [
         {
           "id": "archer-2",
-          "pbgid": 132269,
-          "attribName": "unit_archer_2_fre",
+          "pbgid": 7079577,
+          "attribName": "unit_archer_2_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "archer-3",
-          "pbgid": 132270,
-          "attribName": "unit_archer_3_fre",
+          "pbgid": 7276370,
+          "attribName": "unit_archer_3_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "archer-4",
-          "pbgid": 132271,
-          "attribName": "unit_archer_4_fre",
+          "pbgid": 4220886,
+          "attribName": "unit_archer_4_fre_ha_01",
           "civs": [
             "je"
           ]
@@ -293,6 +295,7 @@
           "name": "Archer",
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 5,
@@ -323,8 +326,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -372,6 +374,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 7,
@@ -402,8 +405,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -451,6 +453,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 8,
@@ -481,8 +484,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -576,9 +578,10 @@
             "siege-workshop"
           ],
           "icon": "https://data.aoe4world.com/images/units/battering-ram-3.png",
-          "hitpoints": 370,
+          "hitpoints": 410,
           "weapons": [
             {
+              "id": "ram",
               "name": "Ram",
               "type": "siege",
               "damage": 200,
@@ -663,7 +666,6 @@
       "classes": [
         "annihilation_condition",
         "bombard_wheeled",
-        "find_non_siege_land_military",
         "formational",
         "gunpowder",
         "included_by_military_hotkeys",
@@ -681,8 +683,8 @@
           "baseId": "cannon",
           "type": "unit",
           "name": "Cannon",
-          "pbgid": 165175,
-          "attribName": "unit_cannon_4_fre",
+          "pbgid": 7585237,
+          "attribName": "unit_cannon_4_fre_ha_01",
           "age": 4,
           "civs": [
             "je"
@@ -691,7 +693,6 @@
           "classes": [
             "annihilation_condition",
             "bombard_wheeled",
-            "find_non_siege_land_military",
             "formational",
             "gunpowder",
             "included_by_military_hotkeys",
@@ -721,6 +722,7 @@
           "hitpoints": 190,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 60,
@@ -839,7 +841,6 @@
         "massive",
         "military",
         "naval_broadside",
-        "naval_military",
         "naval_unit",
         "naval_warship",
         "naval_western",
@@ -856,8 +857,8 @@
           "baseId": "carrack",
           "type": "unit",
           "name": "Carrack",
-          "pbgid": 193120,
-          "attribName": "unit_naval_combat_warship_4_fre",
+          "pbgid": 4626069,
+          "attribName": "unit_naval_combat_warship_4_fre_ha_01",
           "age": 4,
           "civs": [
             "je"
@@ -869,7 +870,6 @@
             "massive",
             "military",
             "naval_broadside",
-            "naval_military",
             "naval_unit",
             "naval_warship",
             "naval_western",
@@ -897,6 +897,7 @@
           "hitpoints": 700,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 45,
@@ -990,8 +991,8 @@
           "baseId": "counterweight-trebuchet",
           "type": "unit",
           "name": "Counterweight Trebuchet",
-          "pbgid": 132307,
-          "attribName": "unit_trebuchet_4_cw_fre",
+          "pbgid": 5678117,
+          "attribName": "unit_trebuchet_4_cw_fre_ha_01",
           "age": 3,
           "civs": [
             "je"
@@ -1028,6 +1029,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "trebuchet",
               "name": "Trebuchet",
               "type": "siege",
               "damage": 40,
@@ -1135,8 +1137,8 @@
           "baseId": "demolition-ship",
           "type": "unit",
           "name": "Demolition Ship",
-          "pbgid": 193122,
-          "attribName": "unit_naval_fireship_3_fre",
+          "pbgid": 3350950,
+          "attribName": "unit_naval_fireship_3_fre_ha_01",
           "age": 2,
           "civs": [
             "je"
@@ -1175,6 +1177,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "incendiaries",
               "name": "Incendiaries",
               "type": "siege",
               "damage": 95,
@@ -1273,8 +1276,8 @@
           "baseId": "fishing-boat",
           "type": "unit",
           "name": "Fishing Boat",
-          "pbgid": 193121,
-          "attribName": "unit_naval_fishing_boat_2_fre",
+          "pbgid": 6565065,
+          "attribName": "unit_naval_fishing_boat_2_fre_ha_01",
           "age": 2,
           "civs": [
             "je"
@@ -1336,14 +1339,15 @@
       ],
       "unique": true,
       "displayClasses": [
-        "Gunpowder Ship"
+        "Ship"
       ],
       "classes": [
         "annihilation_condition",
+        "gunpowder",
+        "included_by_military_hotkeys",
         "massive",
         "military",
         "naval_galleass",
-        "naval_military",
         "naval_unit",
         "ranged",
         "ship",
@@ -1358,8 +1362,8 @@
           "baseId": "galleass",
           "type": "unit",
           "name": "Galleass",
-          "pbgid": 193931,
-          "attribName": "unit_naval_galleass_4_fre",
+          "pbgid": 8972526,
+          "attribName": "unit_naval_galleass_4_fre_ha_01",
           "age": 3,
           "civs": [
             "je"
@@ -1367,17 +1371,18 @@
           "description": "Large oared vessel with a powerful forward mounted bombard.\n+ Long Range\n+ Anti-structure specialist",
           "classes": [
             "annihilation_condition",
+            "gunpowder",
+            "included_by_military_hotkeys",
             "massive",
             "military",
             "naval_galleass",
-            "naval_military",
             "naval_unit",
             "ranged",
             "ship",
             "siegeable"
           ],
           "displayClasses": [
-            "Gunpowder Ship"
+            "Ship"
           ],
           "unique": true,
           "costs": {
@@ -1396,6 +1401,7 @@
           "hitpoints": 700,
           "weapons": [
             {
+              "id": "bombard",
               "name": "Bombard",
               "type": "ranged",
               "damage": 130,
@@ -1473,8 +1479,8 @@
           "baseId": "galley",
           "type": "unit",
           "name": "Galley",
-          "pbgid": 2101341,
-          "attribName": "unit_naval_war_galley_3_fre",
+          "pbgid": 3485012,
+          "attribName": "unit_naval_war_galley_3_fre_ha_01",
           "age": 2,
           "civs": [
             "je"
@@ -1512,6 +1518,7 @@
           "hitpoints": 300,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -1584,7 +1591,7 @@
       ],
       "unique": false,
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "classes": [
         "annihilation_condition",
@@ -1609,8 +1616,8 @@
           "baseId": "handcannoneer",
           "type": "unit",
           "name": "Handcannoneer",
-          "pbgid": 132274,
-          "attribName": "unit_handcannon_4_fre",
+          "pbgid": 8743649,
+          "attribName": "unit_handcannon_4_fre_ha_01",
           "age": 4,
           "civs": [
             "je"
@@ -1631,7 +1638,7 @@
             "ranged_infantry"
           ],
           "displayClasses": [
-            "Ranged Gunpowder Infantry"
+            "Medium Gunpowder Infantry"
           ],
           "unique": false,
           "costs": {
@@ -1650,6 +1657,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 38,
@@ -1722,24 +1730,24 @@
       "variations": [
         {
           "id": "horseman-2",
-          "pbgid": 132276,
-          "attribName": "unit_horseman_2_fre",
+          "pbgid": 8137971,
+          "attribName": "unit_horseman_2_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "horseman-3",
-          "pbgid": 132277,
-          "attribName": "unit_horseman_3_fre",
+          "pbgid": 5400180,
+          "attribName": "unit_horseman_3_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "horseman-4",
-          "pbgid": 132278,
-          "attribName": "unit_horseman_4_fre",
+          "pbgid": 5028115,
+          "attribName": "unit_horseman_4_fre_ha_01",
           "civs": [
             "je"
           ]
@@ -1778,6 +1786,7 @@
           "name": "Horseman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -1828,6 +1837,7 @@
               "pbgid": 109275
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1866,6 +1876,7 @@
           "hitpoints": 155,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -1916,6 +1927,7 @@
               "pbgid": 127820
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1954,6 +1966,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 13,
@@ -2004,6 +2017,7 @@
               "pbgid": 127821
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2036,6 +2050,157 @@
           "id": "horseman-4"
         }
       }
+    },
+    {
+      "id": "hulk",
+      "name": "Hulk",
+      "type": "unit",
+      "civs": [
+        "je"
+      ],
+      "unique": false,
+      "displayClasses": [
+        "Springald Ship"
+      ],
+      "classes": [
+        "annihilation_condition",
+        "massive",
+        "medium_ship",
+        "military",
+        "naval_broadside",
+        "naval_general_ship",
+        "naval_military",
+        "naval_unit",
+        "ranged",
+        "ship",
+        "ship_medium_sail",
+        "siegeable",
+        "springald_ship"
+      ],
+      "minAge": 2,
+      "icon": "https://data.aoe4world.com/images/units/hulk-2.png",
+      "description": "Ship equipped with broadside ballistae.\n+ Strong against Arrow Ships\n- Lower maneuverability",
+      "variations": [
+        {
+          "id": "hulk-2",
+          "baseId": "hulk",
+          "type": "unit",
+          "name": "Hulk",
+          "pbgid": 7701549,
+          "attribName": "unit_naval_combat_ship_2_fre_ha_01",
+          "age": 2,
+          "civs": [
+            "je"
+          ],
+          "description": "Ship equipped with broadside ballistae.\n+ Strong against Arrow Ships\n- Lower maneuverability",
+          "classes": [
+            "annihilation_condition",
+            "massive",
+            "medium_ship",
+            "military",
+            "naval_broadside",
+            "naval_general_ship",
+            "naval_military",
+            "naval_unit",
+            "ranged",
+            "ship",
+            "ship_medium_sail",
+            "siegeable",
+            "springald_ship"
+          ],
+          "displayClasses": [
+            "Springald Ship"
+          ],
+          "unique": false,
+          "costs": {
+            "food": 110,
+            "wood": 200,
+            "stone": 0,
+            "gold": 30,
+            "total": 340,
+            "popcap": 3,
+            "time": 30
+          },
+          "producedBy": [
+            "dock"
+          ],
+          "icon": "https://data.aoe4world.com/images/units/hulk-2.png",
+          "hitpoints": 450,
+          "weapons": [
+            {
+              "id": "ballista",
+              "name": "Ballista",
+              "type": "ranged",
+              "damage": 35,
+              "speed": 4.125,
+              "range": {
+                "min": 0,
+                "max": 6
+              },
+              "modifiers": [
+                {
+                  "property": "rangedAttack",
+                  "target": {
+                    "class": [
+                      [
+                        "archer",
+                        "ship"
+                      ]
+                    ]
+                  },
+                  "effect": "change",
+                  "value": 45,
+                  "type": "passive"
+                },
+                {
+                  "property": "rangedAttack",
+                  "target": {
+                    "class": [
+                      [
+                        "building"
+                      ]
+                    ]
+                  },
+                  "effect": "change",
+                  "value": 55,
+                  "type": "passive"
+                }
+              ],
+              "durations": {
+                "aim": 0.5,
+                "windup": 0.25,
+                "attack": 0.125,
+                "winddown": 0.5,
+                "reload": 2.75,
+                "setup": 0,
+                "teardown": 0,
+                "cooldown": 0
+              },
+              "attribName": "weapon_naval_combat_ship_springald",
+              "pbgid": 2102494
+            }
+          ],
+          "armor": [
+            {
+              "type": "ranged",
+              "value": 3
+            }
+          ],
+          "sight": {
+            "inner_height": 10,
+            "inner_radius": 45,
+            "outer_height": -15,
+            "outer_radius": 45,
+            "base": 45,
+            "line": 45,
+            "height": 10
+          },
+          "movement": {
+            "speed": 1.375
+          }
+        }
+      ],
+      "shared": {}
     },
     {
       "id": "jeanne-darc-blast-cannon",
@@ -2133,6 +2298,7 @@
           "hitpoints": 480,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "siege",
               "damage": 40,
@@ -2286,6 +2452,7 @@
           "hitpoints": 225,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 5,
@@ -2339,6 +2506,7 @@
               "pbgid": 2136861
             },
             {
+              "id": "weapon-archer-incendiary-2-jeanne-fre-ha-01",
               "name": "(translation not found) (undefined)",
               "type": "ranged",
               "damage": 8,
@@ -2517,6 +2685,7 @@
           "hitpoints": 360,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 16,
@@ -2555,6 +2724,7 @@
               "pbgid": 2127617
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 12,
@@ -2578,6 +2748,7 @@
               "pbgid": 2127618
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 24,
@@ -2738,6 +2909,7 @@
           "hitpoints": 400,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 28,
@@ -2912,6 +3084,7 @@
           "hitpoints": 280,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 15,
@@ -2965,6 +3138,7 @@
               "pbgid": 2136854
             },
             {
+              "id": "weapon-archer-incendiary-4-jeanne-fre-ha-01",
               "name": "(translation not found) (undefined)",
               "type": "ranged",
               "damage": 15,
@@ -3134,6 +3308,7 @@
           "hitpoints": 150,
           "weapons": [
             {
+              "id": "knife",
               "name": "Knife",
               "type": "melee",
               "damage": 6,
@@ -3157,6 +3332,7 @@
               "pbgid": 120606
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3180,6 +3356,7 @@
               "pbgid": 123522
             },
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 3,
@@ -3218,6 +3395,7 @@
               "pbgid": 2127625
             },
             {
+              "id": "crook",
               "name": "Crook",
               "type": "melee",
               "damage": 12,
@@ -3241,6 +3419,7 @@
               "pbgid": 173518
             },
             {
+              "id": "hunting-spear",
               "name": "Hunting Spear",
               "type": "melee",
               "damage": 12,
@@ -3373,6 +3552,7 @@
           "hitpoints": 225,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 10,
@@ -3411,6 +3591,7 @@
               "pbgid": 2136588
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 12,
@@ -3541,6 +3722,7 @@
           "name": "Jeanne's Champion",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 13,
@@ -3578,6 +3760,7 @@
               "pbgid": 2144061
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3620,6 +3803,7 @@
           "hitpoints": 210,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 16,
@@ -3657,6 +3841,7 @@
               "pbgid": 2144426
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3775,6 +3960,7 @@
           "name": "Jeanne's Rider",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 13,
@@ -3825,6 +4011,7 @@
               "pbgid": 2144062
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3863,6 +4050,7 @@
           "hitpoints": 205,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 16,
@@ -3913,6 +4101,7 @@
               "pbgid": 2144428
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3979,16 +4168,16 @@
       "variations": [
         {
           "id": "man-at-arms-3",
-          "pbgid": 132282,
-          "attribName": "unit_manatarms_3_fre",
+          "pbgid": 5634655,
+          "attribName": "unit_manatarms_3_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "man-at-arms-4",
-          "pbgid": 132283,
-          "attribName": "unit_manatarms_4_fre",
+          "pbgid": 3372074,
+          "attribName": "unit_manatarms_4_fre_ha_01",
           "civs": [
             "je"
           ]
@@ -4026,6 +4215,7 @@
           "name": "Man-at-Arms",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 12,
@@ -4049,6 +4239,7 @@
               "pbgid": 109253
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4091,6 +4282,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 14,
@@ -4114,6 +4306,7 @@
               "pbgid": 127823
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4182,8 +4375,8 @@
           "baseId": "mangonel",
           "type": "unit",
           "name": "Mangonel",
-          "pbgid": 132284,
-          "attribName": "unit_mangonel_3_fre",
+          "pbgid": 7879044,
+          "attribName": "unit_mangonel_3_fre_ha_01",
           "age": 3,
           "civs": [
             "je"
@@ -4220,6 +4413,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "mangonel",
               "name": "Mangonel",
               "type": "siege",
               "damage": 10,
@@ -4287,6 +4481,7 @@
               "pbgid": 127503
             },
             {
+              "id": "incendiary",
               "name": "Incendiary",
               "type": "fire",
               "damage": 2,
@@ -4341,6 +4536,7 @@
               "pbgid": 127724
             },
             {
+              "id": "adjustable-crossbars",
               "name": "Adjustable Crossbars",
               "type": "siege",
               "damage": 10,
@@ -4463,8 +4659,8 @@
           "baseId": "monk",
           "type": "unit",
           "name": "Monk",
-          "pbgid": 132286,
-          "attribName": "unit_monk_3_fre",
+          "pbgid": 7704205,
+          "attribName": "unit_monk_3_fre_ha_01",
           "age": 3,
           "civs": [
             "je"
@@ -4550,8 +4746,8 @@
           "baseId": "ribauldequin",
           "type": "unit",
           "name": "Ribauldequin",
-          "pbgid": 132291,
-          "attribName": "unit_ribauldequin_4_fre",
+          "pbgid": 8752136,
+          "attribName": "unit_ribauldequin_4_fre_ha_01",
           "age": 4,
           "civs": [
             "je"
@@ -4589,6 +4785,7 @@
           "hitpoints": 215,
           "weapons": [
             {
+              "id": "ribauldequin",
               "name": "Ribauldequin",
               "type": "ranged",
               "damage": 42,
@@ -4658,7 +4855,6 @@
       "classes": [
         "annihilation_condition",
         "bombard_wheeled",
-        "find_non_siege_land_military",
         "formational",
         "gunpowder",
         "included_by_military_hotkeys",
@@ -4687,7 +4883,6 @@
           "classes": [
             "annihilation_condition",
             "bombard_wheeled",
-            "find_non_siege_land_military",
             "formational",
             "gunpowder",
             "included_by_military_hotkeys",
@@ -4706,8 +4901,8 @@
             "food": 0,
             "wood": 300,
             "stone": 0,
-            "gold": 600,
-            "total": 900,
+            "gold": 450,
+            "total": 750,
             "popcap": 3,
             "time": 45
           },
@@ -4718,6 +4913,7 @@
           "hitpoints": 190,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 60,
@@ -4820,180 +5016,6 @@
       "shared": {}
     },
     {
-      "id": "royal-culverin",
-      "name": "Royal Culverin",
-      "type": "unit",
-      "civs": [
-        "je"
-      ],
-      "unique": false,
-      "displayClasses": [
-        "Siege",
-        "Gunpowder"
-      ],
-      "classes": [
-        "annihilation_condition",
-        "culverin",
-        "formational",
-        "gunpowder",
-        "included_by_military_hotkeys",
-        "land_military",
-        "military",
-        "royal_artillery",
-        "siege",
-        "siege_range"
-      ],
-      "minAge": 3,
-      "icon": "https://data.aoe4world.com/images/units/royal-culverin-3.png",
-      "description": "Long-range mobile cannon with bonus vs buildings.\n+ Effective against Defenses\n+ Does not require setup to fire",
-      "variations": [
-        {
-          "id": "royal-culverin-3",
-          "baseId": "royal-culverin",
-          "type": "unit",
-          "name": "Royal Culverin",
-          "pbgid": 8041328,
-          "attribName": "unit_culverin_4_royal_fre_ha_01",
-          "age": 3,
-          "civs": [
-            "je"
-          ],
-          "description": "Long-range mobile cannon with bonus vs buildings.\n+ Effective against Defenses\n+ Does not require setup to fire",
-          "classes": [
-            "annihilation_condition",
-            "culverin",
-            "formational",
-            "gunpowder",
-            "included_by_military_hotkeys",
-            "land_military",
-            "military",
-            "royal_artillery",
-            "siege",
-            "siege_range"
-          ],
-          "displayClasses": [
-            "Siege",
-            "Gunpowder"
-          ],
-          "unique": false,
-          "costs": {
-            "food": 0,
-            "wood": 325,
-            "stone": 0,
-            "gold": 550,
-            "total": 875,
-            "popcap": 3,
-            "time": 45
-          },
-          "producedBy": [
-            "college-of-artillery"
-          ],
-          "icon": "https://data.aoe4world.com/images/units/royal-culverin-3.png",
-          "hitpoints": 200,
-          "weapons": [
-            {
-              "name": "Cannon",
-              "type": "siege",
-              "damage": 40,
-              "speed": 3.625,
-              "range": {
-                "min": 1.25,
-                "max": 10.5
-              },
-              "modifiers": [
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "naval",
-                        "unit"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 230,
-                  "type": "passive"
-                },
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "building"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 215,
-                  "type": "passive"
-                },
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "infantry"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 50,
-                  "type": "passive"
-                },
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "war",
-                        "elephant"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 35,
-                  "type": "passive"
-                }
-              ],
-              "durations": {
-                "aim": 0.5,
-                "windup": 0,
-                "attack": 0.125,
-                "winddown": 0.75,
-                "reload": 2.25,
-                "setup": 0.25,
-                "teardown": 0.25,
-                "cooldown": 0
-              },
-              "attribName": "weapon_culverin_4",
-              "pbgid": 165122
-            }
-          ],
-          "armor": [],
-          "resistance": [
-            {
-              "type": "ranged",
-              "value": 85
-            }
-          ],
-          "sight": {
-            "inner_height": 10,
-            "inner_radius": 40,
-            "outer_height": -15,
-            "outer_radius": 64,
-            "base": 49.6,
-            "line": 64,
-            "height": 10
-          },
-          "movement": {
-            "speed": 0.625
-          }
-        }
-      ],
-      "shared": {}
-    },
-    {
       "id": "royal-knight",
       "name": "Royal Knight",
       "type": "unit",
@@ -5028,24 +5050,24 @@
       "variations": [
         {
           "id": "royal-knight-2",
-          "pbgid": 133147,
-          "attribName": "unit_knight_2_fre",
+          "pbgid": 2955885,
+          "attribName": "unit_knight_2_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "royal-knight-3",
-          "pbgid": 132279,
-          "attribName": "unit_knight_3_fre",
+          "pbgid": 7075678,
+          "attribName": "unit_knight_3_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "royal-knight-4",
-          "pbgid": 132280,
-          "attribName": "unit_knight_4_fre",
+          "pbgid": 2681511,
+          "attribName": "unit_knight_4_fre_ha_01",
           "civs": [
             "je"
           ]
@@ -5084,6 +5106,7 @@
           "name": "Royal Knight",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 19,
@@ -5107,6 +5130,7 @@
               "pbgid": 129602
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5149,6 +5173,7 @@
           "hitpoints": 230,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 24,
@@ -5172,6 +5197,7 @@
               "pbgid": 106614
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5214,6 +5240,7 @@
           "hitpoints": 270,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 29,
@@ -5237,6 +5264,7 @@
               "pbgid": 127822
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5281,7 +5309,7 @@
       "civs": [
         "je"
       ],
-      "unique": false,
+      "unique": true,
       "displayClasses": [
         "Siege",
         "Gunpowder"
@@ -5300,7 +5328,7 @@
       ],
       "minAge": 3,
       "icon": "https://data.aoe4world.com/images/units/royal-ribauldequin-3.png",
-      "description": "Five-barreled gunpowder weapon effective against massed units. Deals little damage to buildings.\n+ Can hit multiple targets in a single volley\n- Short range\n- Low ranged armor",
+      "description": "Five-barreled gunpowder weapon effective against massed units. Deals little damage to buildings.\n+ Can hit multiple targets in a single volley\n+ Can Fortify to deploy Palings and gain range\n- Short range\n- Low ranged armor",
       "variations": [
         {
           "id": "royal-ribauldequin-3",
@@ -5313,7 +5341,7 @@
           "civs": [
             "je"
           ],
-          "description": "Five-barreled gunpowder weapon effective against massed units. Deals little damage to buildings.\n+ Can hit multiple targets in a single volley\n- Short range\n- Low ranged armor",
+          "description": "Five-barreled gunpowder weapon effective against massed units. Deals little damage to buildings.\n+ Can hit multiple targets in a single volley\n+ Can Fortify to deploy Palings and gain range\n- Short range\n- Low ranged armor",
           "classes": [
             "annihilation_condition",
             "formational",
@@ -5330,13 +5358,13 @@
             "Siege",
             "Gunpowder"
           ],
-          "unique": false,
+          "unique": true,
           "costs": {
             "food": 0,
             "wood": 350,
             "stone": 0,
-            "gold": 500,
-            "total": 850,
+            "gold": 375,
+            "total": 725,
             "popcap": 3,
             "time": 45
           },
@@ -5347,6 +5375,7 @@
           "hitpoints": 215,
           "weapons": [
             {
+              "id": "ribauldequin",
               "name": "Ribauldequin",
               "type": "ranged",
               "damage": 42,
@@ -5437,8 +5466,8 @@
           "baseId": "scout",
           "type": "unit",
           "name": "Scout",
-          "pbgid": 132268,
-          "attribName": "unit_scout_1_fre",
+          "pbgid": 7559313,
+          "attribName": "unit_scout_1_fre_ha_01",
           "age": 1,
           "civs": [
             "je"
@@ -5483,6 +5512,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "ax",
               "name": "Ax",
               "type": "melee",
               "damage": 1,
@@ -5688,32 +5718,32 @@
       "variations": [
         {
           "id": "spearman-1",
-          "pbgid": 132299,
-          "attribName": "unit_spearman_1_fre",
+          "pbgid": 7226937,
+          "attribName": "unit_spearman_1_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "spearman-2",
-          "pbgid": 132301,
-          "attribName": "unit_spearman_2_fre",
+          "pbgid": 4774695,
+          "attribName": "unit_spearman_2_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "spearman-3",
-          "pbgid": 132303,
-          "attribName": "unit_spearman_3_fre",
+          "pbgid": 3058724,
+          "attribName": "unit_spearman_3_fre_ha_01",
           "civs": [
             "je"
           ]
         },
         {
           "id": "spearman-4",
-          "pbgid": 132305,
-          "attribName": "unit_spearman_4_fre",
+          "pbgid": 3508858,
+          "attribName": "unit_spearman_4_fre_ha_01",
           "civs": [
             "je"
           ]
@@ -5751,6 +5781,7 @@
           "name": "Spearman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 7,
@@ -5816,6 +5847,7 @@
               "pbgid": 106762
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5849,6 +5881,7 @@
           "hitpoints": 90,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 8,
@@ -5914,6 +5947,7 @@
               "pbgid": 127825
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5947,6 +5981,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -6012,6 +6047,7 @@
               "pbgid": 127826
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6045,6 +6081,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -6110,6 +6147,7 @@
               "pbgid": 127827
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6171,8 +6209,8 @@
           "baseId": "springald",
           "type": "unit",
           "name": "Springald",
-          "pbgid": 132292,
-          "attribName": "unit_springald_3_fre",
+          "pbgid": 2991967,
+          "attribName": "unit_springald_3_fre_ha_01",
           "age": 3,
           "civs": [
             "je"
@@ -6208,6 +6246,7 @@
           "hitpoints": 85,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 15,
@@ -6320,8 +6359,8 @@
           "baseId": "trade-ship",
           "type": "unit",
           "name": "Trade Ship",
-          "pbgid": 196682,
-          "attribName": "unit_naval_trade_ship_3_fre",
+          "pbgid": 3787451,
+          "attribName": "unit_naval_trade_ship_3_fre_ha_01",
           "age": 2,
           "civs": [
             "je"
@@ -6402,8 +6441,8 @@
           "baseId": "trader",
           "type": "unit",
           "name": "Trader",
-          "pbgid": 132306,
-          "attribName": "unit_trade_cart_fre",
+          "pbgid": 5073127,
+          "attribName": "unit_trade_cart_fre_ha_01",
           "age": 2,
           "civs": [
             "je"
@@ -6483,8 +6522,8 @@
           "baseId": "transport-ship",
           "type": "unit",
           "name": "Transport Ship",
-          "pbgid": 193123,
-          "attribName": "unit_naval_transport_ship_2_fre",
+          "pbgid": 2180756,
+          "attribName": "unit_naval_transport_ship_2_fre_ha_01",
           "age": 2,
           "civs": [
             "je"
@@ -6541,7 +6580,8 @@
               "siege",
               "monk",
               "khan",
-              "cavalry"
+              "cavalry",
+              "cattle"
             ]
           }
         }
@@ -6614,6 +6654,7 @@
           "hitpoints": 50,
           "weapons": [
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6637,6 +6678,7 @@
               "pbgid": 123522
             },
             {
+              "id": "knife",
               "name": "Knife",
               "type": "melee",
               "damage": 6,
@@ -6672,207 +6714,6 @@
           },
           "movement": {
             "speed": 1.125
-          }
-        }
-      ],
-      "shared": {}
-    },
-    {
-      "id": "war-cog",
-      "name": "War Cog",
-      "type": "unit",
-      "civs": [
-        "je"
-      ],
-      "unique": true,
-      "displayClasses": [
-        "Springald Ship"
-      ],
-      "classes": [
-        "annihilation_condition",
-        "massive",
-        "medium_ship",
-        "military",
-        "naval_broadside",
-        "naval_general_ship",
-        "naval_military",
-        "naval_unit",
-        "ranged",
-        "ship",
-        "ship_medium_sail",
-        "siegeable",
-        "springald_ship"
-      ],
-      "minAge": 2,
-      "icon": "https://data.aoe4world.com/images/units/war-cog-2.png",
-      "description": "Ship equipped with broadside ballistae.\n+ Strong against Arrow Ships\n- Lower maneuverability",
-      "variations": [
-        {
-          "id": "war-cog-2",
-          "baseId": "war-cog",
-          "type": "unit",
-          "name": "War Cog",
-          "pbgid": 193119,
-          "attribName": "unit_naval_combat_ship_2_fre",
-          "age": 2,
-          "civs": [
-            "je"
-          ],
-          "description": "Ship equipped with broadside ballistae.\n+ Strong against Arrow Ships\n- Lower maneuverability",
-          "classes": [
-            "annihilation_condition",
-            "massive",
-            "medium_ship",
-            "military",
-            "naval_broadside",
-            "naval_general_ship",
-            "naval_military",
-            "naval_unit",
-            "ranged",
-            "ship",
-            "ship_medium_sail",
-            "siegeable",
-            "springald_ship"
-          ],
-          "displayClasses": [
-            "Springald Ship"
-          ],
-          "unique": true,
-          "costs": {
-            "food": 75,
-            "wood": 200,
-            "stone": 0,
-            "gold": 30,
-            "total": 305,
-            "popcap": 3,
-            "time": 30
-          },
-          "producedBy": [
-            "dock"
-          ],
-          "icon": "https://data.aoe4world.com/images/units/war-cog-2.png",
-          "hitpoints": 450,
-          "weapons": [
-            {
-              "name": "Ballista",
-              "type": "ranged",
-              "damage": 35,
-              "speed": 4.125,
-              "range": {
-                "min": 0,
-                "max": 6
-              },
-              "modifiers": [
-                {
-                  "property": "rangedAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "archer",
-                        "ship"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 45,
-                  "type": "passive"
-                },
-                {
-                  "property": "rangedAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "building"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 55,
-                  "type": "passive"
-                }
-              ],
-              "durations": {
-                "aim": 0.5,
-                "windup": 0.25,
-                "attack": 0.125,
-                "winddown": 0.5,
-                "reload": 2.75,
-                "setup": 0,
-                "teardown": 0,
-                "cooldown": 0
-              },
-              "attribName": "weapon_naval_combat_ship_springald_fre",
-              "pbgid": 2128677
-            },
-            {
-              "name": "Cannon",
-              "type": "siege",
-              "damage": 40,
-              "speed": 4.125,
-              "range": {
-                "min": 0,
-                "max": 8
-              },
-              "modifiers": [
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "archer",
-                        "ship"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 45,
-                  "type": "passive"
-                },
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "building"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 80,
-                  "type": "passive"
-                }
-              ],
-              "durations": {
-                "aim": 0.5,
-                "windup": 0.25,
-                "attack": 0.125,
-                "winddown": 0.5,
-                "reload": 2.75,
-                "setup": 0,
-                "teardown": 0,
-                "cooldown": 0
-              },
-              "attribName": "weapon_naval_mounted_gun",
-              "pbgid": 2101775
-            }
-          ],
-          "armor": [
-            {
-              "type": "ranged",
-              "value": 4
-            }
-          ],
-          "sight": {
-            "inner_height": 10,
-            "inner_radius": 45,
-            "outer_height": -15,
-            "outer_radius": 45,
-            "base": 45,
-            "line": 45,
-            "height": 10
-          },
-          "movement": {
-            "speed": 1.375
           }
         }
       ],

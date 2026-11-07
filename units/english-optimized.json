@@ -81,9 +81,10 @@
             "the-white-tower"
           ],
           "icon": "https://data.aoe4world.com/images/units/battering-ram-3.png",
-          "hitpoints": 370,
+          "hitpoints": 410,
           "weapons": [
             {
+              "id": "ram",
               "name": "Ram",
               "type": "siege",
               "damage": 200,
@@ -227,6 +228,7 @@
           "hitpoints": 210,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 55,
@@ -403,6 +405,7 @@
           "hitpoints": 700,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 45,
@@ -537,6 +540,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "trebuchet",
               "name": "Trebuchet",
               "type": "siege",
               "damage": 40,
@@ -694,6 +698,7 @@
           "name": "Crossbowman",
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 11,
@@ -757,6 +762,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 14,
@@ -872,6 +878,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "incendiaries",
               "name": "Incendiaries",
               "type": "siege",
               "damage": 95,
@@ -1095,6 +1102,7 @@
           "hitpoints": 300,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -1167,7 +1175,7 @@
       ],
       "unique": false,
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "classes": [
         "annihilation_condition",
@@ -1214,7 +1222,7 @@
             "ranged_infantry"
           ],
           "displayClasses": [
-            "Ranged Gunpowder Infantry"
+            "Medium Gunpowder Infantry"
           ],
           "unique": false,
           "costs": {
@@ -1237,6 +1245,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 38,
@@ -1367,6 +1376,7 @@
           "name": "Horseman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -1417,6 +1427,7 @@
               "pbgid": 109275
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1455,6 +1466,7 @@
           "hitpoints": 155,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -1505,6 +1517,7 @@
               "pbgid": 127820
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1543,6 +1556,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 13,
@@ -1593,6 +1607,7 @@
               "pbgid": 127821
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1703,6 +1718,7 @@
           "hitpoints": 450,
           "weapons": [
             {
+              "id": "ballista",
               "name": "Ballista",
               "type": "ranged",
               "damage": 35,
@@ -1857,6 +1873,7 @@
           "hitpoints": 220,
           "weapons": [
             {
+              "id": "great-sword",
               "name": "Great Sword",
               "type": "melee",
               "damage": 16,
@@ -1880,6 +1897,7 @@
               "pbgid": 2104834
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1903,6 +1921,7 @@
               "pbgid": 123518
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 24,
@@ -2037,6 +2056,7 @@
           "name": "Knight",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 24,
@@ -2060,6 +2080,7 @@
               "pbgid": 106614
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2102,6 +2123,7 @@
           "hitpoints": 270,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 29,
@@ -2125,6 +2147,7 @@
               "pbgid": 127822
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2248,11 +2271,26 @@
       "movement": {
         "speed": 1.125
       },
+      "productionVariations": [
+        {
+          "venue": "council-hall",
+          "costs": {
+            "food": 38,
+            "wood": 47.5,
+            "gold": 0,
+            "stone": 0,
+            "time": 15,
+            "popcap": 1,
+            "total": 85.5
+          }
+        }
+      ],
       "shared": {
         "longbowman-2": {
           "name": "Longbowman",
           "weapons": [
             {
+              "id": "longbow",
               "name": "Longbow",
               "type": "ranged",
               "damage": 6,
@@ -2283,8 +2321,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -2317,6 +2354,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "longbow",
               "name": "Longbow",
               "type": "ranged",
               "damage": 8,
@@ -2347,8 +2385,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -2381,6 +2418,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "longbow",
               "name": "Longbow",
               "type": "ranged",
               "damage": 9,
@@ -2411,8 +2449,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -2539,6 +2576,7 @@
           "name": "Vanguard Man-at-Arms",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 8,
@@ -2562,6 +2600,7 @@
               "pbgid": 131040
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2604,6 +2643,7 @@
           "hitpoints": 120,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 10,
@@ -2627,6 +2667,7 @@
               "pbgid": 129615
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2669,6 +2710,7 @@
           "hitpoints": 155,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 12,
@@ -2692,6 +2734,7 @@
               "pbgid": 109253
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2734,6 +2777,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 14,
@@ -2757,6 +2801,7 @@
               "pbgid": 127823
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2866,6 +2911,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "mangonel",
               "name": "Mangonel",
               "type": "siege",
               "damage": 10,
@@ -2933,6 +2979,7 @@
               "pbgid": 127503
             },
             {
+              "id": "incendiary",
               "name": "Incendiary",
               "type": "fire",
               "damage": 2,
@@ -2987,6 +3034,7 @@
               "pbgid": 127724
             },
             {
+              "id": "adjustable-crossbars",
               "name": "Adjustable Crossbars",
               "type": "siege",
               "damage": 10,
@@ -3238,6 +3286,7 @@
           "hitpoints": 215,
           "weapons": [
             {
+              "id": "ribauldequin",
               "name": "Ribauldequin",
               "type": "ranged",
               "damage": 42,
@@ -3374,6 +3423,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "short-sword",
               "name": "Short Sword",
               "type": "melee",
               "damage": 1,
@@ -3633,6 +3683,7 @@
           "name": "Hardened Spearman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 8,
@@ -3698,6 +3749,7 @@
               "pbgid": 127825
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3731,6 +3783,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -3796,6 +3849,7 @@
               "pbgid": 127826
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3829,6 +3883,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -3894,6 +3949,7 @@
               "pbgid": 127827
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3995,6 +4051,7 @@
           "hitpoints": 85,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 15,
@@ -4327,7 +4384,8 @@
               "siege",
               "monk",
               "khan",
-              "cavalry"
+              "cavalry",
+              "cattle"
             ]
           }
         }
@@ -4401,6 +4459,7 @@
           "hitpoints": 50,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 5,
@@ -4424,6 +4483,7 @@
               "pbgid": 128811
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4476,14 +4536,7 @@
         "Mixed Force Army"
       ],
       "classes": [
-        "archer",
-        "audio_wynguard_army",
-        "can_be_converted",
-        "infantry",
-        "military",
-        "ranged",
-        "scar_age4",
-        "scar_military"
+        "scar_inflation_include"
       ],
       "minAge": 4,
       "icon": "https://data.aoe4world.com/images/units/wynguard-army-1.png",
@@ -4502,14 +4555,7 @@
           ],
           "description": "Produces an army of 2 Spearmen, 2 Crossbowmen, and a Trebuchet.",
           "classes": [
-            "archer",
-            "audio_wynguard_army",
-            "can_be_converted",
-            "infantry",
-            "military",
-            "ranged",
-            "scar_age4",
-            "scar_military"
+            "scar_inflation_include"
           ],
           "displayClasses": [
             "Mixed Force Army"
@@ -4541,7 +4587,21 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/spearman",
+              "count": 2
+            },
+            {
+              "item": "units/crossbowman",
+              "count": 2
+            },
+            {
+              "item": "units/counterweight-trebuchet",
+              "count": 1
+            }
+          ]
         }
       ],
       "shared": {}
@@ -4553,7 +4613,7 @@
       "civs": [
         "en"
       ],
-      "unique": false,
+      "unique": true,
       "displayClasses": [
         "Heavy Melee Infantry"
       ],
@@ -4606,7 +4666,7 @@
           "displayClasses": [
             "Heavy Melee Infantry"
           ],
-          "unique": false,
+          "unique": true,
           "costs": {
             "food": 60,
             "wood": 0,
@@ -4621,6 +4681,7 @@
           "hitpoints": 280,
           "weapons": [
             {
+              "id": "ax",
               "name": "Ax",
               "type": "melee",
               "damage": 20,
@@ -4658,6 +4719,7 @@
               "pbgid": 2122348
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4719,14 +4781,7 @@
         "Mixed Force Army"
       ],
       "classes": [
-        "archer",
-        "audio_wynguard_footman",
-        "can_be_converted",
-        "infantry",
-        "military",
-        "ranged",
-        "scar_age4",
-        "scar_military"
+        "scar_inflation_include"
       ],
       "minAge": 4,
       "icon": "https://data.aoe4world.com/images/units/wynguard-footmen-1.png",
@@ -4745,14 +4800,7 @@
           ],
           "description": "Produces an army of 6 Wynguard Footmen.",
           "classes": [
-            "archer",
-            "audio_wynguard_footman",
-            "can_be_converted",
-            "infantry",
-            "military",
-            "ranged",
-            "scar_age4",
-            "scar_military"
+            "scar_inflation_include"
           ],
           "displayClasses": [
             "Mixed Force Army"
@@ -4784,7 +4832,13 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/wynguard-footman",
+              "count": 6
+            }
+          ]
         }
       ],
       "shared": {}
@@ -4801,14 +4855,7 @@
         "Mixed Force Army"
       ],
       "classes": [
-        "archer",
-        "audio_wynguard_raiders",
-        "can_be_converted",
-        "infantry",
-        "military",
-        "ranged",
-        "scar_age4",
-        "scar_military"
+        "scar_inflation_include"
       ],
       "minAge": 4,
       "icon": "https://data.aoe4world.com/images/units/wynguard-raiders-1.png",
@@ -4827,14 +4874,7 @@
           ],
           "description": "Produces an army of 3 Horsemen and 3 Knights.",
           "classes": [
-            "archer",
-            "audio_wynguard_raiders",
-            "can_be_converted",
-            "infantry",
-            "military",
-            "ranged",
-            "scar_age4",
-            "scar_military"
+            "scar_inflation_include"
           ],
           "displayClasses": [
             "Mixed Force Army"
@@ -4866,7 +4906,17 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/horseman",
+              "count": 3
+            },
+            {
+              "item": "units/knight",
+              "count": 3
+            }
+          ]
         }
       ],
       "shared": {}
@@ -4946,6 +4996,7 @@
           "hitpoints": 125,
           "weapons": [
             {
+              "id": "longbow",
               "name": "Longbow",
               "type": "ranged",
               "damage": 12,
@@ -4976,8 +5027,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -5029,14 +5079,7 @@
         "Mixed Force Army"
       ],
       "classes": [
-        "archer",
-        "audio_wynguard_rangers",
-        "can_be_converted",
-        "infantry",
-        "military",
-        "ranged",
-        "scar_age4",
-        "scar_military"
+        "scar_inflation_include"
       ],
       "minAge": 4,
       "icon": "https://data.aoe4world.com/images/units/wynguard-rangers-1.png",
@@ -5055,14 +5098,7 @@
           ],
           "description": "Produces an army of 6 Wynguard Rangers.",
           "classes": [
-            "archer",
-            "audio_wynguard_rangers",
-            "can_be_converted",
-            "infantry",
-            "military",
-            "ranged",
-            "scar_age4",
-            "scar_military"
+            "scar_inflation_include"
           ],
           "displayClasses": [
             "Mixed Force Army"
@@ -5094,7 +5130,13 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/wynguard-ranger",
+              "count": 6
+            }
+          ]
         }
       ],
       "shared": {}

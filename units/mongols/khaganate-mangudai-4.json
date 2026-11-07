@@ -46,6 +46,7 @@
   "hitpoints": 120,
   "weapons": [
     {
+      "id": "bow",
       "name": "Bow",
       "type": "ranged",
       "damage": 8,
@@ -81,5 +82,15 @@
   },
   "movement": {
     "speed": 1.5625
-  }
+  },
+  "recruits": [
+    {
+      "item": "units/khaganate-mangudai",
+      "count": 2
+    },
+    {
+      "item": "units/khans-hunter",
+      "count": 2
+    }
+  ]
 }

@@ -9,7 +9,7 @@
   "civs": [
     "ay"
   ],
-  "description": "Ranged infantry wielding a javelin to fend off lightly armored enemies.\n+ Bonus against light infantry\n+ Long Range\n- Weak against cavalry\n\nRequires the Trade Wing - Bazaar",
+  "description": "Ranged infantry wielding a javelin to fend off lightly armored enemies.\n+ Bonus against light infantry\n+ Long Range\n- Weak against cavalry\n\nRequires the Trade Wing: Bazaar",
   "classes": [
     "annihilation_condition",
     "bedouin_ranged",
@@ -42,6 +42,7 @@
   "hitpoints": 90,
   "weapons": [
     {
+      "id": "javelin",
       "name": "Javelin",
       "type": "ranged",
       "damage": 8,
@@ -80,6 +81,7 @@
       "pbgid": 2146032
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,

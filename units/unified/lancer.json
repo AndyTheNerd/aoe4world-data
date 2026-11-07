@@ -88,6 +88,7 @@
       "hitpoints": 230,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 24,
@@ -111,6 +112,7 @@
           "pbgid": 106614
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -207,6 +209,7 @@
       "hitpoints": 270,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 29,
@@ -230,6 +233,7 @@
           "pbgid": 127822
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -326,6 +330,7 @@
       "hitpoints": 230,
       "weapons": [
         {
+          "id": "guandao",
           "name": "Guandao",
           "type": "melee",
           "damage": 24,
@@ -349,6 +354,7 @@
           "pbgid": 2029874
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -445,6 +451,7 @@
       "hitpoints": 270,
       "weapons": [
         {
+          "id": "guandao",
           "name": "Guandao",
           "type": "melee",
           "damage": 29,
@@ -468,6 +475,7 @@
           "pbgid": 2029876
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -564,6 +572,7 @@
       "hitpoints": 230,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 24,
@@ -587,6 +596,7 @@
           "pbgid": 106614
         },
         {
+          "id": "kilij",
           "name": "Kilij",
           "type": "melee",
           "damage": 27,
@@ -610,6 +620,7 @@
           "pbgid": 193018
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -706,6 +717,7 @@
       "hitpoints": 270,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 29,
@@ -729,6 +741,7 @@
           "pbgid": 127822
         },
         {
+          "id": "kilij",
           "name": "Kilij",
           "type": "melee",
           "damage": 32,
@@ -752,6 +765,7 @@
           "pbgid": 193019
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -850,6 +864,7 @@
       "hitpoints": 230,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 24,
@@ -873,6 +888,7 @@
           "pbgid": 2072758
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -917,7 +933,22 @@
       },
       "movement": {
         "speed": 1.625
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 35,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "lancer-4",
@@ -971,6 +1002,7 @@
       "hitpoints": 270,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 29,
@@ -994,6 +1026,7 @@
           "pbgid": 2072759
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1038,7 +1071,22 @@
       },
       "movement": {
         "speed": 1.625
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 35,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "lancer-3",
@@ -1090,6 +1138,7 @@
       "hitpoints": 230,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 24,
@@ -1113,6 +1162,7 @@
           "pbgid": 106614
         },
         {
+          "id": "kilij",
           "name": "Kilij",
           "type": "melee",
           "damage": 27,
@@ -1136,6 +1186,7 @@
           "pbgid": 193018
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1232,6 +1283,7 @@
       "hitpoints": 270,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 29,
@@ -1255,6 +1307,7 @@
           "pbgid": 127822
         },
         {
+          "id": "kilij",
           "name": "Kilij",
           "type": "melee",
           "damage": 32,
@@ -1278,6 +1331,7 @@
           "pbgid": 193019
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1374,6 +1428,7 @@
       "hitpoints": 230,
       "weapons": [
         {
+          "id": "guandao",
           "name": "Guandao",
           "type": "melee",
           "damage": 24,
@@ -1397,6 +1452,7 @@
           "pbgid": 2029874
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1493,6 +1549,7 @@
       "hitpoints": 270,
       "weapons": [
         {
+          "id": "guandao",
           "name": "Guandao",
           "type": "melee",
           "damage": 29,
@@ -1516,6 +1573,7 @@
           "pbgid": 2029876
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,

@@ -1,7 +1,10 @@
 {
+  "id": "holy_roman_empire",
   "name": "Holy Roman Empire",
-  "description": "Prelates enhance the economy of the Holy Roman Empire, while powerful infantry units form the core of its military. Enemies must face an opponent able to rapidly recover from attacks and field strong counterattacks.",
+  "abbr": "hr",
+  "slug": "hre",
   "classes": "Infantry, Religion, Defense",
+  "description": "Prelates enhance the economy of the Holy Roman Empire, while powerful infantry units form the core of its military. Enemies must face an opponent able to rapidly recover from attacks and field strong counterattacks.",
   "overview": [
     {
       "title": "Civilization Bonuses",
@@ -12,8 +15,9 @@
         "Infantry move 5% faster in the Dark Age (I) and 10% faster from the Feudal Age (II).",
         "Emplacements are -20% cheaper. Outpost sight range increased by +20%.",
         "Villagers carry +40% more resources.",
-        "Prelates can heal and use Holy Inspiration in the Dark Age (I) — inspired Villagers gather +35% faster for 30 seconds.",
-        "Buildings within influence of a Town Center gain the Emergency Repairs ability which can be activated to repair the building."
+        "Prelates can heal and use Holy Inspiration in the Dark Age (I) — inspired Villagers gather +40% faster for 30 seconds.",
+        "Buildings within influence of a Town Center gain the Emergency Repairs ability which can be activated to repair the building.",
+        "Universities provide population space and their technologies are cheaper."
       ]
     },
     {
@@ -33,12 +37,16 @@
       "description": "Villagers carry +40% more resources than other civilizations."
     },
     {
+      "title": "Bursae",
+      "description": "Mandatory housing at Universities provides +30 population space at each University, and the freedom to choose curriculum reduces research costs at Universities by -10%."
+    },
+    {
       "title": "Influence",
       "description": "Buildings constructed within the influence of a Town Center gain the Emergency Repairs ability which can be activated to repair the building for +150 health every second for 20 seconds."
     },
     {
       "title": "Unique Units",
-      "description": "Prelate: Use the Holy Inspiration ability on Villagers increasing their gather rate by +35% for 30 seconds.\nLandsknecht: Light melee infantry with a large two-handed sword capable of doing significant area damage.\nBlack Rider: Powerful armored mounted gunner. Production is limited by the number of constructed Keeps."
+      "description": "Prelate: Use the Holy Inspiration ability on Villagers increasing their gather rate by +40% for 30 seconds.\nLandsknecht: Light melee infantry with a large two-handed sword capable of doing significant area damage.\nBlack Rider: Powerful armored mounted gunner. Production is limited by the number of constructed Keeps."
     }
   ],
   "techtree": {
@@ -347,6 +355,7 @@
       "siege-works-4": null,
       "silk-bowstrings-4": null,
       "serpentine-powder-4": null,
+      "concave-lens-4": null,
       "ability-emergency-repairs-1": null
     },
     "great-palace-of-flensburg-4": {

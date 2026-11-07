@@ -16,6 +16,7 @@
     "mo",
     "ot",
     "ru",
+    "sco",
     "tug"
   ],
   "unique": false,
@@ -91,6 +92,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "khanda",
           "name": "Khanda",
           "type": "melee",
           "damage": 12,
@@ -114,6 +116,7 @@
           "pbgid": 195285
         },
         {
+          "id": "kilij",
           "name": "Kilij",
           "type": "melee",
           "damage": 15,
@@ -137,6 +140,7 @@
           "pbgid": 193005
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -231,6 +235,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "khanda",
           "name": "Khanda",
           "type": "melee",
           "damage": 14,
@@ -254,6 +259,7 @@
           "pbgid": 195287
         },
         {
+          "id": "kilij",
           "name": "Kilij",
           "type": "melee",
           "damage": 17,
@@ -277,6 +283,7 @@
           "pbgid": 193012
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -374,6 +381,7 @@
       "hitpoints": 100,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 8,
@@ -397,6 +405,7 @@
           "pbgid": 131040
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -494,6 +503,7 @@
       "hitpoints": 120,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 10,
@@ -517,6 +527,7 @@
           "pbgid": 129615
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -614,6 +625,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -637,6 +649,7 @@
           "pbgid": 109253
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -734,6 +747,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -757,6 +771,7 @@
           "pbgid": 127823
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -851,6 +866,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -874,6 +890,7 @@
           "pbgid": 109253
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -968,6 +985,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -991,6 +1009,7 @@
           "pbgid": 127823
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1085,6 +1104,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -1108,6 +1128,7 @@
           "pbgid": 187730
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1202,6 +1223,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -1225,6 +1247,7 @@
           "pbgid": 187731
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1320,6 +1343,7 @@
       "hitpoints": 120,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 10,
@@ -1343,6 +1367,7 @@
           "pbgid": 129615
         },
         {
+          "id": "mace",
           "name": "Mace",
           "type": "melee",
           "damage": 10,
@@ -1380,6 +1405,7 @@
           "pbgid": 171908
         },
         {
+          "id": "ax",
           "name": "Ax",
           "type": "melee",
           "damage": 10,
@@ -1403,6 +1429,7 @@
           "pbgid": 2020386
         },
         {
+          "id": "bludgeon",
           "name": "Bludgeon",
           "type": "melee",
           "damage": 10,
@@ -1440,6 +1467,7 @@
           "pbgid": 171902
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1535,6 +1563,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -1558,6 +1587,7 @@
           "pbgid": 109253
         },
         {
+          "id": "mace",
           "name": "Mace",
           "type": "melee",
           "damage": 12,
@@ -1595,6 +1625,7 @@
           "pbgid": 171909
         },
         {
+          "id": "ax",
           "name": "Ax",
           "type": "melee",
           "damage": 12,
@@ -1618,6 +1649,7 @@
           "pbgid": 2020388
         },
         {
+          "id": "bludgeon",
           "name": "Bludgeon",
           "type": "melee",
           "damage": 12,
@@ -1655,6 +1687,7 @@
           "pbgid": 171903
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1750,6 +1783,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -1773,6 +1807,7 @@
           "pbgid": 127823
         },
         {
+          "id": "mace",
           "name": "Mace",
           "type": "melee",
           "damage": 14,
@@ -1810,6 +1845,7 @@
           "pbgid": 171910
         },
         {
+          "id": "ax",
           "name": "Ax",
           "type": "melee",
           "damage": 14,
@@ -1833,6 +1869,7 @@
           "pbgid": 2020390
         },
         {
+          "id": "bludgeon",
           "name": "Bludgeon",
           "type": "melee",
           "damage": 14,
@@ -1870,6 +1907,7 @@
           "pbgid": 171904
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1921,8 +1959,8 @@
       "baseId": "man-at-arms",
       "type": "unit",
       "name": "Man-at-Arms",
-      "pbgid": 132282,
-      "attribName": "unit_manatarms_3_fre",
+      "pbgid": 5634655,
+      "attribName": "unit_manatarms_3_fre_ha_01",
       "age": 3,
       "civs": [
         "je"
@@ -1964,6 +2002,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -1987,6 +2026,7 @@
           "pbgid": 109253
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2038,8 +2078,8 @@
       "baseId": "man-at-arms",
       "type": "unit",
       "name": "Elite Man-at-Arms",
-      "pbgid": 132283,
-      "attribName": "unit_manatarms_4_fre",
+      "pbgid": 3372074,
+      "attribName": "unit_manatarms_4_fre_ha_01",
       "age": 4,
       "civs": [
         "je"
@@ -2081,6 +2121,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -2104,6 +2145,7 @@
           "pbgid": 127823
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2199,6 +2241,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -2222,6 +2265,7 @@
           "pbgid": 109253
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2317,6 +2361,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -2340,6 +2385,7 @@
           "pbgid": 127823
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2434,6 +2480,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -2457,6 +2504,7 @@
           "pbgid": 9001391
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2551,6 +2599,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -2574,6 +2623,7 @@
           "pbgid": 9001393
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2668,6 +2718,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -2691,6 +2742,7 @@
           "pbgid": 187730
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2785,6 +2837,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -2808,6 +2861,7 @@
           "pbgid": 187731
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2904,6 +2958,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "khanda",
           "name": "Khanda",
           "type": "melee",
           "damage": 12,
@@ -2927,6 +2982,7 @@
           "pbgid": 2072734
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2971,7 +3027,22 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 20.5,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "man-at-arms-4",
@@ -3023,6 +3094,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "khanda",
           "name": "Khanda",
           "type": "melee",
           "damage": 14,
@@ -3046,6 +3118,7 @@
           "pbgid": 2072738
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3090,7 +3163,22 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 20.5,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "man-at-arms-3",
@@ -3140,6 +3228,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -3163,6 +3252,7 @@
           "pbgid": 133281
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3257,6 +3347,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -3280,6 +3371,7 @@
           "pbgid": 133282
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3321,6 +3413,603 @@
         "base": 21.6,
         "line": 36,
         "height": 10
+      },
+      "movement": {
+        "speed": 1.125
+      }
+    },
+    {
+      "id": "man-at-arms-2",
+      "baseId": "man-at-arms",
+      "type": "unit",
+      "name": "Early Man-at-Arms",
+      "pbgid": 7161837,
+      "attribName": "unit_manatarms_2_sco",
+      "age": 2,
+      "civs": [
+        "sco"
+      ],
+      "description": "Tough infantry with good damage.\n+ High armor\n- Slow movement\n- Countered by Knights, Lancers, and Crossbowmen",
+      "classes": [
+        "annihilation_condition",
+        "armored",
+        "find_non_siege_land_military",
+        "formational",
+        "heavy",
+        "human",
+        "included_by_military_hotkeys",
+        "infantry",
+        "land_military",
+        "manatarms",
+        "melee",
+        "melee_infantry",
+        "military",
+        "torch_thrower"
+      ],
+      "displayClasses": [
+        "Heavy Melee Infantry"
+      ],
+      "unique": false,
+      "costs": {
+        "food": 90,
+        "wood": 0,
+        "stone": 0,
+        "gold": 20,
+        "total": 110,
+        "popcap": 1,
+        "time": 20.5
+      },
+      "producedBy": [
+        "barracks"
+      ],
+      "icon": "https://data.aoe4world.com/images/units/man-at-arms-2.png",
+      "hitpoints": 120,
+      "weapons": [
+        {
+          "id": "sword",
+          "name": "Sword",
+          "type": "melee",
+          "damage": 10,
+          "speed": 1.375,
+          "range": {
+            "min": 0,
+            "max": 0.295
+          },
+          "modifiers": [
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "cavalry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 0,
+              "type": "passive"
+            },
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "war",
+                    "elephant"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 0,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0.5,
+            "attack": 0.125,
+            "winddown": 0.75,
+            "reload": 0,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_manatarms_2_sco",
+          "pbgid": 9007689
+        },
+        {
+          "id": "lochaber-axe",
+          "name": "Lochaber Axe",
+          "type": "melee",
+          "damage": 10,
+          "speed": 1.375,
+          "range": {
+            "min": 0,
+            "max": 0.295
+          },
+          "modifiers": [
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "cavalry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 4,
+              "type": "passive"
+            },
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "war",
+                    "elephant"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 4,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0.5,
+            "attack": 0.125,
+            "winddown": 0.75,
+            "reload": 0,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_manatarms_2_lochaber_axe_sco",
+          "pbgid": 9007224
+        },
+        {
+          "id": "torch",
+          "name": "Torch",
+          "type": "fire",
+          "damage": 10,
+          "speed": 2.125,
+          "range": {
+            "min": 0,
+            "max": 1.25
+          },
+          "modifiers": [],
+          "durations": {
+            "aim": 0,
+            "windup": 0.75,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 0,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 1.25
+          },
+          "attribName": "weapon_torch",
+          "pbgid": 123518
+        }
+      ],
+      "armor": [
+        {
+          "type": "melee",
+          "value": 3
+        },
+        {
+          "type": "ranged",
+          "value": 3
+        }
+      ],
+      "sight": {
+        "inner_height": 100,
+        "inner_radius": 12,
+        "outer_height": -15,
+        "outer_radius": 30.4,
+        "base": 28,
+        "line": 30.4,
+        "height": 100
+      },
+      "movement": {
+        "speed": 1.125
+      }
+    },
+    {
+      "id": "man-at-arms-3",
+      "baseId": "man-at-arms",
+      "type": "unit",
+      "name": "Man-at-Arms",
+      "pbgid": 3298418,
+      "attribName": "unit_manatarms_3_sco",
+      "age": 3,
+      "civs": [
+        "sco"
+      ],
+      "description": "Tough infantry with good damage.\n+ High armor\n- Slow movement\n- Countered by Knights, Lancers, and Crossbowmen",
+      "classes": [
+        "annihilation_condition",
+        "armored",
+        "find_non_siege_land_military",
+        "formational",
+        "heavy",
+        "human",
+        "included_by_military_hotkeys",
+        "infantry",
+        "land_military",
+        "manatarms",
+        "melee",
+        "melee_infantry",
+        "military",
+        "torch_thrower"
+      ],
+      "displayClasses": [
+        "Heavy Melee Infantry"
+      ],
+      "unique": false,
+      "costs": {
+        "food": 90,
+        "wood": 0,
+        "stone": 0,
+        "gold": 20,
+        "total": 110,
+        "popcap": 1,
+        "time": 20.5
+      },
+      "producedBy": [
+        "barracks"
+      ],
+      "icon": "https://data.aoe4world.com/images/units/man-at-arms-3.png",
+      "hitpoints": 155,
+      "weapons": [
+        {
+          "id": "sword",
+          "name": "Sword",
+          "type": "melee",
+          "damage": 12,
+          "speed": 1.375,
+          "range": {
+            "min": 0,
+            "max": 0.295
+          },
+          "modifiers": [
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "cavalry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 0,
+              "type": "passive"
+            },
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "war",
+                    "elephant"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 0,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0.5,
+            "attack": 0.125,
+            "winddown": 0.75,
+            "reload": 0,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_manatarms_3_sco",
+          "pbgid": 9007691
+        },
+        {
+          "id": "lochaber-axe",
+          "name": "Lochaber Axe",
+          "type": "melee",
+          "damage": 12,
+          "speed": 1.375,
+          "range": {
+            "min": 0,
+            "max": 0.295
+          },
+          "modifiers": [
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "cavalry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 4,
+              "type": "passive"
+            },
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "war",
+                    "elephant"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 4,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0.5,
+            "attack": 0.125,
+            "winddown": 0.75,
+            "reload": 0,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_manatarms_3_lochaber_axe_sco",
+          "pbgid": 9007226
+        },
+        {
+          "id": "torch",
+          "name": "Torch",
+          "type": "fire",
+          "damage": 10,
+          "speed": 2.125,
+          "range": {
+            "min": 0,
+            "max": 1.25
+          },
+          "modifiers": [],
+          "durations": {
+            "aim": 0,
+            "windup": 0.75,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 0,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 1.25
+          },
+          "attribName": "weapon_torch",
+          "pbgid": 123518
+        }
+      ],
+      "armor": [
+        {
+          "type": "melee",
+          "value": 4
+        },
+        {
+          "type": "ranged",
+          "value": 4
+        }
+      ],
+      "sight": {
+        "inner_height": 100,
+        "inner_radius": 12,
+        "outer_height": -15,
+        "outer_radius": 30.4,
+        "base": 28,
+        "line": 30.4,
+        "height": 100
+      },
+      "movement": {
+        "speed": 1.125
+      }
+    },
+    {
+      "id": "man-at-arms-4",
+      "baseId": "man-at-arms",
+      "type": "unit",
+      "name": "Elite Man-at-Arms",
+      "pbgid": 4042720,
+      "attribName": "unit_manatarms_4_sco",
+      "age": 4,
+      "civs": [
+        "sco"
+      ],
+      "description": "Tough infantry with good damage.\n+ High armor\n- Slow movement\n- Countered by Knights, Lancers, and Crossbowmen",
+      "classes": [
+        "annihilation_condition",
+        "armored",
+        "find_non_siege_land_military",
+        "formational",
+        "heavy",
+        "human",
+        "included_by_military_hotkeys",
+        "infantry",
+        "land_military",
+        "manatarms",
+        "melee",
+        "melee_infantry",
+        "military",
+        "torch_thrower"
+      ],
+      "displayClasses": [
+        "Heavy Melee Infantry"
+      ],
+      "unique": false,
+      "costs": {
+        "food": 90,
+        "wood": 0,
+        "stone": 0,
+        "gold": 20,
+        "total": 110,
+        "popcap": 1,
+        "time": 20.5
+      },
+      "producedBy": [
+        "barracks"
+      ],
+      "icon": "https://data.aoe4world.com/images/units/man-at-arms-4.png",
+      "hitpoints": 180,
+      "weapons": [
+        {
+          "id": "sword",
+          "name": "Sword",
+          "type": "melee",
+          "damage": 14,
+          "speed": 1.375,
+          "range": {
+            "min": 0,
+            "max": 0.295
+          },
+          "modifiers": [
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "cavalry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 0,
+              "type": "passive"
+            },
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "war",
+                    "elephant"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 0,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0.5,
+            "attack": 0.125,
+            "winddown": 0.75,
+            "reload": 0,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_manatarms_4_sco",
+          "pbgid": 9007693
+        },
+        {
+          "id": "lochaber-axe",
+          "name": "Lochaber Axe",
+          "type": "melee",
+          "damage": 14,
+          "speed": 1.375,
+          "range": {
+            "min": 0,
+            "max": 0.295
+          },
+          "modifiers": [
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "cavalry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 4,
+              "type": "passive"
+            },
+            {
+              "property": "meleeAttack",
+              "target": {
+                "class": [
+                  [
+                    "war",
+                    "elephant"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 4,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0.5,
+            "attack": 0.125,
+            "winddown": 0.75,
+            "reload": 0,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_manatarms_4_lochaber_axe_sco",
+          "pbgid": 9007228
+        },
+        {
+          "id": "torch",
+          "name": "Torch",
+          "type": "fire",
+          "damage": 10,
+          "speed": 2.125,
+          "range": {
+            "min": 0,
+            "max": 1.25
+          },
+          "modifiers": [],
+          "durations": {
+            "aim": 0,
+            "windup": 0.75,
+            "attack": 0.125,
+            "winddown": 0,
+            "reload": 0,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 1.25
+          },
+          "attribName": "weapon_torch",
+          "pbgid": 123518
+        }
+      ],
+      "armor": [
+        {
+          "type": "melee",
+          "value": 5
+        },
+        {
+          "type": "ranged",
+          "value": 6
+        }
+      ],
+      "sight": {
+        "inner_height": 100,
+        "inner_radius": 12,
+        "outer_height": -15,
+        "outer_radius": 30.4,
+        "base": 28,
+        "line": 30.4,
+        "height": 100
       },
       "movement": {
         "speed": 1.125
@@ -3374,6 +4063,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "khanda",
           "name": "Khanda",
           "type": "melee",
           "damage": 12,
@@ -3397,6 +4087,7 @@
           "pbgid": 195285
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3491,6 +4182,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "khanda",
           "name": "Khanda",
           "type": "melee",
           "damage": 14,
@@ -3514,6 +4206,7 @@
           "pbgid": 195287
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,

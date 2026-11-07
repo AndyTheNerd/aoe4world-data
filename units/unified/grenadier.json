@@ -32,7 +32,7 @@
   ],
   "minAge": 3,
   "icon": "https://data.aoe4world.com/images/units/grenadier-4.png",
-  "description": "Advanced ranged infantry with thrown explosive canisters that deal damage in a small area.\n+ Deals area damage\n- Low single target damage\n- Slow movement speed\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Contract.",
+  "description": "Advanced ranged infantry with thrown explosive canisters that deal damage in a small area.\n+ Deals area damage\n- Low single target damage\n- Slow movement speed\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Mercenary Contract.",
   "variations": [
     {
       "id": "grenadier-4",
@@ -45,7 +45,7 @@
       "civs": [
         "by"
       ],
-      "description": "Advanced ranged infantry with thrown explosive canisters that deal damage in a small area.\n+ Deals area damage\n- Low single target damage\n- Slow movement speed\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Contract.",
+      "description": "Advanced ranged infantry with thrown explosive canisters that deal damage in a small area.\n+ Deals area damage\n- Low single target damage\n- Slow movement speed\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Mercenary Contract.",
       "classes": [
         "annihilation_condition",
         "dynasty_unit",
@@ -84,6 +84,7 @@
       "hitpoints": 150,
       "weapons": [
         {
+          "id": "grenade",
           "name": "Grenade",
           "type": "siege",
           "damage": 12,
@@ -186,6 +187,7 @@
       "hitpoints": 150,
       "weapons": [
         {
+          "id": "grenade",
           "name": "Grenade",
           "type": "siege",
           "damage": 12,
@@ -284,6 +286,7 @@
       "hitpoints": 110,
       "weapons": [
         {
+          "id": "grenade",
           "name": "Grenade",
           "type": "siege",
           "damage": 10,
@@ -382,6 +385,7 @@
       "hitpoints": 150,
       "weapons": [
         {
+          "id": "grenade",
           "name": "Grenade",
           "type": "siege",
           "damage": 12,

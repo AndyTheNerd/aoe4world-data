@@ -37,10 +37,10 @@
     "wood": 0,
     "stone": 0,
     "gold": 0,
-    "silver": 250,
-    "total": 250,
+    "silver": 260,
+    "total": 260,
     "popcap": 1,
-    "time": 40
+    "time": 25
   },
   "producedBy": [
     "palatine-school"
@@ -49,6 +49,7 @@
   "hitpoints": 405,
   "weapons": [
     {
+      "id": "sword",
       "name": "Sword",
       "type": "melee",
       "damage": 32,
@@ -72,6 +73,7 @@
       "pbgid": 2145252
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,
@@ -95,6 +97,7 @@
       "pbgid": 127935
     },
     {
+      "id": "lance",
       "name": "Lance",
       "type": "melee",
       "damage": 36,

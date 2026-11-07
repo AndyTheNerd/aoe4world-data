@@ -287,7 +287,7 @@
       "civs": [
         "de"
       ],
-      "description": "Infantry units can build Stone Walls, Gates, and Towers. Reduces Stone cost of buildings and their emplacements by 20%.\nContains defensive technologies that ignore building and Imperial Age (IV) requirements.",
+      "description": "Infantry units can build Stone Walls, Gates, and Towers. Reduces Stone cost of buildings and their emplacements by 25%.\nContains defensive technologies that ignore building and Imperial Age (IV) requirements.",
       "classes": [
         "age2_landmark1",
         "audio_production_landmark",
@@ -693,7 +693,8 @@
       "hitpoints": 750,
       "weapons": [
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -731,7 +732,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -769,7 +771,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -807,7 +810,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -845,7 +849,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -1012,6 +1017,7 @@
       "hitpoints": 5000,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 12,
@@ -2006,6 +2012,7 @@
       "hitpoints": 3000,
       "weapons": [
         {
+          "id": "springald",
           "name": "Springald",
           "type": "ranged",
           "damage": 60,
@@ -2072,12 +2079,14 @@
       "civs": [
         "de"
       ],
-      "description": "Enables Tower of Victory, Mosques, and Madrasas to increase the attack speed of infantry by +20% when produced within their influence.",
+      "description": "Acts as a Blacksmith.\nEnables Tower of Victory, Mosques, and Madrasas to increase the attack speed of infantry by +20% when produced within their influence.",
       "classes": [
         "age1_landmark1",
         "audio_production_landmark",
+        "blacksmith",
         "building",
         "landmark",
+        "research_building",
         "select_special_building",
         "siegeable",
         "town_center_or_landmark",
@@ -2158,7 +2167,7 @@
         "gold": 0,
         "total": 700,
         "popcap": 0,
-        "time": 150
+        "time": 165
       },
       "producedBy": [
         "villager"

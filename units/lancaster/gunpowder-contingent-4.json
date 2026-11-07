@@ -11,14 +11,7 @@
   ],
   "description": "Produces an army of 2 Ribauldequins and 1 Culverin.",
   "classes": [
-    "archer",
-    "audio_wynguard_rangers",
-    "can_be_converted",
-    "infantry",
-    "military",
-    "ranged",
-    "scar_age2",
-    "scar_military"
+    "scar_inflation_include"
   ],
   "displayClasses": [
     "Mixed Force Army"
@@ -50,5 +43,15 @@
   },
   "movement": {
     "speed": null
-  }
+  },
+  "recruits": [
+    {
+      "item": "units/culverin",
+      "count": 1
+    },
+    {
+      "item": "units/ribauldequin",
+      "count": 2
+    }
+  ]
 }

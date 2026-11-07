@@ -59,6 +59,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -89,8 +90,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -174,6 +174,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -204,8 +205,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -289,6 +289,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -319,8 +320,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -397,9 +397,10 @@
         "siege-workshop"
       ],
       "icon": "https://data.aoe4world.com/images/units/battering-ram-3.png",
-      "hitpoints": 370,
+      "hitpoints": 410,
       "weapons": [
         {
+          "id": "ram",
           "name": "Ram",
           "type": "siege",
           "damage": 200,
@@ -510,6 +511,7 @@
       "hitpoints": 210,
       "weapons": [
         {
+          "id": "cannon",
           "name": "Cannon",
           "type": "siege",
           "damage": 55,
@@ -651,6 +653,7 @@
       "hitpoints": 140,
       "weapons": [
         {
+          "id": "trebuchet",
           "name": "Trebuchet",
           "type": "siege",
           "damage": 40,
@@ -769,6 +772,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -868,6 +872,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -967,6 +972,7 @@
       "hitpoints": 85,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 10,
@@ -1052,6 +1058,7 @@
       "hitpoints": 100,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 12,
@@ -1136,6 +1143,7 @@
       "hitpoints": 125,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 9,
@@ -1186,6 +1194,7 @@
           "pbgid": 133275
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1275,6 +1284,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 11,
@@ -1325,6 +1335,7 @@
           "pbgid": 133276
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1414,6 +1425,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 13,
@@ -1464,6 +1476,7 @@
           "pbgid": 133277
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1554,6 +1567,7 @@
       "hitpoints": 190,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 19,
@@ -1577,6 +1591,7 @@
           "pbgid": 133280
         },
         {
+          "id": "poleax",
           "name": "Poleax",
           "type": "melee",
           "damage": 19,
@@ -1600,6 +1615,7 @@
           "pbgid": 2133556
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1696,6 +1712,7 @@
       "hitpoints": 230,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 24,
@@ -1719,6 +1736,7 @@
           "pbgid": 133278
         },
         {
+          "id": "poleax",
           "name": "Poleax",
           "type": "melee",
           "damage": 24,
@@ -1742,6 +1760,7 @@
           "pbgid": 2133555
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1838,6 +1857,7 @@
       "hitpoints": 270,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 29,
@@ -1861,6 +1881,7 @@
           "pbgid": 133279
         },
         {
+          "id": "poleax",
           "name": "Poleax",
           "type": "melee",
           "damage": 29,
@@ -1884,6 +1905,7 @@
           "pbgid": 2133554
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1979,6 +2001,7 @@
       "hitpoints": 450,
       "weapons": [
         {
+          "id": "ballista",
           "name": "Ballista",
           "type": "ranged",
           "damage": 35,
@@ -2095,6 +2118,7 @@
       "hitpoints": 145,
       "weapons": [
         {
+          "id": "incendiaries",
           "name": "Incendiaries",
           "type": "siege",
           "damage": 95,
@@ -2263,6 +2287,7 @@
       "hitpoints": 300,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2445,7 +2470,8 @@
           "siege",
           "monk",
           "khan",
-          "cavalry"
+          "cavalry",
+          "cattle"
         ]
       }
     },
@@ -2497,6 +2523,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -2520,6 +2547,7 @@
           "pbgid": 133281
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2614,6 +2642,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -2637,6 +2666,7 @@
           "pbgid": 133282
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2726,6 +2756,7 @@
       "hitpoints": 130,
       "weapons": [
         {
+          "id": "mangonel",
           "name": "Mangonel",
           "type": "siege",
           "damage": 10,
@@ -2793,6 +2824,7 @@
           "pbgid": 133314
         },
         {
+          "id": "incendiary",
           "name": "Incendiary",
           "type": "fire",
           "damage": 2,
@@ -2847,6 +2879,7 @@
           "pbgid": 133315
         },
         {
+          "id": "adjustable-crossbars",
           "name": "Adjustable Crossbars",
           "type": "siege",
           "damage": 10,
@@ -2935,127 +2968,6 @@
       }
     },
     {
-      "id": "militia-2",
-      "baseId": "militia",
-      "type": "unit",
-      "name": "Militia",
-      "pbgid": 2104839,
-      "attribName": "unit_militia_2_rus",
-      "age": 2,
-      "civs": [
-        "ru"
-      ],
-      "description": "Light melee infantry equipped with a polearm.\n+ Fast moving\n- Countered by Archers\n- Can't garrison\n- Loses life over time",
-      "classes": [
-        "annihilation_condition",
-        "formational",
-        "human",
-        "included_by_military_hotkeys",
-        "infantry",
-        "infantry_light",
-        "light_melee_infantry",
-        "melee",
-        "melee_infantry",
-        "military",
-        "militia",
-        "spearman"
-      ],
-      "displayClasses": [
-        "Light Melee Infantry"
-      ],
-      "unique": false,
-      "costs": {
-        "food": 20,
-        "wood": 0,
-        "stone": 0,
-        "gold": 0,
-        "vizier": null,
-        "oliveoil": null,
-        "silver": null,
-        "total": null,
-        "time": 0,
-        "popcap": 0
-      },
-      "producedBy": [],
-      "icon": "https://data.aoe4world.com/images/units/militia-2.png",
-      "hitpoints": 85,
-      "weapons": [
-        {
-          "name": "Militia Axe",
-          "type": "melee",
-          "damage": 6,
-          "speed": 1.625,
-          "range": {
-            "min": 0,
-            "max": 0.2875
-          },
-          "modifiers": [
-            {
-              "property": "meleeAttack",
-              "target": {
-                "class": [
-                  [
-                    "cavalry"
-                  ]
-                ]
-              },
-              "effect": "change",
-              "value": 4,
-              "type": "passive"
-            }
-          ],
-          "durations": {
-            "aim": 0,
-            "windup": 0.5,
-            "attack": 0.125,
-            "winddown": 0.75,
-            "reload": 0,
-            "setup": 0,
-            "teardown": 0,
-            "cooldown": 0.25
-          },
-          "attribName": "weapon_shield_militia_2_rus",
-          "pbgid": 2104847
-        },
-        {
-          "name": "Torch",
-          "type": "fire",
-          "damage": 10,
-          "speed": 2.125,
-          "range": {
-            "min": 0,
-            "max": 1.25
-          },
-          "modifiers": [],
-          "durations": {
-            "aim": 0,
-            "windup": 0.75,
-            "attack": 0.125,
-            "winddown": 0,
-            "reload": 0,
-            "setup": 0,
-            "teardown": 0,
-            "cooldown": 1.25
-          },
-          "attribName": "weapon_torch_rus",
-          "pbgid": 133324
-        }
-      ],
-      "armor": [],
-      "sight": {
-        "inner_height": 10,
-        "inner_radius": 12,
-        "outer_height": -15,
-        "outer_radius": 36,
-        "base": 21.6,
-        "line": 36,
-        "height": 10
-      },
-      "movement": {
-        "speed": 1.5
-      }
-    },
-    {
       "id": "militia-halberdier-2",
       "baseId": "militia-halberdier",
       "type": "unit",
@@ -3098,6 +3010,7 @@
       "hitpoints": 85,
       "weapons": [
         {
+          "id": "militia-axe",
           "name": "Militia Axe",
           "type": "melee",
           "damage": 6,
@@ -3135,6 +3048,7 @@
           "pbgid": 2104847
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3223,6 +3137,7 @@
       "hitpoints": 110,
       "weapons": [
         {
+          "id": "short-sword",
           "name": "Short Sword",
           "type": "melee",
           "damage": 1,
@@ -3410,6 +3325,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 7,
@@ -3475,6 +3391,7 @@
           "pbgid": 133287
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3560,6 +3477,7 @@
       "hitpoints": 90,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 8,
@@ -3625,6 +3543,7 @@
           "pbgid": 133288
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3710,6 +3629,7 @@
       "hitpoints": 110,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 9,
@@ -3771,10 +3691,11 @@
             "teardown": 0,
             "cooldown": 0.75
           },
-          "attribName": "weapon_spearman_3_rus",
-          "pbgid": 133289
+          "attribName": "weapon_spearman_3",
+          "pbgid": 127826
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3860,6 +3781,7 @@
       "hitpoints": 140,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 11,
@@ -3921,10 +3843,11 @@
             "teardown": 0,
             "cooldown": 0.75
           },
-          "attribName": "weapon_spearman_4_rus",
-          "pbgid": 133290
+          "attribName": "weapon_spearman_4",
+          "pbgid": 127827
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -4004,6 +3927,7 @@
       "hitpoints": 85,
       "weapons": [
         {
+          "id": "springald",
           "name": "Springald",
           "type": "ranged",
           "damage": 15,
@@ -4109,7 +4033,7 @@
         "streltsy"
       ],
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "unique": true,
       "costs": {
@@ -4128,6 +4052,7 @@
       "hitpoints": 130,
       "weapons": [
         {
+          "id": "handcannon",
           "name": "Handcannon",
           "type": "ranged",
           "damage": 38,
@@ -4259,6 +4184,7 @@
       "hitpoints": 50,
       "weapons": [
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -4282,6 +4208,7 @@
           "pbgid": 123522
         },
         {
+          "id": "knife",
           "name": "Knife",
           "type": "melee",
           "damage": 6,
@@ -4369,6 +4296,7 @@
       "hitpoints": 190,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 11,
@@ -4392,6 +4320,7 @@
           "pbgid": 2031620
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,

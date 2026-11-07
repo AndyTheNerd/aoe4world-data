@@ -544,6 +544,7 @@
           "hitpoints": 1700,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 10,
@@ -582,6 +583,7 @@
               "pbgid": 127357
             },
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 40,
@@ -620,6 +622,7 @@
               "pbgid": 127365
             },
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "ranged",
               "damage": 70,
@@ -658,6 +661,7 @@
               "pbgid": 171004
             },
             {
+              "id": "hot-oil",
               "name": "Hot Oil",
               "type": "siege",
               "damage": 30,
@@ -681,7 +685,8 @@
               "pbgid": 145523
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -719,7 +724,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -757,7 +763,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -795,7 +802,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -833,7 +841,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -1889,12 +1898,12 @@
           "unique": true,
           "costs": {
             "food": 0,
-            "wood": 250,
+            "wood": 275,
             "stone": 0,
             "gold": 0,
-            "total": 250,
+            "total": 275,
             "popcap": 0,
-            "time": 20
+            "time": 30
           },
           "producedBy": [
             "villager"
@@ -1940,6 +1949,7 @@
         "hq",
         "land_food_deposit_4_by_4",
         "resource_drop_off",
+        "scar_town_center",
         "siegeable",
         "town_bell_target",
         "town_center",
@@ -1969,6 +1979,7 @@
             "hq",
             "land_food_deposit_4_by_4",
             "resource_drop_off",
+            "scar_town_center",
             "siegeable",
             "town_bell_target",
             "town_center",
@@ -1986,7 +1997,7 @@
             "gold": 0,
             "total": 750,
             "popcap": 0,
-            "time": 150
+            "time": 165
           },
           "producedBy": [
             "villager"

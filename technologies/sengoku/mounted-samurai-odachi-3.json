@@ -9,11 +9,11 @@
   "civs": [
     "sen"
   ],
-  "description": "Equip Mounted Samurai with an Odachi, a long sword that deals +4 bonus damage against infantry.",
+  "description": "Equip Mounted Samurai with an Odachi, a long sword that deals +3 bonus damage against infantry.",
   "classes": [
     "japanese_ha_sen_upgrade",
     "military_upgrade",
-    "scar_feudal_age_upgrade",
+    "scar_imperial_age_upgrade",
     "scar_military_upgrade",
     "scar_nontiered_upgrade"
   ],

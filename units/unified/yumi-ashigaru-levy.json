@@ -76,6 +76,7 @@
       "hitpoints": 65,
       "weapons": [
         {
+          "id": "yumi",
           "name": "Yumi",
           "type": "ranged",
           "damage": 4,
@@ -106,8 +107,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -130,6 +130,7 @@
           "pbgid": 2127613
         },
         {
+          "id": "yumi-incendiary",
           "name": "Yumi Incendiary",
           "type": "ranged",
           "damage": 4,
@@ -160,8 +161,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -184,6 +184,7 @@
           "pbgid": 2145559
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "siege",
           "damage": 3,
@@ -219,7 +220,13 @@
       },
       "movement": {
         "speed": 1.375
-      }
+      },
+      "recruits": [
+        {
+          "item": "units/yumi-ashigaru-levy",
+          "count": 3
+        }
+      ]
     }
   ]
 }

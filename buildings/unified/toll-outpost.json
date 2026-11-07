@@ -69,6 +69,7 @@
       "hitpoints": 750,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 10,
@@ -107,6 +108,7 @@
           "pbgid": 127357
         },
         {
+          "id": "springald",
           "name": "Springald",
           "type": "ranged",
           "damage": 40,
@@ -145,6 +147,7 @@
           "pbgid": 127365
         },
         {
+          "id": "cannon",
           "name": "Cannon",
           "type": "ranged",
           "damage": 70,
@@ -183,6 +186,7 @@
           "pbgid": 171004
         },
         {
+          "id": "hot-oil",
           "name": "Hot Oil",
           "type": "siege",
           "damage": 30,
@@ -206,7 +210,8 @@
           "pbgid": 145523
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -244,7 +249,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -282,7 +288,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -320,7 +327,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -358,7 +366,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -396,6 +405,7 @@
           "pbgid": 171016
         },
         {
+          "id": "javelin",
           "name": "Javelin",
           "type": "ranged",
           "damage": 12,

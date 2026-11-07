@@ -1,7 +1,10 @@
 {
+  "id": "malians",
   "name": "Malians",
-  "description": "The Malian economy booms with options for gold and food production. Claiming gold deposits for their Pit Mines, they leverage that growth to produce unique infantry units that strike from stealth and hurl javelins at enemies.",
+  "abbr": "ma",
+  "slug": "malians",
   "classes": "Gold Economy, Infantry, Cattle",
+  "description": "The Malian economy booms with options for gold and food production. Claiming gold deposits for their Pit Mines, they leverage that growth to produce unique infantry units that strike from stealth and hurl javelins at enemies.",
   "overview": [
     {
       "title": "Civilization Bonuses",
@@ -320,7 +323,7 @@
     },
     "griot-bara-3": {
       "ability-food-festival-4": null,
-      "ability-military-festival-4": null,
+      "ability-production-festival-4": null,
       "ability-siege-festival-4": null
     },
     "fort-of-the-huntress-3": {

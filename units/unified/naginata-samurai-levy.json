@@ -82,6 +82,7 @@
       "hitpoints": 100,
       "weapons": [
         {
+          "id": "naginata",
           "name": "Naginata",
           "type": "melee",
           "damage": 8,
@@ -105,6 +106,7 @@
           "pbgid": 2127560
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -128,6 +130,7 @@
           "pbgid": 123518
         },
         {
+          "id": "yumi",
           "name": "Yumi",
           "type": "ranged",
           "damage": 8,
@@ -203,7 +206,26 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "recruits": [
+        {
+          "item": "units/naginata-samurai-levy",
+          "count": 1
+        }
+      ],
+      "productionVariations": [
+        {
+          "venue": "hojo-clan-daimyo-estate",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     }
   ]
 }

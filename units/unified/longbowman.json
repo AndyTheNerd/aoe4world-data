@@ -79,6 +79,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "longbow",
           "name": "Longbow",
           "type": "ranged",
           "damage": 6,
@@ -109,8 +110,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -197,6 +197,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "longbow",
           "name": "Longbow",
           "type": "ranged",
           "damage": 8,
@@ -227,8 +228,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -315,6 +315,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "longbow",
           "name": "Longbow",
           "type": "ranged",
           "damage": 9,
@@ -345,8 +346,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -437,6 +437,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "longbow",
           "name": "Longbow",
           "type": "ranged",
           "damage": 6,
@@ -467,8 +468,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -503,7 +503,21 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "council-hall",
+          "costs": {
+            "food": 38,
+            "wood": 47.5,
+            "gold": 0,
+            "stone": 0,
+            "time": 15,
+            "popcap": 1,
+            "total": 85.5
+          }
+        }
+      ]
     },
     {
       "id": "longbowman-3",
@@ -556,6 +570,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "longbow",
           "name": "Longbow",
           "type": "ranged",
           "damage": 8,
@@ -586,8 +601,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -622,7 +636,21 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "council-hall",
+          "costs": {
+            "food": 38,
+            "wood": 47.5,
+            "gold": 0,
+            "stone": 0,
+            "time": 15,
+            "popcap": 1,
+            "total": 85.5
+          }
+        }
+      ]
     },
     {
       "id": "longbowman-4",
@@ -675,6 +703,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "longbow",
           "name": "Longbow",
           "type": "ranged",
           "damage": 9,
@@ -705,8 +734,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -741,7 +769,21 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "council-hall",
+          "costs": {
+            "food": 38,
+            "wood": 47.5,
+            "gold": 0,
+            "stone": 0,
+            "time": 15,
+            "popcap": 1,
+            "total": 85.5
+          }
+        }
+      ]
     }
   ]
 }

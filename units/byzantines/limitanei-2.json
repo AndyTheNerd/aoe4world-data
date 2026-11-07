@@ -45,9 +45,10 @@
     "palatine-school"
   ],
   "icon": "https://data.aoe4world.com/images/units/limitanei-2.png",
-  "hitpoints": 100,
+  "hitpoints": 105,
   "weapons": [
     {
+      "id": "spear",
       "name": "Spear",
       "type": "melee",
       "damage": 8,
@@ -113,6 +114,7 @@
       "pbgid": 2136368
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,
@@ -148,5 +150,20 @@
   },
   "movement": {
     "speed": 1.25
-  }
+  },
+  "productionVariations": [
+    {
+      "venue": "palatine-school",
+      "costs": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0,
+        "oliveoil": 0,
+        "time": 17,
+        "popcap": 1,
+        "total": 0
+      }
+    }
+  ]
 }

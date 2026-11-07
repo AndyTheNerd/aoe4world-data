@@ -44,9 +44,10 @@
   "hitpoints": 90,
   "weapons": [
     {
+      "id": "bow",
       "name": "Bow",
       "type": "ranged",
-      "damage": 7,
+      "damage": 8,
       "speed": 1.625,
       "range": {
         "min": 0,
@@ -74,8 +75,7 @@
             "class": [
               [
                 "light",
-                "gunpowder",
-                "infantry"
+                "gunpowder"
               ]
             ]
           },

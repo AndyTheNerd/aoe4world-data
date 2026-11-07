@@ -48,6 +48,7 @@
   "hitpoints": 180,
   "weapons": [
     {
+      "id": "sword",
       "name": "Sword",
       "type": "melee",
       "damage": 19,
@@ -71,6 +72,7 @@
       "pbgid": 2131337
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,
@@ -94,6 +96,7 @@
       "pbgid": 2135368
     },
     {
+      "id": "lance",
       "name": "Lance",
       "type": "melee",
       "damage": 29,
@@ -138,5 +141,19 @@
   },
   "movement": {
     "speed": 1.625
-  }
+  },
+  "productionVariations": [
+    {
+      "venue": "golden-tent",
+      "costs": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 65,
+        "time": 60,
+        "popcap": 1,
+        "total": 65
+      }
+    }
+  ]
 }

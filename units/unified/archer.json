@@ -19,7 +19,8 @@
     "mo",
     "ot",
     "ru",
-    "tug"
+    "tug",
+    "vik"
   ],
   "unique": false,
   "displayClasses": [
@@ -93,6 +94,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -123,8 +125,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -208,6 +209,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -238,8 +240,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -323,6 +324,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -353,8 +355,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -438,6 +439,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -468,8 +470,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -553,6 +554,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -583,8 +585,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -668,6 +669,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -698,8 +700,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -784,6 +785,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -814,8 +816,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -900,6 +901,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -930,8 +932,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -1016,6 +1017,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -1046,8 +1048,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -1131,6 +1132,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -1161,8 +1163,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -1246,6 +1247,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -1276,8 +1278,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -1361,6 +1362,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -1391,8 +1393,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -1476,6 +1477,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -1506,8 +1508,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -1591,6 +1592,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -1621,8 +1623,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -1706,6 +1707,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -1736,8 +1738,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -1821,6 +1822,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -1851,8 +1853,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -1936,6 +1937,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -1966,8 +1968,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2051,6 +2052,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -2081,8 +2083,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2165,6 +2166,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -2195,8 +2197,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2279,6 +2280,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -2309,8 +2311,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2393,6 +2394,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -2423,8 +2425,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2508,6 +2509,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -2538,8 +2540,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2623,6 +2624,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -2653,8 +2655,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2738,6 +2739,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -2768,8 +2770,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2811,8 +2812,8 @@
       "baseId": "archer",
       "type": "unit",
       "name": "Archer",
-      "pbgid": 132269,
-      "attribName": "unit_archer_2_fre",
+      "pbgid": 7079577,
+      "attribName": "unit_archer_2_fre_ha_01",
       "age": 2,
       "civs": [
         "je"
@@ -2853,6 +2854,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -2883,8 +2885,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2926,8 +2927,8 @@
       "baseId": "archer",
       "type": "unit",
       "name": "Veteran Archer",
-      "pbgid": 132270,
-      "attribName": "unit_archer_3_fre",
+      "pbgid": 7276370,
+      "attribName": "unit_archer_3_fre_ha_01",
       "age": 3,
       "civs": [
         "je"
@@ -2968,6 +2969,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -2998,8 +3000,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -3041,8 +3042,8 @@
       "baseId": "archer",
       "type": "unit",
       "name": "Elite Archer",
-      "pbgid": 132271,
-      "attribName": "unit_archer_4_fre",
+      "pbgid": 4220886,
+      "attribName": "unit_archer_4_fre_ha_01",
       "age": 4,
       "civs": [
         "je"
@@ -3083,6 +3084,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -3113,8 +3115,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -3198,6 +3199,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -3228,8 +3230,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -3313,6 +3314,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -3343,8 +3345,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -3428,6 +3429,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -3458,8 +3460,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -3543,6 +3544,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -3573,8 +3575,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -3597,6 +3598,7 @@
           "pbgid": 106763
         },
         {
+          "id": "poisoned-arrows",
           "name": "Poisoned Arrows",
           "type": "ranged",
           "damage": 5,
@@ -3627,8 +3629,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -3712,6 +3713,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -3742,8 +3744,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -3766,6 +3767,7 @@
           "pbgid": 127828
         },
         {
+          "id": "poisoned-arrows",
           "name": "Poisoned Arrows",
           "type": "ranged",
           "damage": 7,
@@ -3796,8 +3798,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -3881,6 +3882,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -3911,8 +3913,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -3935,6 +3936,7 @@
           "pbgid": 127829
         },
         {
+          "id": "poisoned-arrows",
           "name": "Poisoned Arrows",
           "type": "ranged",
           "damage": 8,
@@ -3965,8 +3967,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -4049,6 +4050,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -4079,8 +4081,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -4163,6 +4164,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -4193,8 +4195,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -4277,6 +4278,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -4307,8 +4309,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -4394,6 +4395,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -4424,8 +4426,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -4460,7 +4461,22 @@
       },
       "movement": {
         "speed": 1.25
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 15,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "archer-3",
@@ -4511,6 +4527,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -4541,8 +4558,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -4577,7 +4593,22 @@
       },
       "movement": {
         "speed": 1.25
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 15,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "archer-4",
@@ -4628,6 +4659,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -4658,8 +4690,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -4694,7 +4725,22 @@
       },
       "movement": {
         "speed": 1.25
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 15,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "archer-2",
@@ -4743,6 +4789,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -4773,8 +4820,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -4858,6 +4904,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -4888,8 +4935,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -4973,6 +5019,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -5003,8 +5050,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -5088,6 +5134,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -5118,8 +5165,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -5203,6 +5249,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 7,
@@ -5233,8 +5280,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -5318,6 +5364,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 8,
@@ -5348,8 +5395,352 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
+                    "gunpowder"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 8,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0.25,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0.5,
+            "reload": 0.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_archer_4",
+          "pbgid": 127829
+        }
+      ],
+      "armor": [],
+      "sight": {
+        "inner_height": 10,
+        "inner_radius": 12,
+        "outer_height": -15,
+        "outer_radius": 36,
+        "base": 21.6,
+        "line": 36,
+        "height": 10
+      },
+      "movement": {
+        "speed": 1.25
+      }
+    },
+    {
+      "id": "archer-2",
+      "baseId": "archer",
+      "type": "unit",
+      "name": "Archer",
+      "pbgid": 7301063,
+      "attribName": "unit_archer_2_vik",
+      "age": 2,
+      "civs": [
+        "vik"
+      ],
+      "description": "Cheap ranged infantry with good damage vs. unarmored targets.\n+ High rate of fire\n- Weak against high ranged armor targets\n- Countered by Horsemen",
+      "classes": [
+        "annihilation_condition",
+        "archer",
+        "archer_incendiary_age_2",
+        "find_non_siege_land_military",
+        "formational",
+        "human",
+        "included_by_military_hotkeys",
+        "infantry",
+        "infantry_light",
+        "land_military",
+        "military",
+        "ranged",
+        "ranged_infantry"
+      ],
+      "displayClasses": [
+        "Light Ranged Infantry"
+      ],
+      "unique": false,
+      "costs": {
+        "food": 30,
+        "wood": 50,
+        "stone": 0,
+        "gold": 0,
+        "total": 80,
+        "popcap": 1,
+        "time": 15
+      },
+      "producedBy": [
+        "archery-range"
+      ],
+      "icon": "https://data.aoe4world.com/images/units/archer-2.png",
+      "hitpoints": 70,
+      "weapons": [
+        {
+          "id": "bow",
+          "name": "Bow",
+          "type": "ranged",
+          "damage": 5,
+          "speed": 1.625,
+          "range": {
+            "min": 0,
+            "max": 5
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "light",
+                    "melee",
                     "infantry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 5,
+              "type": "passive"
+            },
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "light",
+                    "gunpowder"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 5,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0.25,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0.5,
+            "reload": 0.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_archer_2",
+          "pbgid": 106763
+        }
+      ],
+      "armor": [],
+      "sight": {
+        "inner_height": 10,
+        "inner_radius": 12,
+        "outer_height": -15,
+        "outer_radius": 36,
+        "base": 21.6,
+        "line": 36,
+        "height": 10
+      },
+      "movement": {
+        "speed": 1.25
+      }
+    },
+    {
+      "id": "archer-3",
+      "baseId": "archer",
+      "type": "unit",
+      "name": "Veteran Archer",
+      "pbgid": 7576152,
+      "attribName": "unit_archer_3_vik",
+      "age": 3,
+      "civs": [
+        "vik"
+      ],
+      "description": "Cheap ranged infantry with good damage vs. unarmored targets.\n+ High rate of fire\n- Weak against high ranged armor targets\n- Countered by Horsemen",
+      "classes": [
+        "annihilation_condition",
+        "archer",
+        "archer_incendiary_age_3",
+        "find_non_siege_land_military",
+        "formational",
+        "human",
+        "included_by_military_hotkeys",
+        "infantry",
+        "infantry_light",
+        "land_military",
+        "military",
+        "ranged",
+        "ranged_infantry"
+      ],
+      "displayClasses": [
+        "Light Ranged Infantry"
+      ],
+      "unique": false,
+      "costs": {
+        "food": 30,
+        "wood": 50,
+        "stone": 0,
+        "gold": 0,
+        "total": 80,
+        "popcap": 1,
+        "time": 15
+      },
+      "producedBy": [
+        "archery-range"
+      ],
+      "icon": "https://data.aoe4world.com/images/units/archer-3.png",
+      "hitpoints": 80,
+      "weapons": [
+        {
+          "id": "bow",
+          "name": "Bow",
+          "type": "ranged",
+          "damage": 7,
+          "speed": 1.625,
+          "range": {
+            "min": 0,
+            "max": 5
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "light",
+                    "melee",
+                    "infantry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 7,
+              "type": "passive"
+            },
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "light",
+                    "gunpowder"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 7,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0.25,
+            "windup": 0,
+            "attack": 0.125,
+            "winddown": 0.5,
+            "reload": 0.75,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "attribName": "weapon_archer_3",
+          "pbgid": 127828
+        }
+      ],
+      "armor": [],
+      "sight": {
+        "inner_height": 10,
+        "inner_radius": 12,
+        "outer_height": -15,
+        "outer_radius": 36,
+        "base": 21.6,
+        "line": 36,
+        "height": 10
+      },
+      "movement": {
+        "speed": 1.25
+      }
+    },
+    {
+      "id": "archer-4",
+      "baseId": "archer",
+      "type": "unit",
+      "name": "Elite Archer",
+      "pbgid": 6779031,
+      "attribName": "unit_archer_4_vik",
+      "age": 4,
+      "civs": [
+        "vik"
+      ],
+      "description": "Cheap ranged infantry with good damage vs. unarmored targets.\n+ High rate of fire\n- Weak against high ranged armor targets\n- Countered by Horsemen",
+      "classes": [
+        "annihilation_condition",
+        "archer",
+        "archer_incendiary_age_4",
+        "find_non_siege_land_military",
+        "formational",
+        "human",
+        "included_by_military_hotkeys",
+        "infantry",
+        "infantry_light",
+        "land_military",
+        "military",
+        "ranged",
+        "ranged_infantry"
+      ],
+      "displayClasses": [
+        "Light Ranged Infantry"
+      ],
+      "unique": false,
+      "costs": {
+        "food": 30,
+        "wood": 50,
+        "stone": 0,
+        "gold": 0,
+        "total": 80,
+        "popcap": 1,
+        "time": 15
+      },
+      "producedBy": [
+        "archery-range"
+      ],
+      "icon": "https://data.aoe4world.com/images/units/archer-4.png",
+      "hitpoints": 95,
+      "weapons": [
+        {
+          "id": "bow",
+          "name": "Bow",
+          "type": "ranged",
+          "damage": 8,
+          "speed": 1.625,
+          "range": {
+            "min": 0,
+            "max": 5
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "light",
+                    "melee",
+                    "infantry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 8,
+              "type": "passive"
+            },
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "light",
+                    "gunpowder"
                   ]
                 ]
               },

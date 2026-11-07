@@ -35,6 +35,7 @@
     "abbasid_ha_01_upgrade",
     "abbasid_upgrade",
     "ayyubid_cmp_upgrade",
+    "byzantine_ha_mac_upgrade",
     "byzantine_upgrade",
     "chinese_ha_01_upgrade",
     "chinese_upgrade",
@@ -42,8 +43,12 @@
     "english_upgrade",
     "french_ha_01_upgrade",
     "french_upgrade",
+    "hre_ha_01_upgrade",
     "hre_upgrade",
+    "japanese_ha_sen_upgrade",
     "japanese_upgrade",
+    "jin_upgrade",
+    "lancaster_upgrade",
     "malian_upgrade",
     "military_upgrade",
     "mongol_upgrade",
@@ -51,8 +56,10 @@
     "scar_castle_age_upgrade",
     "scar_military_upgrade",
     "scar_nontiered_upgrade",
-    "scar_rogue_exclude",
-    "sultinate_upgrade"
+    "scots_upgrade",
+    "templar_upgrade",
+    "sultinate_upgrade",
+    "sultanate_ha_tug_upgrade"
   ],
   "minAge": 3,
   "icon": "https://data.aoe4world.com/images/technologies/military-academy-3.png",
@@ -74,6 +81,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -81,8 +89,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -90,7 +102,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -155,6 +168,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -162,8 +176,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -171,7 +189,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -236,6 +255,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -243,8 +263,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -252,7 +276,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -318,6 +343,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -325,8 +351,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -334,7 +364,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -416,7 +447,8 @@
         "time": 300
       },
       "producedBy": [
-        "blacksmith"
+        "blacksmith",
+        "tower-of-victory"
       ],
       "icon": "https://data.aoe4world.com/images/technologies/military-academy-3.png",
       "effects": [
@@ -465,6 +497,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -472,8 +505,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -481,7 +518,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -546,6 +584,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -553,8 +592,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -562,7 +605,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -627,6 +671,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -634,8 +679,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -643,7 +692,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -709,6 +759,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -716,8 +767,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -725,7 +780,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -790,6 +846,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -797,8 +854,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -806,7 +867,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -871,6 +933,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -878,8 +941,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -887,7 +954,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -952,6 +1020,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -959,8 +1028,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -968,7 +1041,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -1033,6 +1107,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -1040,8 +1115,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -1049,7 +1128,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -1111,26 +1191,11 @@
       ],
       "description": "Increase the production speed of infantry, cavalry, siege, and transport units at buildings by 33%.\nDoes not affect religious units or other support units.",
       "classes": [
-        "abbasid_ha_01_upgrade",
-        "abbasid_upgrade",
-        "ayyubid_cmp_upgrade",
-        "byzantine_upgrade",
-        "chinese_ha_01_upgrade",
-        "chinese_upgrade",
-        "crusader_cmp_upgrade",
-        "english_upgrade",
-        "french_ha_01_upgrade",
-        "french_upgrade",
-        "hre_upgrade",
-        "japanese_upgrade",
-        "malian_upgrade",
+        "byzantine_ha_mac_upgrade",
         "military_upgrade",
-        "mongol_upgrade",
-        "rus_upgrade",
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
-        "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scar_nontiered_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -1196,6 +1261,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -1203,8 +1269,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -1212,7 +1282,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -1277,6 +1348,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -1284,8 +1356,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -1293,7 +1369,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -1358,6 +1435,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -1365,8 +1443,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -1374,7 +1456,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -1440,6 +1523,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -1447,8 +1531,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -1456,7 +1544,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -1521,6 +1610,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -1528,8 +1618,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -1537,7 +1631,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -1603,7 +1698,7 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "sultinate_upgrade"
+        "sultanate_ha_tug_upgrade"
       ],
       "displayClasses": [
         "Production Technology"
@@ -1668,6 +1763,7 @@
         "abbasid_ha_01_upgrade",
         "abbasid_upgrade",
         "ayyubid_cmp_upgrade",
+        "byzantine_ha_mac_upgrade",
         "byzantine_upgrade",
         "chinese_ha_01_upgrade",
         "chinese_upgrade",
@@ -1675,8 +1771,12 @@
         "english_upgrade",
         "french_ha_01_upgrade",
         "french_upgrade",
+        "hre_ha_01_upgrade",
         "hre_upgrade",
+        "japanese_ha_sen_upgrade",
         "japanese_upgrade",
+        "jin_upgrade",
+        "lancaster_upgrade",
         "malian_upgrade",
         "military_upgrade",
         "mongol_upgrade",
@@ -1684,7 +1784,8 @@
         "scar_castle_age_upgrade",
         "scar_military_upgrade",
         "scar_nontiered_upgrade",
-        "scar_rogue_exclude"
+        "scots_upgrade",
+        "templar_upgrade"
       ],
       "displayClasses": [
         "Production Technology"

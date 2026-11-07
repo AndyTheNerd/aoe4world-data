@@ -90,6 +90,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 12,
@@ -113,6 +114,7 @@
               "pbgid": 195285
             },
             {
+              "id": "kilij",
               "name": "Kilij",
               "type": "melee",
               "damage": 15,
@@ -136,6 +138,7 @@
               "pbgid": 193005
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -272,6 +275,7 @@
           "name": "Archer",
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 5,
@@ -302,8 +306,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -351,6 +354,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 7,
@@ -381,8 +385,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -430,6 +433,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 8,
@@ -460,8 +464,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -566,6 +569,7 @@
           "hitpoints": 450,
           "weapons": [
             {
+              "id": "ballista",
               "name": "Ballista",
               "type": "ranged",
               "damage": 35,
@@ -693,13 +697,13 @@
       "baseId": "ballista-elephant",
       "age": 3,
       "costs": {
-        "food": 300,
+        "food": 250,
         "wood": 0,
         "stone": 0,
         "gold": 350,
-        "total": 650,
+        "total": 600,
         "popcap": 4,
-        "time": 45
+        "time": 40
       },
       "producedBy": [
         "siege-workshop"
@@ -722,6 +726,7 @@
           "name": "Ballista Elephant",
           "weapons": [
             {
+              "id": "ballista",
               "name": "Ballista",
               "type": "ranged",
               "damage": 18,
@@ -793,6 +798,7 @@
           "hitpoints": 475,
           "weapons": [
             {
+              "id": "ballista",
               "name": "Ballista",
               "type": "ranged",
               "damage": 20,
@@ -925,9 +931,10 @@
             "siege-workshop"
           ],
           "icon": "https://data.aoe4world.com/images/units/battering-ram-3.png",
-          "hitpoints": 370,
+          "hitpoints": 410,
           "weapons": [
             {
+              "id": "ram",
               "name": "Ram",
               "type": "siege",
               "damage": 200,
@@ -1068,6 +1075,7 @@
           "hitpoints": 210,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 55,
@@ -1238,6 +1246,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "trebuchet",
               "name": "Trebuchet",
               "type": "siege",
               "damage": 40,
@@ -1391,6 +1400,7 @@
           "name": "Crossbowman",
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 11,
@@ -1454,6 +1464,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 14,
@@ -1567,6 +1578,7 @@
           "hitpoints": 300,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -1703,6 +1715,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "incendiaries",
               "name": "Incendiaries",
               "type": "siege",
               "damage": 95,
@@ -1843,6 +1856,7 @@
           "hitpoints": 150,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 4,
@@ -1906,7 +1920,7 @@
       ],
       "unique": false,
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "classes": [
         "annihilation_condition",
@@ -1953,7 +1967,7 @@
             "ranged_infantry"
           ],
           "displayClasses": [
-            "Ranged Gunpowder Infantry"
+            "Medium Gunpowder Infantry"
           ],
           "unique": false,
           "costs": {
@@ -1972,6 +1986,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 38,
@@ -2091,11 +2106,26 @@
       "movement": {
         "speed": 1
       },
+      "productionVariations": [
+        {
+          "venue": "dome-of-the-faith",
+          "costs": {
+            "food": 150,
+            "wood": 0,
+            "gold": 155,
+            "stone": 0,
+            "time": 40,
+            "popcap": 3,
+            "total": 305
+          }
+        }
+      ],
       "shared": {
         "healer-elephant-2": {
           "name": "Healer Elephant",
           "weapons": [
             {
+              "id": "tusks",
               "name": "Tusks",
               "type": "melee",
               "damage": 15,
@@ -2151,6 +2181,7 @@
           "icon": "https://data.aoe4world.com/images/units/healer-elephant-4.png",
           "weapons": [
             {
+              "id": "tusks",
               "name": "Tusks",
               "type": "melee",
               "damage": 15,
@@ -2285,7 +2316,21 @@
           },
           "movement": {
             "speed": 1.125
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "dome-of-the-faith",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 85,
+                "stone": 0,
+                "time": 30,
+                "popcap": 1,
+                "total": 85
+              }
+            }
+          ]
         }
       ],
       "shared": {}
@@ -2372,6 +2417,7 @@
           "name": "Lancer",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 24,
@@ -2395,6 +2441,7 @@
               "pbgid": 106614
             },
             {
+              "id": "kilij",
               "name": "Kilij",
               "type": "melee",
               "damage": 27,
@@ -2418,6 +2465,7 @@
               "pbgid": 193018
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2460,6 +2508,7 @@
           "hitpoints": 270,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 29,
@@ -2483,6 +2532,7 @@
               "pbgid": 127822
             },
             {
+              "id": "kilij",
               "name": "Kilij",
               "type": "melee",
               "damage": 32,
@@ -2506,6 +2556,7 @@
               "pbgid": 193019
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2623,6 +2674,7 @@
           "name": "Man-at-Arms",
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 12,
@@ -2646,6 +2698,7 @@
               "pbgid": 195285
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2688,6 +2741,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 14,
@@ -2711,6 +2765,7 @@
               "pbgid": 195287
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2817,6 +2872,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "mangonel",
               "name": "Mangonel",
               "type": "siege",
               "damage": 10,
@@ -2884,6 +2940,7 @@
               "pbgid": 127503
             },
             {
+              "id": "incendiary",
               "name": "Incendiary",
               "type": "fire",
               "damage": 2,
@@ -2938,6 +2995,7 @@
               "pbgid": 127724
             },
             {
+              "id": "adjustable-crossbars",
               "name": "Adjustable Crossbars",
               "type": "siege",
               "damage": 10,
@@ -3115,6 +3173,7 @@
           "name": "Raider Elephant",
           "weapons": [
             {
+              "id": "tusks",
               "name": "Tusks",
               "type": "melee",
               "damage": 18,
@@ -3180,6 +3239,7 @@
           "hitpoints": 285,
           "weapons": [
             {
+              "id": "tusks",
               "name": "Tusks",
               "type": "melee",
               "damage": 23,
@@ -3249,6 +3309,7 @@
           "hitpoints": 410,
           "weapons": [
             {
+              "id": "tusks",
               "name": "Tusks",
               "type": "melee",
               "damage": 28,
@@ -3394,6 +3455,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "short-sword",
               "name": "Short Sword",
               "type": "melee",
               "damage": 1,
@@ -3660,6 +3722,7 @@
           "name": "Spearman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 7,
@@ -3725,6 +3788,7 @@
               "pbgid": 106762
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3758,6 +3822,7 @@
           "hitpoints": 90,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 8,
@@ -3823,6 +3888,7 @@
               "pbgid": 127825
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3856,6 +3922,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -3921,6 +3988,7 @@
               "pbgid": 127826
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3954,6 +4022,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -4019,6 +4088,7 @@
               "pbgid": 127827
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4302,7 +4372,8 @@
               "siege",
               "monk",
               "khan",
-              "cavalry"
+              "cavalry",
+              "cattle"
             ]
           }
         }
@@ -4375,6 +4446,7 @@
           "hitpoints": 50,
           "weapons": [
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4398,6 +4470,7 @@
               "pbgid": 123522
             },
             {
+              "id": "knife",
               "name": "Knife",
               "type": "melee",
               "damage": 6,
@@ -4521,6 +4594,7 @@
           "hitpoints": 800,
           "weapons": [
             {
+              "id": "tusks",
               "name": "Tusks",
               "type": "melee",
               "damage": 50,
@@ -4558,6 +4632,7 @@
               "pbgid": 9002936
             },
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 25,
@@ -4719,6 +4794,7 @@
           "hitpoints": 500,
           "weapons": [
             {
+              "id": "weapon-dummy-elephant-worker",
               "name": "(translation not found) (undefined)",
               "type": "melee",
               "damage": 0,
@@ -4834,6 +4910,7 @@
           "hitpoints": 700,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 45,

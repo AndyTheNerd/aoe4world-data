@@ -46,9 +46,10 @@
     "golden-tent"
   ],
   "icon": "https://data.aoe4world.com/images/units/torguud-4.png",
-  "hitpoints": 300,
+  "hitpoints": 280,
   "weapons": [
     {
+      "id": "mace",
       "name": "Mace",
       "type": "melee",
       "damage": 17,
@@ -72,6 +73,7 @@
       "pbgid": 9001309
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,
@@ -95,6 +97,7 @@
       "pbgid": 9005310
     },
     {
+      "id": "lance",
       "name": "Lance",
       "type": "melee",
       "damage": 26,

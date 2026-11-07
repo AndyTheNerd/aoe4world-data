@@ -9,7 +9,7 @@
   "civs": [
     "by"
   ],
-  "description": "Highly mobile and durable melee unit effective against all cavalry.\n+Bonus damage to cavalry\n+Causes enemy cavalry to deal less damage\n-High cost\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Contract.",
+  "description": "Highly mobile and durable melee unit effective against all cavalry.\n+Bonus damage to cavalry\n+Causes enemy cavalry to deal less damage\n-High cost\n\nMercenary that can be purchased per 2 units for a total of 480 Olive Oil.\n\nRequires the Silk Road Mercenary Contract.",
   "classes": [
     "annihilation_condition",
     "camel",
@@ -51,6 +51,7 @@
   "hitpoints": 270,
   "weapons": [
     {
+      "id": "sword",
       "name": "Sword",
       "type": "melee",
       "damage": 14,
@@ -101,6 +102,7 @@
       "pbgid": 204178
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,

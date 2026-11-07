@@ -30,7 +30,7 @@
     "gold": 0,
     "total": 250,
     "popcap": 0,
-    "time": 90
+    "time": 60
   },
   "producedBy": [
     "villager"
@@ -39,6 +39,7 @@
   "hitpoints": 3000,
   "weapons": [
     {
+      "id": "springald",
       "name": "Springald",
       "type": "ranged",
       "damage": 60,

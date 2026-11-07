@@ -30,7 +30,7 @@
   ],
   "minAge": 3,
   "icon": "https://data.aoe4world.com/images/units/landsknecht-3.png",
-  "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 480 Olive Oil.\n\nRequires the Western Mercenary Contract.",
+  "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 450 Olive Oil.\n\nRequires the Western Mercenary Contract.",
   "variations": [
     {
       "id": "landsknecht-3",
@@ -43,7 +43,7 @@
       "civs": [
         "by"
       ],
-      "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 480 Olive Oil.\n\nRequires the Western Mercenary Contract.",
+      "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 450 Olive Oil.\n\nRequires the Western Mercenary Contract.",
       "classes": [
         "annihilation_condition",
         "armored",
@@ -69,8 +69,8 @@
         "wood": 0,
         "stone": 0,
         "gold": 0,
-        "oliveoil": 160,
-        "total": 160,
+        "oliveoil": 150,
+        "total": 150,
         "popcap": 1,
         "time": 80
       },
@@ -82,6 +82,7 @@
       "hitpoints": 90,
       "weapons": [
         {
+          "id": "zweihander",
           "name": "Zweihander",
           "type": "melee",
           "damage": 17,
@@ -105,6 +106,7 @@
           "pbgid": 136942
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -157,7 +159,7 @@
       "civs": [
         "by"
       ],
-      "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 480 Olive Oil.\n\nRequires the Western Mercenary Contract.",
+      "description": "Brave unarmored infantry with an enormous two-handed sword, effective in mixed armies.\n+ Melee attack deals area damage\n- Low health\n- Countered by Archers\n\nMercenary that can be purchased per 3 units for a total of 450 Olive Oil.\n\nRequires the Western Mercenary Contract.",
       "classes": [
         "annihilation_condition",
         "armored",
@@ -183,8 +185,8 @@
         "wood": 0,
         "stone": 0,
         "gold": 0,
-        "oliveoil": 160,
-        "total": 160,
+        "oliveoil": 150,
+        "total": 150,
         "popcap": 1,
         "time": 80
       },
@@ -196,6 +198,7 @@
       "hitpoints": 105,
       "weapons": [
         {
+          "id": "zweihander",
           "name": "Zweihander",
           "type": "melee",
           "damage": 21,
@@ -219,6 +222,7 @@
           "pbgid": 184609
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -291,11 +295,11 @@
       ],
       "unique": true,
       "costs": {
-        "food": 60,
+        "food": 50,
         "wood": 0,
         "stone": 0,
         "gold": 100,
-        "total": 160,
+        "total": 150,
         "popcap": 1,
         "time": 20.5
       },
@@ -307,6 +311,7 @@
       "hitpoints": 90,
       "weapons": [
         {
+          "id": "zweihander",
           "name": "Zweihander",
           "type": "melee",
           "damage": 17,
@@ -330,6 +335,7 @@
           "pbgid": 136942
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -398,11 +404,11 @@
       ],
       "unique": true,
       "costs": {
-        "food": 60,
+        "food": 50,
         "wood": 0,
         "stone": 0,
         "gold": 100,
-        "total": 160,
+        "total": 150,
         "popcap": 1,
         "time": 20.5
       },
@@ -414,6 +420,7 @@
       "hitpoints": 105,
       "weapons": [
         {
+          "id": "zweihander",
           "name": "Zweihander",
           "type": "melee",
           "damage": 21,
@@ -437,6 +444,7 @@
           "pbgid": 184609
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,

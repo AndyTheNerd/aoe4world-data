@@ -1,19 +1,23 @@
 import { existsSync, mkdirSync } from "fs";
 import fs from "fs/promises";
 import path from "path";
-import { FOLDERS, ITEM_TYPE_MAP, ITEM_TYPES } from "../lib/config";
+import { ROOT_FOLDER, FOLDERS, ITEM_TYPE_MAP, ITEM_TYPES } from "../lib/config";
 import { CIVILIZATIONS } from "../lib/config/civs";
+import { LOCALES, SUPPORTED_LOCALES } from "../lib/config/locales";
 import { writeJson } from "../lib/files/writeData";
 import { getAllItems } from "../lib/files/readData";
 import { optimizeItems, unifyItems } from "../lib/utils/items";
+import { cleanDescription } from "../lib/utils/string";
 import { CIVILIZATION_BY_SLUG, CivConfig, CivSlug } from "../types/civs";
-import { Item } from "../types/items";
+import { Item, ItemSlug, ProductionVariation, RecruitedUnit } from "../types/items";
 import { hardcodedDiscovery, hardcodedDiscoveryCommon } from "./config";
 import { workarounds } from "./workarounds";
-import { parseItemFromAttribFile, maybeOnKey } from "./parse";
-import { getTranslation as t } from "./translations";
+import { parseItemFromAttribFile, maybeOnKey, copyPatchHistory } from "./parse";
+import { getTranslation as t, setTargetLocales, getTargetLocales, getAvailableLocales } from "./translations";
+import { applyOverrides, recordItemBundle, recordCivBundle, getLocaleBundles } from "./localize";
 import { getEssenceData, guessAppropriateEssenceFile } from "./essence";
 import { copyIcon } from "./icons";
+import { extractCrucible } from "./crucible";
 
 if (process.argv.some((arg) => arg === "--essence")) {
   console.log(`Warning: --essence is obsolete since it's now the default, and xml parsing is no longer supported`);
@@ -21,6 +25,20 @@ if (process.argv.some((arg) => arg === "--essence")) {
 
 if (process.argv.some((arg) => arg === "--civ")) {
   throw Error(`--civ is no longer allowed since it could mess up icon conflict resolution`);
+}
+
+const localesArgIdx = process.argv.findIndex((arg) => arg === "--locales" || arg === "-l");
+if (process.argv.includes("--no-translations")) {
+  setTargetLocales([]);
+} else if (localesArgIdx !== -1 && process.argv[localesArgIdx + 1]) {
+  setTargetLocales(
+    process.argv[localesArgIdx + 1]
+      .split(/[,\s]+/)
+      .map((s) => s.trim().toLowerCase())
+      .filter(Boolean)
+  );
+} else {
+  setTargetLocales(getAvailableLocales());
 }
 
 const getData = getEssenceData;
@@ -54,11 +72,15 @@ async function buildTechTree(
   const produces = new Map<string, Set<string>>();
   const { debug, getData, race } = context;
 
+  function getItem(query: string): Item | undefined {
+    return items.get(query) ?? [...items.values()].find((i) => i.id === query || i.baseId === query || i.attribName === query);
+  }
+
   const army: any = await getData(`army/normal_${race}`, context);
   const bps = await getData(`racebps/${race}`, context);
 
   const army_extensions = army?.extensions?.[0] ?? army.army_bag;
-  const civOverview = getCivInfo(army_extensions, bps?.extensions?.[0]);
+  const civOverview = getCivInfo(army_extensions, bps?.extensions?.[0], civ);
 
   async function addFile(file: string) {
     if (!file) return;
@@ -72,7 +94,61 @@ async function buildTechTree(
   for (const file of hardcodedDiscovery[civ.slug] ?? []) await addFile(file);
   for (const file of hardcodedDiscoveryCommon ?? []) await addFile(file);
 
-  async function parseFileRecursively(file: string) {
+  function getRawAdditionalSquads(file: string): Record<string, string[]> {
+    const jsonPath = path.join(ROOT_FOLDER, "source/latest/attrib", file + ".json");
+    if (!existsSync(jsonPath)) return {};
+    try {
+      const raw = JSON.parse(require("fs").readFileSync(jsonPath, "utf8")).data;
+      const def = raw.find((x: any) => x.key === "default")?.value;
+      const spawner = def?.find((x: any) => x.key === "spawner_ext")?.value?.find((x: any) => x.key === "spawn_items")?.value;
+      if (!spawner) return {};
+      const result: Record<string, string[]> = {};
+      for (const item of spawner) {
+        const val = item.value;
+        const squad = val?.find((x: any) => x.key === "squad")?.value?.find((x: any) => x.key?.includes("PBGNAME"))?.value;
+        const adds = val?.find((x: any) => x.key === "additional_squads")?.value;
+        if (squad && adds && Array.isArray(adds)) {
+          const squadList = adds.map((a: any) => a.value?.find((x: any) => x.key?.includes("PBGNAME"))?.value).filter(Boolean);
+          result[squad] = squadList;
+        }
+      }
+      return result;
+    } catch {
+      return {};
+    }
+  }
+
+  function applyCostAdjustment(baseCosts: Item["costs"], adj: any): Item["costs"] | undefined {
+    if (!adj || !baseCosts) return undefined;
+    const hasAdj = Object.entries(adj).some(([k, v]) => v !== 0);
+    if (!hasAdj) return undefined;
+
+    const food = Math.max(0, (baseCosts.food ?? 0) + (adj.food ?? 0));
+    const wood = Math.max(0, (baseCosts.wood ?? 0) + (adj.wood ?? 0));
+    const gold = Math.max(0, (baseCosts.gold ?? 0) + (adj.gold ?? 0));
+    const stone = Math.max(0, (baseCosts.stone ?? 0) + (adj.stone ?? 0));
+    const oliveoil = baseCosts.oliveoil !== undefined ? Math.max(0, baseCosts.oliveoil + (adj.merc_byz ?? 0)) : undefined;
+    const silver = baseCosts.silver !== undefined ? Math.max(0, baseCosts.silver + (adj.merc_byz ?? 0)) : undefined;
+    const muster_charge = baseCosts.muster_charge !== undefined ? Math.max(0, baseCosts.muster_charge + (adj.action ?? 0)) : (adj.action > 0 ? adj.action : undefined);
+    const vizier = baseCosts.vizier !== undefined ? Math.max(0, baseCosts.vizier + (adj.command ?? 0)) : (adj.command > 0 ? adj.command : undefined);
+    const total = food + wood + gold + stone + (oliveoil ?? 0) + (silver ?? 0);
+
+    return {
+      food,
+      wood,
+      gold,
+      stone,
+      oliveoil,
+      silver,
+      muster_charge,
+      vizier,
+      time: baseCosts.time,
+      popcap: baseCosts.popcap,
+      total,
+    };
+  }
+
+  async function parseFileRecursively(file: string, parent?: Item) {
     const matchedFile = await addFile(file);
     if (!matchedFile) return;
     file = matchedFile;
@@ -85,13 +161,15 @@ async function buildTechTree(
 
     for (const [override, { predicate, mutator, validator, callContext }] of workarounds)
       if (predicate(item)) {
-        mutator(item);
+        await mutator(item, { parent, getItem, context });
         debug && console.info(`Overriding ${item.id} with ${override}`);
         if (validator && !validator(item)) {
           console.error(`Invalid item ${item.id} after override ${override}`, item);
           throw new Error("Error during workarounds: " + callContext);
         }
       }
+
+    applyOverrides(item);
 
     // Workarounds can set this flag
     if ((item as any)._skip) {
@@ -113,7 +191,7 @@ async function buildTechTree(
     const itemProduces = produces.get(item?.baseId!) ?? produces.set(item?.baseId!, new Set()).get(item?.baseId!)!;
     const discovered = await tryFindFile(race, [findConstructables(data), findUpgrades(data), findUnits(data), findEbpAbilities(data), findSbpAbilities(data)].flat());
     for (const d of discovered) {
-      const dItem = await parseFileRecursively(d);
+      const dItem = await parseFileRecursively(d, item);
       if (dItem && !Object.isFrozen(dItem.producedBy)) {
         dItem.producedBy ??= [];
         dItem.producedBy = [...new Set(dItem.producedBy).add(item.baseId)];
@@ -122,6 +200,60 @@ async function buildTechTree(
       }
     }
     techtree[item.id] = discovered.map((d) => filesToItemId.get(d)!);
+
+    const rawAddsMap = getRawAdditionalSquads(file);
+    for (const [mainSquadPbg, squadList] of Object.entries(rawAddsMap)) {
+      if (squadList.length > 0) {
+        const squadCounts: Record<string, number> = {};
+        for (const add of squadList) {
+          const pbg = add?.split("/").pop() ?? add;
+          squadCounts[pbg] = (squadCounts[pbg] || 0) + 1;
+        }
+        const recruits: RecruitedUnit[] = [];
+        for (const [pbg, count] of Object.entries(squadCounts)) {
+          const unitFile = await guessAppropriateEssenceFile(`sbps/${pbg}`);
+          if (unitFile) {
+            const parsedAdd = await parseFileRecursively(unitFile, item);
+            if (parsedAdd) {
+              recruits.push({ item: `units/${parsedAdd.baseId}` as ItemSlug, count });
+            }
+          }
+        }
+        if (recruits.length > 0) {
+          const mainFile = await guessAppropriateEssenceFile(`sbps/${mainSquadPbg}`);
+          if (mainFile) {
+            const mainItem = await parseFileRecursively(mainFile, item);
+            if (mainItem) {
+              mainItem.recruits = recruits;
+            }
+          }
+        }
+      }
+    }
+
+    const spawnerExt = data?.extensions?.find((x: any) => x.exts === "ebpextensions/spawner_ext");
+    if (spawnerExt?.spawn_items) {
+      for (const s of spawnerExt.spawn_items) {
+        const itemObj = s.spawn_item ?? s;
+        const mainSquad = itemObj.squad;
+        const adj = itemObj.item_cost_adjustment;
+        if (mainSquad && adj) {
+          const mainFile = await guessAppropriateEssenceFile(`sbps/${mainSquad.pbgname ?? mainSquad}`);
+          if (mainFile) {
+            const unitItem = await parseFileRecursively(mainFile, item);
+            if (unitItem && unitItem.costs) {
+              const adjustedCosts = applyCostAdjustment(unitItem.costs, adj);
+              if (adjustedCosts) {
+                unitItem.productionVariations ??= [];
+                if (!unitItem.productionVariations.some((v) => v.venue === item.baseId)) {
+                  unitItem.productionVariations.push({ venue: item.baseId, costs: adjustedCosts });
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 
     // const itemProduces = produces.get(item?.id!) ?? produces.set(item?.id!, new Set()).get(item?.id!)!;
     // const discovered = await tryFindFile(race, [findConstructables(data), findUpgrades(data), findUnits(data), findEbpAbilities(data), findSbpAbilities(data)].flat());
@@ -231,7 +363,7 @@ async function tryFindFile(race: string, paths: string[]) {
   ).filter(Boolean) as string[];
 }
 
-function getCivInfo(army_bag: any, bps_race_bag: any) {
+function getCivInfo(army_bag: any, bps_race_bag: any, civ?: CivConfig) {
   if (!army_bag || !bps_race_bag) return;
   const overview = army_bag.ui?.global_traits_summary.map((x) => {
     const title = t(x.title);
@@ -245,12 +377,51 @@ function getCivInfo(army_bag: any, bps_race_bag: any) {
     if (list) return { title, list };
     return { title, description };
   });
-  return {
+  const civInfo: any = {
+    id: civ?.id,
     name: t(bps_race_bag.name),
-    description: t(bps_race_bag.description),
+    abbr: civ?.abbr,
+    slug: civ?.slug,
     classes: t(army_bag.ui?.one_liner),
+    description: t(bps_race_bag.description),
     overview,
-  } as any;
+  };
+
+  const targetLocales = getTargetLocales();
+  if (targetLocales.length > 0) {
+    civInfo.translations = {};
+    for (const locale of targetLocales) {
+      const patch: any = {};
+      const locName = t(bps_race_bag.name, [], locale);
+      if (locName && !locName.startsWith("(translation not found)") && locName !== civInfo.name) patch.name = locName;
+
+      const locDesc = t(bps_race_bag.description, [], locale);
+      if (locDesc && !locDesc.startsWith("(translation not found)") && locDesc !== civInfo.description) patch.description = locDesc;
+
+      const locClasses = t(army_bag.ui?.one_liner, [], locale);
+      if (locClasses && !locClasses.startsWith("(translation not found)") && locClasses !== civInfo.classes) patch.classes = locClasses;
+
+      if (overview) {
+        patch.overview = army_bag.ui?.global_traits_summary.map((x) => {
+          const title = t(x.title, [], locale);
+          const desc = x.description_formatter?.value
+            ? t(x.description_formatter.formatter, x.description_formatter.formatter_arguments, locale)
+            : t(x.description, [], locale);
+          const list = desc.startsWith("• ")
+            ? desc.split("• ").map((s) => s.trim()).filter(Boolean)
+            : undefined;
+          if (list) return { title, list };
+          return { title, description: desc };
+        });
+      }
+      if (Object.keys(patch).length > 0) {
+        civInfo.translations[locale] = patch;
+      }
+    }
+    if (Object.keys(civInfo.translations).length === 0) delete civInfo.translations;
+  }
+
+  return civInfo;
 }
 
 const itemTypeMap = {
@@ -326,16 +497,70 @@ async function compile(type: ITEM_TYPES) {
   // Persist Items & Civ
   for (const [civ, techTree] of civTechTreeMap) {
     console.log(`Persisting ${techTree.civ.name}...`);
+    recordCivBundle(techTree.civOverview, techTree.civ.slug);
     techTree.items.forEach(item => {
-      persistItem(item, techTree.civ);
+      recordItemBundle(item);
+      const toPersist = { ...item };
+      if (toPersist.description) toPersist.description = cleanDescription(toPersist.description);
+      delete toPersist.translations;
+      persistItem(toPersist, techTree.civ);
     });
     
-    writeJson(`${FOLDERS.CIVILIZATIONS.DATA}/${techTree.civ.slug}.json`, techTree.civOverview, { log: false });
+    const civOverviewToPersist = { ...techTree.civOverview };
+    delete civOverviewToPersist.translations;
+    writeJson(`${FOLDERS.CIVILIZATIONS.DATA}/${techTree.civ.slug}.json`, civOverviewToPersist, { log: false });
   }
 
-writeJson(`${FOLDERS.CIVILIZATIONS.DATA}/civs-index.json`, CIVILIZATIONS, { log: false });
+  writeJson(`${FOLDERS.CIVILIZATIONS.DATA}/civs-index.json`, CIVILIZATIONS, { log: false });
 
-  [ITEM_TYPES.UNITS, ITEM_TYPES.TECHNOLOGIES, ITEM_TYPES.BUILDINGS, ITEM_TYPES.UPGRADES, ITEM_TYPES.ABILITIES].forEach((type) => compile(type));
+  await Promise.all([ITEM_TYPES.UNITS, ITEM_TYPES.TECHNOLOGIES, ITEM_TYPES.BUILDINGS, ITEM_TYPES.UPGRADES, ITEM_TYPES.ABILITIES].map((type) => compile(type)));
+
+  // Extract Crucible (perks, boons, mutators, talents)
+  await extractCrucible();
+
+  // Write decoupled per-locale bundles
+  const bundles = getLocaleBundles();
+  const localesDir = path.join(ROOT_FOLDER, "locales");
+  if (!existsSync(localesDir)) mkdirSync(localesDir, { recursive: true });
+
+  const enConfig = LOCALES["en"];
+  writeJson(
+    path.join(localesDir, "en.json"),
+    {
+      code: "en",
+      name: enConfig?.name ?? "English",
+      label: enConfig?.label ?? "English",
+      units: {},
+      buildings: {},
+      technologies: {},
+      upgrades: {},
+      abilities: {},
+      civilizations: {},
+      weapons: {},
+      crucible: {
+        perks: {},
+        boons: {},
+        mutators: {},
+        talents: {},
+      },
+    },
+    { log: true }
+  );
+
+  const selectedLocales = ["en", ...bundles.keys()];
+  const generatedLocaleConfigs = selectedLocales
+    .map((code) => LOCALES[code] ?? { code, short: code.slice(0, 2).toUpperCase(), name: code, label: code });
+
+  writeJson(path.join(localesDir, "locale-index.json"), generatedLocaleConfigs, { log: true });
+
+  for (const [locale, bundle] of bundles) {
+    bundle.weapons = Object.fromEntries(
+      Object.entries(bundle.weapons).sort(([a], [b]) => a.localeCompare(b))
+    );
+    writeJson(path.join(localesDir, `${locale}.json`), bundle, { log: true });
+  }
+
+  await copyPatchHistory();
 })();
 
 function resolveIconConflict(icon_dest: string, variations: Item[]) {

@@ -12,13 +12,15 @@
     "King Scaling Technology"
   ],
   "classes": [
-    "king",
-    "scaling",
-    "technology"
+    "english_upgrade",
+    "military_upgrade",
+    "scar_imperial_age_upgrade",
+    "scar_tiered_upgrade",
+    "scar_unit_upgrade"
   ],
   "minAge": 4,
   "icon": "https://data.aoe4world.com/images/units/king-2.png",
-  "description": "Increases the health, attack and armor of the King when reaching Imperial Age.",
+  "description": "Increases the health, attack and armor of King when reaching Imperial Age.",
   "variations": [
     {
       "id": "upgrade-king-4",
@@ -31,11 +33,13 @@
       "civs": [
         "en"
       ],
-      "description": "Increases the health, attack and armor of the King when reaching Imperial Age.",
+      "description": "Increases the health, attack and armor of King when reaching Imperial Age.",
       "classes": [
-        "king",
-        "scaling",
-        "technology"
+        "english_upgrade",
+        "military_upgrade",
+        "scar_imperial_age_upgrade",
+        "scar_tiered_upgrade",
+        "scar_unit_upgrade"
       ],
       "displayClasses": [
         "King Scaling Technology"

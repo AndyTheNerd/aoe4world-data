@@ -39,9 +39,10 @@
     "siege-workshop"
   ],
   "icon": "https://data.aoe4world.com/images/units/battering-ram-3.png",
-  "hitpoints": 370,
+  "hitpoints": 410,
   "weapons": [
     {
+      "id": "ram",
       "name": "Ram",
       "type": "siege",
       "damage": 200,

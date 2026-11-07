@@ -3,8 +3,8 @@
   "baseId": "man-at-arms",
   "type": "unit",
   "name": "Elite Man-at-Arms",
-  "pbgid": 132283,
-  "attribName": "unit_manatarms_4_fre",
+  "pbgid": 3372074,
+  "attribName": "unit_manatarms_4_fre_ha_01",
   "age": 4,
   "civs": [
     "je"
@@ -46,6 +46,7 @@
   "hitpoints": 180,
   "weapons": [
     {
+      "id": "sword",
       "name": "Sword",
       "type": "melee",
       "damage": 14,
@@ -69,6 +70,7 @@
       "pbgid": 127823
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,

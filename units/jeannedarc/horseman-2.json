@@ -3,8 +3,8 @@
   "baseId": "horseman",
   "type": "unit",
   "name": "Horseman",
-  "pbgid": 132276,
-  "attribName": "unit_horseman_2_fre",
+  "pbgid": 8137971,
+  "attribName": "unit_horseman_2_fre_ha_01",
   "age": 2,
   "civs": [
     "je"
@@ -46,6 +46,7 @@
   "hitpoints": 125,
   "weapons": [
     {
+      "id": "spear",
       "name": "Spear",
       "type": "melee",
       "damage": 9,
@@ -96,6 +97,7 @@
       "pbgid": 109275
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,

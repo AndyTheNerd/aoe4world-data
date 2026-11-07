@@ -529,7 +529,7 @@
       "civs": [
         "jin"
       ],
-      "description": "Must be constructed on a Grassland Post.\nSpawns a Horse up to the max of 5 every 90/60/45 seconds in Feudal/Castle/Imperial Ages. Each Horse in a Grassland grants +2 maximum Health to all Melee Cavalry and +1 to all Ranged Cavalry.\nHorses can be used by War Stables in Influence to instantly train Cavalry at a 25 resources discount.",
+      "description": "Must be constructed on a Grassland Post.\nSpawns a Horse up to the max of 5 every 75/60/45 seconds in Feudal/Castle/Imperial Ages. Each Horse in a Grassland grants +2 maximum Health to all Melee Cavalry and +1 to all Ranged Cavalry.\nHorses can be used by War Stables in Influence to instantly train Cavalry at a 25 resources discount.",
       "classes": [
         "building",
         "grassland",
@@ -692,6 +692,7 @@
       "hitpoints": 5000,
       "weapons": [
         {
+          "id": "handcannon",
           "name": "Handcannon",
           "type": "ranged",
           "damage": 25,
@@ -730,13 +731,14 @@
           "pbgid": 173756
         },
         {
+          "id": "bed-crossbow",
           "name": "Bed Crossbow",
           "type": "ranged",
-          "damage": 14,
+          "damage": 28,
           "speed": 4,
           "range": {
             "min": 0,
-            "max": 9
+            "max": 11
           },
           "modifiers": [
             {
@@ -781,10 +783,179 @@
           "burst": {
             "count": 2
           },
-          "attribName": "weapon_keep_bedcrossbow_jin",
-          "pbgid": 9004377
+          "attribName": "weapon_landmark_bedcrossbow_jin",
+          "pbgid": 9007101
         },
         {
+          "id": "bed-crossbow",
+          "name": "Bed Crossbow",
+          "type": "ranged",
+          "damage": 28,
+          "speed": 4,
+          "range": {
+            "min": 0,
+            "max": 11
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "melee",
+                    "infantry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 3,
+              "type": "passive"
+            },
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 15,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0.25,
+            "attack": 0.25,
+            "winddown": 0.5,
+            "reload": 3,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "burst": {
+            "count": 2
+          },
+          "attribName": "weapon_landmark_bedcrossbow_jin",
+          "pbgid": 9007101
+        },
+        {
+          "id": "bed-crossbow",
+          "name": "Bed Crossbow",
+          "type": "ranged",
+          "damage": 28,
+          "speed": 4,
+          "range": {
+            "min": 0,
+            "max": 11
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "melee",
+                    "infantry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 3,
+              "type": "passive"
+            },
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 15,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0.25,
+            "attack": 0.25,
+            "winddown": 0.5,
+            "reload": 3,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "burst": {
+            "count": 2
+          },
+          "attribName": "weapon_landmark_bedcrossbow_jin",
+          "pbgid": 9007101
+        },
+        {
+          "id": "bed-crossbow",
+          "name": "Bed Crossbow",
+          "type": "ranged",
+          "damage": 28,
+          "speed": 4,
+          "range": {
+            "min": 0,
+            "max": 11
+          },
+          "modifiers": [
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "melee",
+                    "infantry"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 3,
+              "type": "passive"
+            },
+            {
+              "property": "rangedAttack",
+              "target": {
+                "class": [
+                  [
+                    "naval",
+                    "unit"
+                  ]
+                ]
+              },
+              "effect": "change",
+              "value": 15,
+              "type": "passive"
+            }
+          ],
+          "durations": {
+            "aim": 0,
+            "windup": 0.25,
+            "attack": 0.25,
+            "winddown": 0.5,
+            "reload": 3,
+            "setup": 0,
+            "teardown": 0,
+            "cooldown": 0
+          },
+          "burst": {
+            "count": 2
+          },
+          "attribName": "weapon_landmark_bedcrossbow_jin",
+          "pbgid": 9007101
+        },
+        {
+          "id": "cannon",
           "name": "Cannon",
           "type": "ranged",
           "damage": 70,
@@ -823,6 +994,7 @@
           "pbgid": 185624
         },
         {
+          "id": "grenade",
           "name": "Grenade",
           "type": "siege",
           "damage": 7,
@@ -849,6 +1021,7 @@
           "pbgid": 9004759
         },
         {
+          "id": "handcannon",
           "name": "Handcannon",
           "type": "ranged",
           "damage": 11,
@@ -887,6 +1060,7 @@
           "pbgid": 197197
         },
         {
+          "id": "handcannon",
           "name": "Handcannon",
           "type": "ranged",
           "damage": 25,
@@ -925,6 +1099,7 @@
           "pbgid": 173756
         },
         {
+          "id": "handcannon",
           "name": "Handcannon",
           "type": "ranged",
           "damage": 25,
@@ -963,7 +1138,8 @@
           "pbgid": 173756
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1001,7 +1177,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1039,7 +1216,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1077,7 +1255,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1115,7 +1294,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1153,7 +1333,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1191,7 +1372,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1229,7 +1411,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1267,7 +1450,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1305,7 +1489,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1343,7 +1528,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1381,7 +1567,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1419,7 +1606,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1457,7 +1645,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1495,7 +1684,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1533,7 +1723,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1571,7 +1762,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1609,7 +1801,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1647,7 +1840,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1685,7 +1879,8 @@
           "pbgid": 171261
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 10,
           "speed": 2.625,
@@ -1851,49 +2046,7 @@
       ],
       "icon": "https://data.aoe4world.com/images/buildings/keep-3.png",
       "hitpoints": 5000,
-      "weapons": [
-        {
-          "name": "Bow",
-          "type": "ranged",
-          "damage": 10,
-          "speed": 2.625,
-          "range": {
-            "min": 0,
-            "max": 8
-          },
-          "modifiers": [
-            {
-              "property": "rangedAttack",
-              "target": {
-                "class": [
-                  [
-                    "naval",
-                    "unit"
-                  ]
-                ]
-              },
-              "effect": "change",
-              "value": 10,
-              "type": "passive"
-            }
-          ],
-          "durations": {
-            "aim": 0.5,
-            "windup": 0,
-            "attack": 0.125,
-            "winddown": 0,
-            "reload": 0,
-            "setup": 0,
-            "teardown": 0,
-            "cooldown": 2
-          },
-          "burst": {
-            "count": 3
-          },
-          "attribName": "weapon_keep_arrows_garrison",
-          "pbgid": 171261
-        }
-      ],
+      "weapons": [],
       "armor": [
         {
           "type": "ranged",
@@ -2787,6 +2940,7 @@
         "land_food_deposit_4_by_4",
         "production_building",
         "resource_drop_off",
+        "scar_town_center",
         "siegeable",
         "town_bell_target",
         "town_center",
@@ -2804,7 +2958,7 @@
         "gold": 0,
         "total": 700,
         "popcap": 0,
-        "time": 150
+        "time": 165
       },
       "producedBy": [
         "mounted-villager",

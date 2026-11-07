@@ -265,6 +265,7 @@
           "hitpoints": 5000,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 25,
@@ -303,6 +304,7 @@
               "pbgid": 206717
             },
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 40,
@@ -341,6 +343,7 @@
               "pbgid": 127373
             },
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "ranged",
               "damage": 70,
@@ -379,7 +382,8 @@
               "pbgid": 185624
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -417,7 +421,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -455,7 +460,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -493,7 +499,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -531,7 +538,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -569,7 +577,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -607,7 +616,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -645,7 +655,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -683,7 +694,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -721,7 +733,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -925,7 +938,7 @@
             "gold": 0,
             "total": 150,
             "popcap": 0,
-            "time": 13
+            "time": 12.5
           },
           "producedBy": [
             "villager"
@@ -1383,7 +1396,7 @@
             "gold": 0,
             "total": 150,
             "popcap": 0,
-            "time": 18
+            "time": 17.5
           },
           "producedBy": [
             "villager"
@@ -1485,6 +1498,7 @@
           "hitpoints": 7500,
           "weapons": [
             {
+              "id": "rocket-arrow",
               "name": "Rocket Arrow",
               "type": "siege",
               "damage": 6,
@@ -1608,7 +1622,7 @@
             "gold": 0,
             "total": 50,
             "popcap": 0,
-            "time": 8
+            "time": 7.5
           },
           "producedBy": [
             "villager"
@@ -1871,56 +1885,14 @@
             "gold": 0,
             "total": 900,
             "popcap": 0,
-            "time": 180
+            "time": 120
           },
           "producedBy": [
             "villager"
           ],
           "icon": "https://data.aoe4world.com/images/buildings/keep-3.png",
           "hitpoints": 5000,
-          "weapons": [
-            {
-              "name": "Bow",
-              "type": "ranged",
-              "damage": 10,
-              "speed": 2.625,
-              "range": {
-                "min": 0,
-                "max": 8
-              },
-              "modifiers": [
-                {
-                  "property": "rangedAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "naval",
-                        "unit"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 10,
-                  "type": "passive"
-                }
-              ],
-              "durations": {
-                "aim": 0.5,
-                "windup": 0,
-                "attack": 0.125,
-                "winddown": 0,
-                "reload": 0,
-                "setup": 0,
-                "teardown": 0,
-                "cooldown": 2
-              },
-              "burst": {
-                "count": 3
-              },
-              "attribName": "weapon_keep_arrows_garrison",
-              "pbgid": 171261
-            }
-          ],
+          "weapons": [],
           "armor": [
             {
               "type": "ranged",
@@ -2359,7 +2331,7 @@
             "gold": 0,
             "total": 200,
             "popcap": 0,
-            "time": 13
+            "time": 12.5
           },
           "producedBy": [
             "villager"
@@ -2446,7 +2418,7 @@
             "gold": 0,
             "total": 100,
             "popcap": 0,
-            "time": 60
+            "time": 40
           },
           "producedBy": [
             "villager"
@@ -2615,7 +2587,7 @@
             "gold": 0,
             "total": 7,
             "popcap": 0,
-            "time": 6
+            "time": 5.33336
           },
           "producedBy": [
             "villager"
@@ -2696,7 +2668,7 @@
             "gold": 0,
             "total": 25,
             "popcap": 0,
-            "time": 7
+            "time": 6.6667
           },
           "producedBy": [
             "villager"
@@ -2779,7 +2751,7 @@
             "gold": 0,
             "total": 250,
             "popcap": 0,
-            "time": 23
+            "time": 22.5
           },
           "producedBy": [
             "villager"
@@ -3036,7 +3008,7 @@
             "gold": 0,
             "total": 25,
             "popcap": 0,
-            "time": 16
+            "time": 10.66667
           },
           "producedBy": [
             "villager"
@@ -3209,6 +3181,7 @@
           "hitpoints": 3000,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 60,
@@ -3334,7 +3307,7 @@
             "gold": 0,
             "total": 700,
             "popcap": 0,
-            "time": 75
+            "time": 82.5
           },
           "producedBy": [
             "villager"

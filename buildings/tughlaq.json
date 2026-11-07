@@ -281,7 +281,7 @@
       "civs": [
         "tug"
       ],
-      "description": "Reduces Stone cost of buildings by 20%.\nUnlocks an additional upgrade to each Tughlaqabad Fort which further enhances health and Governor benefits.",
+      "description": "Reduces Stone cost of buildings by 25%.\nUnlocks an additional upgrade to each Tughlaqabad Fort which further enhances health and Governor benefits.",
       "classes": [
         "age2_landmark1",
         "audio_production_landmark",
@@ -340,7 +340,7 @@
       "civs": [
         "tug"
       ],
-      "description": "Produces naval units. Generates bonus resources from Elephant Economics when Villagers or Fishing Ships drop off Food.\nAutomatically repairs nearby damaged naval units.\nCapable of holding up to three Fishing Ships.",
+      "description": "Produces naval units. Generates bonus resources from Elephant Economics when Villagers drop off Food.\nAutomatically repairs nearby damaged naval units.\nCapable of holding up to three Fishing Ships.",
       "classes": [
         "building",
         "military_only_production",
@@ -671,7 +671,8 @@
       "hitpoints": 750,
       "weapons": [
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -709,7 +710,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -747,7 +749,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -785,7 +788,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -823,7 +827,8 @@
           "pbgid": 171016
         },
         {
-          "name": "Bow",
+          "id": "garrison-bow",
+          "name": "Garrison Bow",
           "type": "ranged",
           "damage": 6,
           "speed": 3.875,
@@ -1650,6 +1655,7 @@
       "hitpoints": 3000,
       "weapons": [
         {
+          "id": "springald",
           "name": "Springald",
           "type": "ranged",
           "damage": 60,
@@ -1784,6 +1790,7 @@
         "land_food_deposit_4_by_4",
         "production_building",
         "resource_drop_off",
+        "scar_town_center",
         "siegeable",
         "town_bell_target",
         "town_center",
@@ -1801,7 +1808,7 @@
         "gold": 0,
         "total": 700,
         "popcap": 0,
-        "time": 150
+        "time": 165
       },
       "producedBy": [
         "villager"
@@ -1882,6 +1889,7 @@
       "hitpoints": 2000,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 10,
@@ -1920,6 +1928,7 @@
           "pbgid": 9003878
         },
         {
+          "id": "springald",
           "name": "Springald",
           "type": "ranged",
           "damage": 40,
@@ -1958,6 +1967,7 @@
           "pbgid": 127373
         },
         {
+          "id": "cannon",
           "name": "Cannon",
           "type": "ranged",
           "damage": 70,
@@ -1996,6 +2006,7 @@
           "pbgid": 185624
         },
         {
+          "id": "hot-oil",
           "name": "Hot Oil",
           "type": "siege",
           "damage": 30,
@@ -2019,6 +2030,7 @@
           "pbgid": 145524
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 10,
@@ -2057,6 +2069,7 @@
           "pbgid": 9003878
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 10,
@@ -2095,6 +2108,7 @@
           "pbgid": 9003878
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2133,6 +2147,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2171,6 +2186,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2209,6 +2225,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2247,6 +2264,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2285,6 +2303,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2323,6 +2342,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2361,6 +2381,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2399,6 +2420,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2437,6 +2459,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2475,6 +2498,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2513,6 +2537,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2551,6 +2576,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2589,6 +2615,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2627,6 +2654,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2665,6 +2693,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2703,6 +2732,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2741,6 +2771,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2779,6 +2810,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2817,6 +2849,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2855,6 +2888,7 @@
           "pbgid": 9004772
         },
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 10,

@@ -9,7 +9,7 @@
   ],
   "unique": true,
   "displayClasses": [
-    "Light Ranged Gunpowder Infantry"
+    "Light Gunpowder Infantry"
   ],
   "classes": [
     "annihilation_condition",
@@ -22,6 +22,7 @@
     "infantry",
     "infantry_light",
     "land_military",
+    "light_gunpowder",
     "light_gunpowder_infantry",
     "military",
     "ranged",
@@ -54,13 +55,14 @@
         "infantry",
         "infantry_light",
         "land_military",
+        "light_gunpowder",
         "light_gunpowder_infantry",
         "military",
         "ranged",
         "ranged_infantry"
       ],
       "displayClasses": [
-        "Light Ranged Gunpowder Infantry"
+        "Light Gunpowder Infantry"
       ],
       "unique": true,
       "costs": {
@@ -81,6 +83,7 @@
       "hitpoints": 90,
       "weapons": [
         {
+          "id": "trench-gun",
           "name": "Trench Gun",
           "type": "ranged",
           "damage": 16,
@@ -100,7 +103,7 @@
                 ]
               },
               "effect": "change",
-              "value": 11,
+              "value": 10,
               "type": "passive"
             }
           ],
@@ -130,7 +133,22 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 24,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     },
     {
       "id": "janissary-4",
@@ -155,13 +173,14 @@
         "infantry",
         "infantry_light",
         "land_military",
+        "light_gunpowder",
         "light_gunpowder_infantry",
         "military",
         "ranged",
         "ranged_infantry"
       ],
       "displayClasses": [
-        "Light Ranged Gunpowder Infantry"
+        "Light Gunpowder Infantry"
       ],
       "unique": true,
       "costs": {
@@ -182,6 +201,7 @@
       "hitpoints": 105,
       "weapons": [
         {
+          "id": "trench-gun",
           "name": "Trench Gun",
           "type": "ranged",
           "damage": 20,
@@ -201,7 +221,7 @@
                 ]
               },
               "effect": "change",
-              "value": 13,
+              "value": 12,
               "type": "passive"
             }
           ],
@@ -231,7 +251,22 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "military-school",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "vizier": 0,
+            "time": 24,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ]
     }
   ]
 }

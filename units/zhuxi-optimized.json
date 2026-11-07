@@ -87,6 +87,7 @@
           "hitpoints": 700,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 45,
@@ -215,9 +216,10 @@
             "siege-workshop"
           ],
           "icon": "https://data.aoe4world.com/images/units/battering-ram-3.png",
-          "hitpoints": 370,
+          "hitpoints": 410,
           "weapons": [
             {
+              "id": "ram",
               "name": "Ram",
               "type": "siege",
               "damage": 200,
@@ -358,6 +360,7 @@
           "hitpoints": 210,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 55,
@@ -522,7 +525,17 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/zhuge-nu",
+              "count": 4
+            },
+            {
+              "item": "units/palace-guard",
+              "count": 3
+            }
+          ]
         }
       ],
       "shared": {}
@@ -596,6 +609,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "trebuchet",
               "name": "Trebuchet",
               "type": "siege",
               "damage": 40,
@@ -749,6 +763,7 @@
           "name": "Crossbowman",
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 11,
@@ -786,6 +801,7 @@
               "pbgid": 108239
             },
             {
+              "id": "weapon-crossbow-3-library-upgrade-incendiary-chi-ha-01",
               "name": "(translation not found) (undefined)",
               "type": "ranged",
               "damage": 11,
@@ -852,6 +868,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 14,
@@ -967,6 +984,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "incendiaries",
               "name": "Incendiaries",
               "type": "siege",
               "damage": 95,
@@ -1198,6 +1216,7 @@
           "name": "Early Grenadier",
           "weapons": [
             {
+              "id": "grenade",
               "name": "Grenade",
               "type": "siege",
               "damage": 10,
@@ -1245,6 +1264,7 @@
           "hitpoints": 150,
           "weapons": [
             {
+              "id": "grenade",
               "name": "Grenade",
               "type": "siege",
               "damage": 12,
@@ -1374,6 +1394,7 @@
           "name": "Horseman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -1424,6 +1445,7 @@
               "pbgid": 109275
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1462,6 +1484,7 @@
           "hitpoints": 155,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -1512,6 +1535,7 @@
               "pbgid": 127820
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1550,6 +1574,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 13,
@@ -1600,6 +1625,7 @@
               "pbgid": 127821
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1718,6 +1744,7 @@
           "hitpoints": 340,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 28,
@@ -1741,6 +1768,7 @@
               "pbgid": 2143707
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1764,6 +1792,7 @@
               "pbgid": 127935
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 45,
@@ -1888,7 +1917,13 @@
           },
           "movement": {
             "speed": 1.125
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/imperial-official",
+              "count": 1
+            }
+          ]
         }
       ],
       "shared": {}
@@ -1956,7 +1991,17 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/yuan-raider",
+              "count": 4
+            },
+            {
+              "item": "units/imperial-guard",
+              "count": 1
+            }
+          ]
         }
       ],
       "shared": {}
@@ -2032,6 +2077,7 @@
           "hitpoints": 300,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -2177,6 +2223,7 @@
           "name": "Lancer",
           "weapons": [
             {
+              "id": "guandao",
               "name": "Guandao",
               "type": "melee",
               "damage": 24,
@@ -2200,6 +2247,7 @@
               "pbgid": 2029874
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2242,6 +2290,7 @@
           "hitpoints": 270,
           "weapons": [
             {
+              "id": "guandao",
               "name": "Guandao",
               "type": "melee",
               "damage": 29,
@@ -2265,6 +2314,7 @@
               "pbgid": 2029876
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2460,6 +2510,7 @@
           "hitpoints": 120,
           "weapons": [
             {
+              "id": "rocket-arrow",
               "name": "Rocket Arrow",
               "type": "siege",
               "damage": 6,
@@ -2625,6 +2676,7 @@
           "name": "Early Palace Guard",
           "weapons": [
             {
+              "id": "guandao",
               "name": "Guandao",
               "type": "melee",
               "damage": 9,
@@ -2648,6 +2700,7 @@
               "pbgid": 2138268
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2690,6 +2743,7 @@
           "hitpoints": 155,
           "weapons": [
             {
+              "id": "guandao",
               "name": "Guandao",
               "type": "melee",
               "damage": 12,
@@ -2713,6 +2767,7 @@
               "pbgid": 137337
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2755,6 +2810,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "guandao",
               "name": "Guandao",
               "type": "melee",
               "damage": 14,
@@ -2778,6 +2834,7 @@
               "pbgid": 137339
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2878,7 +2935,17 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/spearman",
+              "count": 4
+            },
+            {
+              "item": "units/horseman",
+              "count": 3
+            }
+          ]
         }
       ],
       "shared": {}
@@ -2946,7 +3013,17 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/crossbowman",
+              "count": 4
+            },
+            {
+              "item": "units/grenadier",
+              "count": 1
+            }
+          ]
         }
       ],
       "shared": {}
@@ -3032,6 +3109,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "dao",
               "name": "Dao",
               "type": "melee",
               "damage": 1,
@@ -3183,6 +3261,7 @@
           "hitpoints": 170,
           "weapons": [
             {
+              "id": "bo-staff",
               "name": "Bo Staff",
               "type": "melee",
               "damage": 15,
@@ -3206,6 +3285,7 @@
               "pbgid": 2127469
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3448,6 +3528,7 @@
           "name": "Spearman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 7,
@@ -3513,6 +3594,7 @@
               "pbgid": 106762
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3536,6 +3618,7 @@
               "pbgid": 123518
             },
             {
+              "id": "fire-lance",
               "name": "Fire Lance",
               "type": "melee",
               "damage": 7,
@@ -3611,6 +3694,7 @@
           "hitpoints": 90,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 8,
@@ -3676,6 +3760,7 @@
               "pbgid": 127825
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3699,6 +3784,7 @@
               "pbgid": 123518
             },
             {
+              "id": "fire-lance",
               "name": "Fire Lance",
               "type": "melee",
               "damage": 8,
@@ -3774,6 +3860,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -3839,6 +3926,7 @@
               "pbgid": 127826
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3862,6 +3950,7 @@
               "pbgid": 123518
             },
             {
+              "id": "fire-lance",
               "name": "Fire Lance",
               "type": "melee",
               "damage": 9,
@@ -3937,6 +4026,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -4002,6 +4092,7 @@
               "pbgid": 127827
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4025,6 +4116,7 @@
               "pbgid": 123518
             },
             {
+              "id": "fire-lance",
               "name": "Fire Lance",
               "type": "melee",
               "damage": 11,
@@ -4165,6 +4257,7 @@
           "hitpoints": 85,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 15,
@@ -4359,8 +4452,8 @@
           "baseId": "trader",
           "type": "unit",
           "name": "Trader",
-          "pbgid": 143716,
-          "attribName": "unit_trade_cart_chi",
+          "pbgid": 2703018,
+          "attribName": "unit_trade_cart_chi_ha_01",
           "age": 2,
           "civs": [
             "zx"
@@ -4497,7 +4590,8 @@
               "siege",
               "monk",
               "khan",
-              "cavalry"
+              "cavalry",
+              "cattle"
             ]
           }
         }
@@ -4570,6 +4664,7 @@
           "hitpoints": 50,
           "weapons": [
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4593,6 +4688,7 @@
               "pbgid": 123522
             },
             {
+              "id": "knife",
               "name": "Knife",
               "type": "melee",
               "damage": 6,
@@ -4710,6 +4806,7 @@
           "hitpoints": 450,
           "weapons": [
             {
+              "id": "ballista",
               "name": "Ballista",
               "type": "ranged",
               "damage": 35,
@@ -4862,6 +4959,7 @@
           "hitpoints": 200,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 15,
@@ -4912,6 +5010,7 @@
               "pbgid": 2143702
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5043,6 +5142,7 @@
           "name": "Zhuge Nu",
           "weapons": [
             {
+              "id": "repeater-crossbow",
               "name": "Repeater Crossbow",
               "type": "ranged",
               "damage": 4,
@@ -5079,6 +5179,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "repeater-crossbow",
               "name": "Repeater Crossbow",
               "type": "ranged",
               "damage": 5,
@@ -5115,6 +5216,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "repeater-crossbow",
               "name": "Repeater Crossbow",
               "type": "ranged",
               "damage": 6,

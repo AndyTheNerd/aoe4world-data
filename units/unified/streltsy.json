@@ -10,7 +10,7 @@
   ],
   "unique": false,
   "displayClasses": [
-    "Ranged Gunpowder Infantry"
+    "Medium Gunpowder Infantry"
   ],
   "classes": [
     "annihilation_condition",
@@ -59,7 +59,7 @@
         "streltsy"
       ],
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "unique": false,
       "costs": {
@@ -80,6 +80,7 @@
       "hitpoints": 130,
       "weapons": [
         {
+          "id": "handcannon",
           "name": "Handcannon",
           "type": "ranged",
           "damage": 38,
@@ -149,7 +150,7 @@
         "streltsy"
       ],
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "unique": true,
       "costs": {
@@ -168,6 +169,7 @@
       "hitpoints": 130,
       "weapons": [
         {
+          "id": "handcannon",
           "name": "Handcannon",
           "type": "ranged",
           "damage": 38,

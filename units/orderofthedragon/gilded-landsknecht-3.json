@@ -32,11 +32,11 @@
   ],
   "unique": true,
   "costs": {
-    "food": 120,
+    "food": 100,
     "wood": 0,
     "stone": 0,
     "gold": 200,
-    "total": 320,
+    "total": 300,
     "popcap": 2,
     "time": 27
   },
@@ -48,6 +48,7 @@
   "hitpoints": 185,
   "weapons": [
     {
+      "id": "zweihander",
       "name": "Zweihander",
       "type": "melee",
       "damage": 21,
@@ -71,6 +72,7 @@
       "pbgid": 2127093
     },
     {
+      "id": "halberd",
       "name": "Halberd",
       "type": "melee",
       "damage": 21,
@@ -94,6 +96,7 @@
       "pbgid": 2140617
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 18,

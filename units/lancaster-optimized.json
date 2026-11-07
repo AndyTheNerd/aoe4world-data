@@ -78,9 +78,10 @@
             "siege-workshop"
           ],
           "icon": "https://data.aoe4world.com/images/units/battering-ram-3.png",
-          "hitpoints": 370,
+          "hitpoints": 410,
           "weapons": [
             {
+              "id": "ram",
               "name": "Ram",
               "type": "siege",
               "damage": 200,
@@ -225,6 +226,7 @@
           "hitpoints": 700,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 45,
@@ -356,6 +358,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "trebuchet",
               "name": "Trebuchet",
               "type": "siege",
               "damage": 40,
@@ -509,6 +512,7 @@
           "name": "Crossbowman",
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 11,
@@ -572,6 +576,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 14,
@@ -685,6 +690,7 @@
           "hitpoints": 200,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 40,
@@ -788,7 +794,7 @@
     },
     {
       "id": "demilancer",
-      "name": "Veteran Demilancer",
+      "name": "Elite Demilancer",
       "type": "unit",
       "civs": [
         "hl"
@@ -798,60 +804,251 @@
         "Heavy Melee Cavalry"
       ],
       "classes": [
-        "spawn_ignored_on_timeline"
+        "annihilation_condition",
+        "armored",
+        "cavalry",
+        "cavalry_armored",
+        "demilancer",
+        "find_non_siege_land_military",
+        "formational",
+        "heavy",
+        "horse",
+        "human",
+        "included_by_military_hotkeys",
+        "knight",
+        "land_military",
+        "melee",
+        "military",
+        "military_cavalry",
+        "torch_thrower"
       ],
-      "minAge": 1,
-      "icon": "https://data.aoe4world.com/images/units/demilancer-1.png",
+      "minAge": 3,
+      "icon": "https://data.aoe4world.com/images/units/demilancer-3.png",
       "description": "Unique heavy cavalry with moderate damage and durability. Effective frontline unit.\n+ Heavy armor\n+ Strong in melee combat\n- Countered by Spearmen and Crossbowmen",
       "variations": [
         {
-          "id": "demilancer-1",
-          "baseId": "demilancer",
-          "type": "unit",
-          "name": "Veteran Demilancer",
-          "pbgid": 9002532,
-          "attribName": "unit_free_dummy_mounted_manatarms_lan",
-          "age": 1,
+          "id": "demilancer-3",
+          "pbgid": 5000283,
+          "attribName": "unit_mounted_man_at_arm_3_lan",
           "civs": [
             "hl"
-          ],
-          "description": "Unique heavy cavalry with moderate damage and durability. Effective frontline unit.\n+ Heavy armor\n+ Strong in melee combat\n- Countered by Spearmen and Crossbowmen",
-          "classes": [
-            "spawn_ignored_on_timeline"
-          ],
-          "displayClasses": [
-            "Heavy Melee Cavalry"
-          ],
-          "unique": true,
-          "costs": {
-            "food": 0,
-            "wood": 0,
-            "stone": 0,
-            "gold": 0,
-            "total": 0,
-            "popcap": 0
-          },
-          "producedBy": [
-            "lancaster-castle"
-          ],
-          "icon": "https://data.aoe4world.com/images/units/demilancer-1.png",
-          "weapons": [],
-          "armor": [],
-          "sight": {
-            "inner_height": 0,
-            "inner_radius": 0,
-            "outer_height": 0,
-            "outer_radius": 0,
-            "base": 0,
-            "line": 0,
-            "height": 0
-          },
-          "movement": {
-            "speed": null
-          }
+          ]
+        },
+        {
+          "id": "demilancer-4",
+          "pbgid": 5000284,
+          "attribName": "unit_mounted_man_at_arm_4_lan",
+          "civs": [
+            "hl"
+          ]
         }
       ],
-      "shared": {}
+      "baseId": "demilancer",
+      "age": 3,
+      "costs": {
+        "food": 140,
+        "wood": 0,
+        "stone": 0,
+        "gold": 100,
+        "total": 240,
+        "popcap": 1,
+        "time": 35
+      },
+      "producedBy": [],
+      "hitpoints": 150,
+      "sight": {
+        "inner_height": 10,
+        "inner_radius": 4,
+        "outer_height": -15,
+        "outer_radius": 28,
+        "base": 13.6,
+        "line": 28,
+        "height": 10
+      },
+      "movement": {
+        "speed": 1.625
+      },
+      "shared": {
+        "demilancer-3": {
+          "name": "Veteran Demilancer",
+          "weapons": [
+            {
+              "id": "sword",
+              "name": "Sword",
+              "type": "melee",
+              "damage": 9,
+              "speed": 1.5,
+              "range": {
+                "min": 0,
+                "max": 0.2875
+              },
+              "modifiers": [],
+              "durations": {
+                "aim": 0,
+                "windup": 0.5,
+                "attack": 0.125,
+                "winddown": 0,
+                "reload": 0,
+                "setup": 0,
+                "teardown": 0,
+                "cooldown": 0.875
+              },
+              "attribName": "weapon_mounted_maa_3_lan",
+              "pbgid": 5000287
+            },
+            {
+              "id": "torch",
+              "name": "Torch",
+              "type": "fire",
+              "damage": 10,
+              "speed": 2.125,
+              "range": {
+                "min": 0,
+                "max": 1.25
+              },
+              "modifiers": [],
+              "durations": {
+                "aim": 0,
+                "windup": 0.75,
+                "attack": 0.125,
+                "winddown": 0,
+                "reload": 0,
+                "setup": 0,
+                "teardown": 0,
+                "cooldown": 1.25
+              },
+              "attribName": "weapon_torch_horseman",
+              "pbgid": 127935
+            },
+            {
+              "id": "lance",
+              "name": "Lance",
+              "type": "melee",
+              "damage": 14,
+              "speed": 0.525,
+              "range": {
+                "min": 0,
+                "max": 1.0375
+              },
+              "modifiers": [],
+              "durations": {
+                "aim": 0,
+                "windup": 0,
+                "attack": 0.125,
+                "winddown": 0,
+                "reload": 0,
+                "setup": 0,
+                "teardown": 0,
+                "cooldown": 0.4
+              },
+              "attribName": "weapon_mounted_maa_3_charge_lan",
+              "pbgid": 5000288
+            }
+          ],
+          "armor": [
+            {
+              "type": "melee",
+              "value": 3
+            },
+            {
+              "type": "ranged",
+              "value": 3
+            }
+          ],
+          "id": "demilancer-3"
+        },
+        "demilancer-4": {
+          "name": "Elite Demilancer",
+          "age": 4,
+          "icon": "https://data.aoe4world.com/images/units/demilancer-4.png",
+          "hitpoints": 190,
+          "weapons": [
+            {
+              "id": "sword",
+              "name": "Sword",
+              "type": "melee",
+              "damage": 14,
+              "speed": 1.5,
+              "range": {
+                "min": 0,
+                "max": 0.2875
+              },
+              "modifiers": [],
+              "durations": {
+                "aim": 0,
+                "windup": 0.5,
+                "attack": 0.125,
+                "winddown": 0,
+                "reload": 0,
+                "setup": 0,
+                "teardown": 0,
+                "cooldown": 0.875
+              },
+              "attribName": "weapon_mounted_maa_4_lan",
+              "pbgid": 5000289
+            },
+            {
+              "id": "torch",
+              "name": "Torch",
+              "type": "fire",
+              "damage": 10,
+              "speed": 2.125,
+              "range": {
+                "min": 0,
+                "max": 1.25
+              },
+              "modifiers": [],
+              "durations": {
+                "aim": 0,
+                "windup": 0.75,
+                "attack": 0.125,
+                "winddown": 0,
+                "reload": 0,
+                "setup": 0,
+                "teardown": 0,
+                "cooldown": 1.25
+              },
+              "attribName": "weapon_torch_horseman",
+              "pbgid": 127935
+            },
+            {
+              "id": "lance",
+              "name": "Lance",
+              "type": "melee",
+              "damage": 21,
+              "speed": 0.525,
+              "range": {
+                "min": 0,
+                "max": 1.0375
+              },
+              "modifiers": [],
+              "durations": {
+                "aim": 0,
+                "windup": 0,
+                "attack": 0.125,
+                "winddown": 0,
+                "reload": 0,
+                "setup": 0,
+                "teardown": 0,
+                "cooldown": 0.4
+              },
+              "attribName": "weapon_mounted_maa_4_charge_lan",
+              "pbgid": 5000290
+            }
+          ],
+          "armor": [
+            {
+              "type": "melee",
+              "value": 5
+            },
+            {
+              "type": "ranged",
+              "value": 5
+            }
+          ],
+          "id": "demilancer-4"
+        }
+      }
     },
     {
       "id": "demolition-ship",
@@ -926,6 +1123,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "incendiaries",
               "name": "Incendiaries",
               "type": "siege",
               "damage": 95,
@@ -1111,6 +1309,12 @@
           "movement": {
             "speed": null
           },
+          "recruits": [
+            {
+              "item": "units/earls-guard",
+              "count": 3
+            }
+          ],
           "id": "earls-guard-1"
         },
         "earls-guard-3": {
@@ -1120,6 +1324,7 @@
           "hitpoints": 155,
           "weapons": [
             {
+              "id": "war-hammer",
               "name": "War Hammer",
               "type": "melee",
               "damage": 12,
@@ -1143,6 +1348,7 @@
               "pbgid": 5000148
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1166,6 +1372,7 @@
               "pbgid": 123518
             },
             {
+              "id": "dagger",
               "name": "Dagger",
               "type": "ranged",
               "damage": 16,
@@ -1208,6 +1415,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "war-hammer",
               "name": "War Hammer",
               "type": "melee",
               "damage": 14,
@@ -1231,6 +1439,7 @@
               "pbgid": 5000150
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1254,6 +1463,7 @@
               "pbgid": 123518
             },
             {
+              "id": "dagger",
               "name": "Dagger",
               "type": "ranged",
               "damage": 22,
@@ -1303,14 +1513,7 @@
         "Mixed Force Army"
       ],
       "classes": [
-        "archer",
-        "audio_wynguard_footman",
-        "can_be_converted",
-        "infantry",
-        "military",
-        "ranged",
-        "scar_age2",
-        "scar_military"
+        "scar_inflation_include"
       ],
       "minAge": 4,
       "icon": "https://data.aoe4world.com/images/units/earls-retinue-4.png",
@@ -1329,14 +1532,7 @@
           ],
           "description": "Produces an army of 6 Demilancers and 2 Hobelar.",
           "classes": [
-            "archer",
-            "audio_wynguard_footman",
-            "can_be_converted",
-            "infantry",
-            "military",
-            "ranged",
-            "scar_age2",
-            "scar_military"
+            "scar_inflation_include"
           ],
           "displayClasses": [
             "Mixed Force Army"
@@ -1368,7 +1564,17 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/hobelar",
+              "count": 2
+            },
+            {
+              "item": "units/demilancer",
+              "count": 6
+            }
+          ]
         }
       ],
       "shared": {}
@@ -1529,6 +1735,7 @@
           "hitpoints": 300,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -1604,14 +1811,7 @@
         "Mixed Force Army"
       ],
       "classes": [
-        "archer",
-        "audio_wynguard_raiders",
-        "can_be_converted",
-        "infantry",
-        "military",
-        "ranged",
-        "scar_age2",
-        "scar_military"
+        "scar_inflation_include"
       ],
       "minAge": 4,
       "icon": "https://data.aoe4world.com/images/units/garrison-command-4.png",
@@ -1630,14 +1830,7 @@
           ],
           "description": "Produces an army of 8 Spearman and 1 Earl's Guard.",
           "classes": [
-            "archer",
-            "audio_wynguard_raiders",
-            "can_be_converted",
-            "infantry",
-            "military",
-            "ranged",
-            "scar_age2",
-            "scar_military"
+            "scar_inflation_include"
           ],
           "displayClasses": [
             "Mixed Force Army"
@@ -1669,7 +1862,17 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/earls-guard",
+              "count": 1
+            },
+            {
+              "item": "units/spearman",
+              "count": 8
+            }
+          ]
         }
       ],
       "shared": {}
@@ -1686,14 +1889,7 @@
         "Mixed Force Army"
       ],
       "classes": [
-        "archer",
-        "audio_wynguard_rangers",
-        "can_be_converted",
-        "infantry",
-        "military",
-        "ranged",
-        "scar_age2",
-        "scar_military"
+        "scar_inflation_include"
       ],
       "minAge": 4,
       "icon": "https://data.aoe4world.com/images/units/gunpowder-contingent-4.png",
@@ -1712,14 +1908,7 @@
           ],
           "description": "Produces an army of 2 Ribauldequins and 1 Culverin.",
           "classes": [
-            "archer",
-            "audio_wynguard_rangers",
-            "can_be_converted",
-            "infantry",
-            "military",
-            "ranged",
-            "scar_age2",
-            "scar_military"
+            "scar_inflation_include"
           ],
           "displayClasses": [
             "Mixed Force Army"
@@ -1751,7 +1940,17 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/culverin",
+              "count": 1
+            },
+            {
+              "item": "units/ribauldequin",
+              "count": 2
+            }
+          ]
         }
       ],
       "shared": {}
@@ -1765,7 +1964,7 @@
       ],
       "unique": true,
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "classes": [
         "annihilation_condition",
@@ -1834,6 +2033,7 @@
           "name": "Early Handcannoneer",
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 26,
@@ -1868,6 +2068,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 38,
@@ -1984,6 +2185,7 @@
           "name": "Hobelar",
           "weapons": [
             {
+              "id": "short-sword",
               "name": "Short Sword",
               "type": "melee",
               "damage": 7,
@@ -2034,6 +2236,7 @@
               "pbgid": 5000142
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2057,6 +2260,7 @@
               "pbgid": 127935
             },
             {
+              "id": "spear-charge",
               "name": "Spear Charge",
               "type": "melee",
               "damage": 7,
@@ -2122,6 +2326,7 @@
           "hitpoints": 120,
           "weapons": [
             {
+              "id": "short-sword",
               "name": "Short Sword",
               "type": "melee",
               "damage": 9,
@@ -2172,6 +2377,7 @@
               "pbgid": 5000144
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2195,6 +2401,7 @@
               "pbgid": 127935
             },
             {
+              "id": "spear-charge",
               "name": "Spear Charge",
               "type": "melee",
               "damage": 9,
@@ -2260,6 +2467,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "short-sword",
               "name": "Short Sword",
               "type": "melee",
               "damage": 12,
@@ -2310,6 +2518,7 @@
               "pbgid": 5000146
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2333,6 +2542,7 @@
               "pbgid": 127935
             },
             {
+              "id": "spear-charge",
               "name": "Spear Charge",
               "type": "melee",
               "damage": 12,
@@ -2470,6 +2680,7 @@
           "hitpoints": 450,
           "weapons": [
             {
+              "id": "ballista",
               "name": "Ballista",
               "type": "ranged",
               "damage": 35,
@@ -2625,6 +2836,7 @@
           "name": "Knight",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 24,
@@ -2648,6 +2860,7 @@
               "pbgid": 106614
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2690,6 +2903,7 @@
           "hitpoints": 270,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 29,
@@ -2713,6 +2927,7 @@
               "pbgid": 127822
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2833,6 +3048,7 @@
           "hitpoints": 170,
           "weapons": [
             {
+              "id": "great-sword",
               "name": "Great Sword",
               "type": "melee",
               "damage": 14,
@@ -2856,6 +3072,7 @@
               "pbgid": 9005378
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2879,6 +3096,7 @@
               "pbgid": 123518
             },
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 14,
@@ -2997,6 +3215,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "mangonel",
               "name": "Mangonel",
               "type": "siege",
               "damage": 10,
@@ -3064,6 +3283,7 @@
               "pbgid": 127503
             },
             {
+              "id": "incendiary",
               "name": "Incendiary",
               "type": "fire",
               "damage": 2,
@@ -3118,6 +3338,7 @@
               "pbgid": 127724
             },
             {
+              "id": "adjustable-crossbars",
               "name": "Adjustable Crossbars",
               "type": "siege",
               "damage": 10,
@@ -3296,6 +3517,130 @@
       "shared": {}
     },
     {
+      "id": "ribauldequin",
+      "name": "Ribauldequin",
+      "type": "unit",
+      "civs": [
+        "hl"
+      ],
+      "unique": false,
+      "displayClasses": [
+        "Siege",
+        "Gunpowder"
+      ],
+      "classes": [
+        "annihilation_condition",
+        "formational",
+        "gunpowder",
+        "included_by_military_hotkeys",
+        "land_military",
+        "military",
+        "ribauldequin",
+        "siege",
+        "siege_range"
+      ],
+      "minAge": 4,
+      "icon": "https://data.aoe4world.com/images/units/ribauldequin-4.png",
+      "description": "Five-barreled gunpowder weapon effective against massed units. Deals little damage to buildings.\n+ Can hit multiple targets in a single volley\n- Short range\n- Low ranged armor",
+      "variations": [
+        {
+          "id": "ribauldequin-4",
+          "baseId": "ribauldequin",
+          "type": "unit",
+          "name": "Ribauldequin",
+          "pbgid": 5000109,
+          "attribName": "unit_siege_ribauldequin_4_lan",
+          "age": 4,
+          "civs": [
+            "hl"
+          ],
+          "description": "Five-barreled gunpowder weapon effective against massed units. Deals little damage to buildings.\n+ Can hit multiple targets in a single volley\n- Short range\n- Low ranged armor",
+          "classes": [
+            "annihilation_condition",
+            "formational",
+            "gunpowder",
+            "included_by_military_hotkeys",
+            "land_military",
+            "military",
+            "ribauldequin",
+            "siege",
+            "siege_range"
+          ],
+          "displayClasses": [
+            "Siege",
+            "Gunpowder"
+          ],
+          "unique": false,
+          "costs": {
+            "food": 0,
+            "wood": 350,
+            "stone": 0,
+            "gold": 500,
+            "total": 850,
+            "popcap": 3,
+            "time": 45
+          },
+          "producedBy": [],
+          "icon": "https://data.aoe4world.com/images/units/ribauldequin-4.png",
+          "hitpoints": 215,
+          "weapons": [
+            {
+              "id": "ribauldequin",
+              "name": "Ribauldequin",
+              "type": "ranged",
+              "damage": 42,
+              "speed": 5.25,
+              "range": {
+                "min": 0,
+                "max": 3.75
+              },
+              "modifiers": [],
+              "durations": {
+                "aim": 0,
+                "windup": 0,
+                "attack": 1,
+                "winddown": 1,
+                "reload": 3.25,
+                "setup": 0.25,
+                "teardown": 0.25,
+                "cooldown": 0
+              },
+              "burst": {
+                "count": 12
+              },
+              "attribName": "weapon_ribauldequin_4",
+              "pbgid": 130925
+            }
+          ],
+          "armor": [
+            {
+              "type": "melee",
+              "value": 10
+            }
+          ],
+          "resistance": [
+            {
+              "type": "ranged",
+              "value": 35
+            }
+          ],
+          "sight": {
+            "inner_height": 10,
+            "inner_radius": 15,
+            "outer_height": -15,
+            "outer_radius": 45,
+            "base": 27,
+            "line": 45,
+            "height": 10
+          },
+          "movement": {
+            "speed": 0.875
+          }
+        }
+      ],
+      "shared": {}
+    },
+    {
       "id": "scout",
       "name": "Scout",
       "type": "unit",
@@ -3376,6 +3721,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "short-sword",
               "name": "Short Sword",
               "type": "melee",
               "damage": 1,
@@ -3640,6 +3986,7 @@
           "name": "Spearman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 7,
@@ -3705,6 +4052,7 @@
               "pbgid": 106762
             },
             {
+              "id": "bill",
               "name": "Bill",
               "type": "melee",
               "damage": 7,
@@ -3770,6 +4118,7 @@
               "pbgid": 5000176
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3803,6 +4152,7 @@
           "hitpoints": 90,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 8,
@@ -3868,6 +4218,7 @@
               "pbgid": 127825
             },
             {
+              "id": "bill",
               "name": "Bill",
               "type": "melee",
               "damage": 8,
@@ -3933,6 +4284,7 @@
               "pbgid": 5000179
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3966,6 +4318,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -4031,6 +4384,7 @@
               "pbgid": 127826
             },
             {
+              "id": "bill",
               "name": "Bill",
               "type": "melee",
               "damage": 9,
@@ -4096,6 +4450,7 @@
               "pbgid": 5000182
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4129,6 +4484,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -4194,6 +4550,7 @@
               "pbgid": 127827
             },
             {
+              "id": "bill",
               "name": "Bill",
               "type": "melee",
               "damage": 11,
@@ -4259,6 +4616,7 @@
               "pbgid": 5000185
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4357,6 +4715,7 @@
           "hitpoints": 85,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 15,
@@ -4689,7 +5048,8 @@
               "siege",
               "monk",
               "khan",
-              "cavalry"
+              "cavalry",
+              "cattle"
             ]
           }
         }
@@ -4762,6 +5122,7 @@
           "hitpoints": 50,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 5,
@@ -4785,6 +5146,7 @@
               "pbgid": 128811
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4837,14 +5199,7 @@
         "Mixed Force Army"
       ],
       "classes": [
-        "archer",
-        "audio_wynguard_army",
-        "can_be_converted",
-        "infantry",
-        "military",
-        "ranged",
-        "scar_age2",
-        "scar_military"
+        "scar_inflation_include"
       ],
       "minAge": 4,
       "icon": "https://data.aoe4world.com/images/units/wynguard-army-4.png",
@@ -4863,14 +5218,7 @@
           ],
           "description": "Produces an army of 2 Spearmen, 2 Crossbowmen, and a Trebuchet.",
           "classes": [
-            "archer",
-            "audio_wynguard_army",
-            "can_be_converted",
-            "infantry",
-            "military",
-            "ranged",
-            "scar_age2",
-            "scar_military"
+            "scar_inflation_include"
           ],
           "displayClasses": [
             "Mixed Force Army"
@@ -4902,7 +5250,21 @@
           },
           "movement": {
             "speed": null
-          }
+          },
+          "recruits": [
+            {
+              "item": "units/spearman",
+              "count": 2
+            },
+            {
+              "item": "units/crossbowman",
+              "count": 2
+            },
+            {
+              "item": "units/counterweight-trebuchet",
+              "count": 1
+            }
+          ]
         }
       ],
       "shared": {}
@@ -4995,6 +5357,7 @@
           "name": "Yeoman",
           "weapons": [
             {
+              "id": "longbow",
               "name": "Longbow",
               "type": "ranged",
               "damage": 5,
@@ -5025,8 +5388,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -5059,6 +5421,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "longbow",
               "name": "Longbow",
               "type": "ranged",
               "damage": 7,
@@ -5089,8 +5452,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -5123,6 +5485,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "longbow",
               "name": "Longbow",
               "type": "ranged",
               "damage": 8,
@@ -5153,8 +5516,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },

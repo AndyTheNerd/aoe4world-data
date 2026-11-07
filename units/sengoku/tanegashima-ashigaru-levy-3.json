@@ -26,7 +26,7 @@
     "ranged_infantry"
   ],
   "displayClasses": [
-    "Ranged Gunpowder Infantry"
+    "Medium Gunpowder Infantry"
   ],
   "unique": true,
   "costs": {
@@ -44,6 +44,7 @@
   "hitpoints": 90,
   "weapons": [
     {
+      "id": "handcannon",
       "name": "Handcannon",
       "type": "ranged",
       "damage": 15,
@@ -93,5 +94,11 @@
   },
   "movement": {
     "speed": 1.125
-  }
+  },
+  "recruits": [
+    {
+      "item": "units/tanegashima-ashigaru-levy",
+      "count": 1
+    }
+  ]
 }

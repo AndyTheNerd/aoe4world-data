@@ -76,6 +76,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "javelin",
           "name": "Javelin",
           "type": "ranged",
           "damage": 8,
@@ -111,29 +112,6 @@
           },
           "attribName": "weapon_mansa_javelin_2",
           "pbgid": 9000371
-        },
-        {
-          "name": "Torch",
-          "type": "fire",
-          "damage": 10,
-          "speed": 2.125,
-          "range": {
-            "min": 0,
-            "max": 1.25
-          },
-          "modifiers": [],
-          "durations": {
-            "aim": 0,
-            "windup": 0.75,
-            "attack": 0.125,
-            "winddown": 0,
-            "reload": 0,
-            "setup": 0,
-            "teardown": 0,
-            "cooldown": 1.25
-          },
-          "attribName": "weapon_torch",
-          "pbgid": 123518
         }
       ],
       "armor": [
@@ -202,6 +180,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "javelin",
           "name": "Javelin",
           "type": "ranged",
           "damage": 10,
@@ -237,29 +216,6 @@
           },
           "attribName": "weapon_mansa_javelin_3",
           "pbgid": 9000372
-        },
-        {
-          "name": "Torch",
-          "type": "fire",
-          "damage": 10,
-          "speed": 2.125,
-          "range": {
-            "min": 0,
-            "max": 1.25
-          },
-          "modifiers": [],
-          "durations": {
-            "aim": 0,
-            "windup": 0.75,
-            "attack": 0.125,
-            "winddown": 0,
-            "reload": 0,
-            "setup": 0,
-            "teardown": 0,
-            "cooldown": 1.25
-          },
-          "attribName": "weapon_torch",
-          "pbgid": 123518
         }
       ],
       "armor": [
@@ -328,6 +284,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "javelin",
           "name": "Javelin",
           "type": "ranged",
           "damage": 13,
@@ -363,29 +320,6 @@
           },
           "attribName": "weapon_mansa_javelin_4",
           "pbgid": 9000373
-        },
-        {
-          "name": "Torch",
-          "type": "fire",
-          "damage": 10,
-          "speed": 2.125,
-          "range": {
-            "min": 0,
-            "max": 1.25
-          },
-          "modifiers": [],
-          "durations": {
-            "aim": 0,
-            "windup": 0.75,
-            "attack": 0.125,
-            "winddown": 0,
-            "reload": 0,
-            "setup": 0,
-            "teardown": 0,
-            "cooldown": 1.25
-          },
-          "attribName": "weapon_torch",
-          "pbgid": 123518
         }
       ],
       "armor": [

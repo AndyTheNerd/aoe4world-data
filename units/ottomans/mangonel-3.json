@@ -44,6 +44,7 @@
   "hitpoints": 130,
   "weapons": [
     {
+      "id": "mangonel",
       "name": "Mangonel",
       "type": "siege",
       "damage": 10,
@@ -111,6 +112,7 @@
       "pbgid": 127503
     },
     {
+      "id": "incendiary",
       "name": "Incendiary",
       "type": "fire",
       "damage": 2,
@@ -165,6 +167,7 @@
       "pbgid": 127724
     },
     {
+      "id": "adjustable-crossbars",
       "name": "Adjustable Crossbars",
       "type": "siege",
       "damage": 10,
@@ -259,5 +262,20 @@
       "infantry ranged",
       "monk"
     ]
-  }
+  },
+  "productionVariations": [
+    {
+      "venue": "mehmed-imperial-armory",
+      "costs": {
+        "food": 0,
+        "wood": 0,
+        "gold": 0,
+        "stone": 0,
+        "vizier": 0,
+        "time": 40,
+        "popcap": 3,
+        "total": 0
+      }
+    }
+  ]
 }

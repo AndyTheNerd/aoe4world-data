@@ -874,7 +874,7 @@
       ],
       "minAge": 2,
       "icon": "https://data.aoe4world.com/images/buildings/grand-fulani-corral-2.png",
-      "description": "Nearby cattle provide 18 Food per minute.",
+      "description": "Nearby cattle provide 16 Food per minute.",
       "variations": [
         {
           "id": "grand-fulani-corral-2",
@@ -887,7 +887,7 @@
           "civs": [
             "ma"
           ],
-          "description": "Nearby cattle provide 18 Food per minute.",
+          "description": "Nearby cattle provide 16 Food per minute.",
           "classes": [
             "age2_landmark1",
             "audio_production_landmark",
@@ -1255,6 +1255,7 @@
           "hitpoints": 5000,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 12,
@@ -2242,49 +2243,7 @@
           ],
           "icon": "https://data.aoe4world.com/images/buildings/saharan-trade-network-1.png",
           "hitpoints": 5000,
-          "weapons": [
-            {
-              "name": "Bow",
-              "type": "ranged",
-              "damage": 6,
-              "speed": 3.875,
-              "range": {
-                "min": 0,
-                "max": 6
-              },
-              "modifiers": [
-                {
-                  "property": "rangedAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "naval",
-                        "unit"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 10,
-                  "type": "passive"
-                }
-              ],
-              "durations": {
-                "aim": 0,
-                "windup": 0,
-                "attack": 0.125,
-                "winddown": 0,
-                "reload": 1.75,
-                "setup": 0,
-                "teardown": 0,
-                "cooldown": 2
-              },
-              "burst": {
-                "count": 3
-              },
-              "attribName": "weapon_outpost_arrows_garrison",
-              "pbgid": 171016
-            }
-          ],
+          "weapons": [],
           "armor": [
             {
               "type": "ranged",
@@ -2724,6 +2683,7 @@
           "hitpoints": 3000,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 60,
@@ -2851,6 +2811,7 @@
           "hitpoints": 750,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 10,
@@ -2889,6 +2850,7 @@
               "pbgid": 127357
             },
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 40,
@@ -2927,6 +2889,7 @@
               "pbgid": 127365
             },
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "ranged",
               "damage": 70,
@@ -2965,6 +2928,7 @@
               "pbgid": 171004
             },
             {
+              "id": "hot-oil",
               "name": "Hot Oil",
               "type": "siege",
               "damage": 30,
@@ -2988,7 +2952,8 @@
               "pbgid": 145523
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -3026,7 +2991,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -3064,7 +3030,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -3102,7 +3069,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -3140,7 +3108,8 @@
               "pbgid": 171016
             },
             {
-              "name": "Bow",
+              "id": "garrison-bow",
+              "name": "Garrison Bow",
               "type": "ranged",
               "damage": 6,
               "speed": 3.875,
@@ -3178,6 +3147,7 @@
               "pbgid": 171016
             },
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 12,
@@ -3330,7 +3300,7 @@
             "gold": 350,
             "total": 750,
             "popcap": 0,
-            "time": 150
+            "time": 165
           },
           "producedBy": [
             "villager"

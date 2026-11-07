@@ -113,6 +113,7 @@
           "name": "Atgeirmaðr",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 7,
@@ -178,6 +179,7 @@
               "pbgid": 2136366
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -211,6 +213,7 @@
           "hitpoints": 100,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 8,
@@ -276,6 +279,7 @@
               "pbgid": 2136368
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -309,6 +313,7 @@
           "hitpoints": 120,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -374,6 +379,7 @@
               "pbgid": 2136370
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -407,6 +413,7 @@
           "hitpoints": 150,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -472,6 +479,7 @@
               "pbgid": 2136372
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -585,6 +593,7 @@
           "hitpoints": 450,
           "weapons": [
             {
+              "id": "ballista",
               "name": "Ballista",
               "type": "ranged",
               "damage": 35,
@@ -636,6 +645,7 @@
               "pbgid": 2102494
             },
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 40,
@@ -802,6 +812,7 @@
           "name": "Bogmaðr",
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 5,
@@ -832,8 +843,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -884,6 +894,7 @@
           "hitpoints": 90,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 7,
@@ -914,8 +925,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -966,6 +976,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 8,
@@ -996,8 +1007,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -1097,6 +1107,7 @@
           "hitpoints": 210,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 55,
@@ -1272,6 +1283,7 @@
           "hitpoints": 190,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 60,
@@ -1445,10 +1457,10 @@
             "wood": 0,
             "stone": 0,
             "gold": 0,
-            "silver": 250,
-            "total": 250,
+            "silver": 260,
+            "total": 260,
             "popcap": 1,
-            "time": 40
+            "time": 25
           },
           "producedBy": [
             "palatine-school"
@@ -1457,6 +1469,7 @@
           "hitpoints": 405,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 32,
@@ -1480,6 +1493,7 @@
               "pbgid": 2145252
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1503,6 +1517,7 @@
               "pbgid": 127935
             },
             {
+              "id": "lance",
               "name": "Lance",
               "type": "melee",
               "damage": 36,
@@ -1621,9 +1636,10 @@
             "siege-workshop"
           ],
           "icon": "https://data.aoe4world.com/images/units/cheirosiphon-3.png",
-          "hitpoints": 310,
+          "hitpoints": 330,
           "weapons": [
             {
+              "id": "greek-fire",
               "name": "Greek Fire",
               "type": "siege",
               "damage": 10,
@@ -1766,6 +1782,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "trebuchet",
               "name": "Trebuchet",
               "type": "siege",
               "damage": 40,
@@ -1817,6 +1834,7 @@
               "pbgid": 130952
             },
             {
+              "id": "greek-fire",
               "name": "Greek Fire",
               "type": "siege",
               "damage": 40,
@@ -1967,11 +1985,27 @@
       "movement": {
         "speed": 1.125
       },
+      "productionVariations": [
+        {
+          "venue": "golden-horn-tower",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 0,
+            "stone": 0,
+            "silver": 0,
+            "time": 22.5,
+            "popcap": 1,
+            "total": 0
+          }
+        }
+      ],
       "shared": {
         "crossbowman-3": {
           "name": "Crossbowman",
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 11,
@@ -2035,6 +2069,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "crossbow",
               "name": "Crossbow",
               "type": "ranged",
               "damage": 14,
@@ -2151,6 +2186,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "incendiaries",
               "name": "Incendiaries",
               "type": "siege",
               "damage": 95,
@@ -2227,7 +2263,7 @@
       ],
       "unique": true,
       "displayClasses": [
-        "Springald Ship"
+        "Massive Ship"
       ],
       "classes": [
         "annihilation_condition",
@@ -2276,7 +2312,7 @@
             "siegeable"
           ],
           "displayClasses": [
-            "Springald Ship"
+            "Massive Ship"
           ],
           "unique": true,
           "costs": {
@@ -2296,6 +2332,7 @@
           "hitpoints": 500,
           "weapons": [
             {
+              "id": "greek-fire",
               "name": "Greek Fire",
               "type": "siege",
               "damage": 7,
@@ -2531,6 +2568,7 @@
           "hitpoints": 300,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -2603,7 +2641,7 @@
       ],
       "unique": false,
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "classes": [
         "annihilation_condition",
@@ -2650,7 +2688,7 @@
             "ranged_infantry"
           ],
           "displayClasses": [
-            "Ranged Gunpowder Infantry"
+            "Medium Gunpowder Infantry"
           ],
           "unique": false,
           "costs": {
@@ -2670,6 +2708,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 38,
@@ -2788,6 +2827,7 @@
           "hitpoints": 200,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 13,
@@ -2838,6 +2878,7 @@
               "pbgid": 127821
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2882,7 +2923,22 @@
           },
           "movement": {
             "speed": 1.875
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "imperial-hippodrome",
+              "costs": {
+                "food": 10,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "silver": 0,
+                "time": 20,
+                "popcap": 1,
+                "total": 10
+              }
+            }
+          ]
         }
       ],
       "shared": {}
@@ -2979,6 +3035,7 @@
           "hitpoints": 250,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 29,
@@ -3002,6 +3059,7 @@
               "pbgid": 9001652
             },
             {
+              "id": "rhomphaia",
               "name": "Rhomphaia",
               "type": "melee",
               "damage": 32,
@@ -3025,6 +3083,7 @@
               "pbgid": 9002982
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3048,6 +3107,7 @@
               "pbgid": 127935
             },
             {
+              "id": "throwing-axe",
               "name": "Throwing Axe",
               "type": "melee",
               "damage": 18,
@@ -3092,7 +3152,22 @@
           },
           "movement": {
             "speed": 1.7
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "imperial-hippodrome",
+              "costs": {
+                "food": 0,
+                "wood": 0,
+                "gold": 0,
+                "stone": 0,
+                "silver": 0,
+                "time": 30,
+                "popcap": 1,
+                "total": 0
+              }
+            }
+          ]
         }
       ],
       "shared": {}
@@ -3177,6 +3252,7 @@
           "hitpoints": 200,
           "weapons": [
             {
+              "id": "weapon-dummy-horse-melee-hack",
               "name": "(translation not found) (undefined)",
               "type": "melee",
               "damage": 0,
@@ -3200,6 +3276,7 @@
               "pbgid": 164759
             },
             {
+              "id": "short-sword",
               "name": "Short Sword",
               "type": "melee",
               "damage": 5,
@@ -3250,7 +3327,8 @@
               "pbgid": 9004199
             },
             {
-              "name": "Bow",
+              "id": "hunting-bow",
+              "name": "Hunting Bow",
               "type": "ranged",
               "damage": 3,
               "speed": 1.75,
@@ -3273,6 +3351,7 @@
               "pbgid": 174090
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3308,7 +3387,22 @@
           },
           "movement": {
             "speed": 1.625
-          }
+          },
+          "productionVariations": [
+            {
+              "venue": "imperial-hippodrome",
+              "costs": {
+                "food": 10,
+                "wood": 0,
+                "gold": 10,
+                "stone": 0,
+                "silver": 0,
+                "time": 20,
+                "popcap": 1,
+                "total": 20
+              }
+            }
+          ]
         }
       ],
       "shared": {}
@@ -3402,6 +3496,7 @@
           "name": "Horseman",
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -3452,6 +3547,7 @@
               "pbgid": 109275
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3490,6 +3586,7 @@
           "hitpoints": 155,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -3540,6 +3637,7 @@
               "pbgid": 127820
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3578,6 +3676,7 @@
           "hitpoints": 180,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 13,
@@ -3628,6 +3727,7 @@
               "pbgid": 127821
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3733,6 +3833,7 @@
           "hitpoints": 260,
           "weapons": [
             {
+              "id": "huihui-pao",
               "name": "Huihui Pao",
               "type": "siege",
               "damage": 75,
@@ -3784,6 +3885,7 @@
               "pbgid": 2117338
             },
             {
+              "id": "greek-fire",
               "name": "Greek Fire",
               "type": "siege",
               "damage": 75,
@@ -3928,6 +4030,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "mangonel",
               "name": "Mangonel",
               "type": "siege",
               "damage": 10,
@@ -3995,6 +4098,7 @@
               "pbgid": 127503
             },
             {
+              "id": "incendiary",
               "name": "Incendiary",
               "type": "fire",
               "damage": 2,
@@ -4049,6 +4153,7 @@
               "pbgid": 127724
             },
             {
+              "id": "adjustable-crossbars",
               "name": "Adjustable Crossbars",
               "type": "siege",
               "damage": 10,
@@ -4302,6 +4407,7 @@
           "hitpoints": 120,
           "weapons": [
             {
+              "id": "rocket-arrow",
               "name": "Rocket Arrow",
               "type": "siege",
               "damage": 6,
@@ -4468,6 +4574,7 @@
           "name": "Riddari",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 24,
@@ -4491,6 +4598,7 @@
               "pbgid": 9001649
             },
             {
+              "id": "rhomphaia",
               "name": "Rhomphaia",
               "type": "melee",
               "damage": 27,
@@ -4514,6 +4622,7 @@
               "pbgid": 9002979
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4537,6 +4646,7 @@
               "pbgid": 127935
             },
             {
+              "id": "throwing-axe",
               "name": "Throwing Axe",
               "type": "melee",
               "damage": 15,
@@ -4579,6 +4689,7 @@
           "hitpoints": 270,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 29,
@@ -4602,6 +4713,7 @@
               "pbgid": 9001652
             },
             {
+              "id": "rhomphaia",
               "name": "Rhomphaia",
               "type": "melee",
               "damage": 32,
@@ -4625,6 +4737,7 @@
               "pbgid": 9002982
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4648,6 +4761,7 @@
               "pbgid": 127935
             },
             {
+              "id": "throwing-axe",
               "name": "Throwing Axe",
               "type": "melee",
               "damage": 18,
@@ -4684,183 +4798,6 @@
           "id": "riddari-4"
         }
       }
-    },
-    {
-      "id": "royal-cannon",
-      "name": "Royal Cannon",
-      "type": "unit",
-      "civs": [
-        "mac"
-      ],
-      "unique": false,
-      "displayClasses": [
-        "Siege",
-        "Gunpowder"
-      ],
-      "classes": [
-        "annihilation_condition",
-        "bombard_wheeled",
-        "find_non_siege_land_military",
-        "formational",
-        "gunpowder",
-        "included_by_military_hotkeys",
-        "land_military",
-        "military",
-        "royal_artillery",
-        "siege",
-        "siege_range"
-      ],
-      "minAge": 4,
-      "icon": "https://data.aoe4world.com/images/units/royal-cannon-4.png",
-      "description": "Most powerful siege cannon. Excellent against buildings or any stubborn targets.\n+ Bonus damage to buildings",
-      "variations": [
-        {
-          "id": "royal-cannon-4",
-          "baseId": "royal-cannon",
-          "type": "unit",
-          "name": "Royal Cannon",
-          "pbgid": 9003231,
-          "attribName": "unit_cannon_4_royal_merc_byz_ha_mac",
-          "age": 4,
-          "civs": [
-            "mac"
-          ],
-          "description": "Most powerful siege cannon. Excellent against buildings or any stubborn targets.\n+ Bonus damage to buildings",
-          "classes": [
-            "annihilation_condition",
-            "bombard_wheeled",
-            "find_non_siege_land_military",
-            "formational",
-            "gunpowder",
-            "included_by_military_hotkeys",
-            "land_military",
-            "military",
-            "royal_artillery",
-            "siege",
-            "siege_range"
-          ],
-          "displayClasses": [
-            "Siege",
-            "Gunpowder"
-          ],
-          "unique": false,
-          "costs": {
-            "food": 0,
-            "wood": 0,
-            "stone": 0,
-            "gold": 0,
-            "silver": 900,
-            "total": 900,
-            "popcap": 3,
-            "time": 45
-          },
-          "producedBy": [
-            "foreign-engineering-company"
-          ],
-          "icon": "https://data.aoe4world.com/images/units/royal-cannon-4.png",
-          "hitpoints": 190,
-          "weapons": [
-            {
-              "name": "Cannon",
-              "type": "siege",
-              "damage": 60,
-              "speed": 5.375,
-              "range": {
-                "min": 3.75,
-                "max": 10
-              },
-              "modifiers": [
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "naval",
-                        "unit"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 500,
-                  "type": "passive"
-                },
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "building"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 450,
-                  "type": "passive"
-                },
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "infantry"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 55,
-                  "type": "passive"
-                },
-                {
-                  "property": "siegeAttack",
-                  "target": {
-                    "class": [
-                      [
-                        "war",
-                        "elephant"
-                      ]
-                    ]
-                  },
-                  "effect": "change",
-                  "value": 55,
-                  "type": "passive"
-                }
-              ],
-              "durations": {
-                "aim": 0.5,
-                "windup": 0,
-                "attack": 0.125,
-                "winddown": 1.75,
-                "reload": 3,
-                "setup": 0.25,
-                "teardown": 0.25,
-                "cooldown": 0
-              },
-              "attribName": "weapon_cannon_4",
-              "pbgid": 165121
-            }
-          ],
-          "armor": [],
-          "resistance": [
-            {
-              "type": "ranged",
-              "value": 85
-            }
-          ],
-          "sight": {
-            "inner_height": 10,
-            "inner_radius": 32,
-            "outer_height": -15,
-            "outer_radius": 56,
-            "base": 41.6,
-            "line": 56,
-            "height": 10
-          },
-          "movement": {
-            "speed": 0.875
-          }
-        }
-      ],
-      "shared": {}
     },
     {
       "id": "scout",
@@ -4945,6 +4882,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "short-sword",
               "name": "Short Sword",
               "type": "melee",
               "damage": 1,
@@ -5183,6 +5121,7 @@
           "hitpoints": 85,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 15,
@@ -5235,13 +5174,14 @@
               "pbgid": 190303
             },
             {
+              "id": "roman-fire",
               "name": "Roman Fire",
               "type": "ranged",
               "damage": 15,
               "speed": 2.625,
               "range": {
                 "min": 0,
-                "max": 8
+                "max": 7.5
               },
               "modifiers": [
                 {
@@ -5570,7 +5510,8 @@
               "siege",
               "monk",
               "khan",
-              "cavalry"
+              "cavalry",
+              "cattle"
             ]
           }
         }
@@ -5653,7 +5594,7 @@
         "varangian-stronghold",
         "varangian-warcamp"
       ],
-      "hitpoints": 120,
+      "hitpoints": 115,
       "sight": {
         "inner_height": 10,
         "inner_radius": 12,
@@ -5671,6 +5612,7 @@
           "name": "Early Varangian Guard",
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 11,
@@ -5694,6 +5636,7 @@
               "pbgid": 9001749
             },
             {
+              "id": "ax",
               "name": "Ax",
               "type": "melee",
               "damage": 11,
@@ -5732,6 +5675,7 @@
               "pbgid": 9001751
             },
             {
+              "id": "rhomphaia",
               "name": "Rhomphaia",
               "type": "melee",
               "damage": 11,
@@ -5770,6 +5714,7 @@
               "pbgid": 9002985
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5812,6 +5757,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 13,
@@ -5835,6 +5781,7 @@
               "pbgid": 9001632
             },
             {
+              "id": "ax",
               "name": "Ax",
               "type": "melee",
               "damage": 13,
@@ -5873,6 +5820,7 @@
               "pbgid": 9001634
             },
             {
+              "id": "rhomphaia",
               "name": "Rhomphaia",
               "type": "melee",
               "damage": 13,
@@ -5911,6 +5859,7 @@
               "pbgid": 9002987
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5953,6 +5902,7 @@
           "hitpoints": 195,
           "weapons": [
             {
+              "id": "sword",
               "name": "Sword",
               "type": "melee",
               "damage": 16,
@@ -5976,6 +5926,7 @@
               "pbgid": 9001638
             },
             {
+              "id": "ax",
               "name": "Ax",
               "type": "melee",
               "damage": 16,
@@ -6014,6 +5965,7 @@
               "pbgid": 9001636
             },
             {
+              "id": "rhomphaia",
               "name": "Rhomphaia",
               "type": "melee",
               "damage": 16,
@@ -6052,6 +6004,7 @@
               "pbgid": 9002989
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6156,6 +6109,7 @@
           "hitpoints": 50,
           "weapons": [
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -6179,6 +6133,7 @@
               "pbgid": 123522
             },
             {
+              "id": "knife",
               "name": "Knife",
               "type": "melee",
               "damage": 6,
@@ -6293,6 +6248,7 @@
           "hitpoints": 700,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 45,
@@ -6330,6 +6286,7 @@
               "pbgid": 2033788
             },
             {
+              "id": "chain-shot",
               "name": "Chain Shot",
               "type": "ranged",
               "damage": 35,

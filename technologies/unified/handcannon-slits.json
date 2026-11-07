@@ -9,13 +9,15 @@
     "jin",
     "zx"
   ],
-  "unique": false,
+  "unique": true,
   "displayClasses": [
     "Weapon Emplacement"
   ],
   "classes": [
+    "chinese_ha_01_upgrade",
     "chinese_upgrade",
     "emplacement_upgrade",
+    "jin_upgrade",
     "military_upgrade",
     "scar_feudal_age_upgrade",
     "scar_military_upgrade",
@@ -38,8 +40,10 @@
       ],
       "description": "Add defensive handcannon slits to this structure and increases garrison arrow range by +1. Only one weapon emplacement can be added.",
       "classes": [
+        "chinese_ha_01_upgrade",
         "chinese_upgrade",
         "emplacement_upgrade",
+        "jin_upgrade",
         "military_upgrade",
         "scar_feudal_age_upgrade",
         "scar_military_upgrade",
@@ -48,7 +52,7 @@
       "displayClasses": [
         "Weapon Emplacement"
       ],
-      "unique": false,
+      "unique": true,
       "costs": {
         "food": 0,
         "wood": 0,
@@ -89,8 +93,10 @@
       ],
       "description": "Add defensive handcannon slits to this structure and increases garrison arrow range by +1. Only one weapon emplacement can be added.",
       "classes": [
+        "chinese_ha_01_upgrade",
         "chinese_upgrade",
         "emplacement_upgrade",
+        "jin_upgrade",
         "military_upgrade",
         "scar_feudal_age_upgrade",
         "scar_military_upgrade",
@@ -99,7 +105,7 @@
       "displayClasses": [
         "Weapon Emplacement"
       ],
-      "unique": false,
+      "unique": true,
       "costs": {
         "food": 0,
         "wood": 0,
@@ -140,8 +146,10 @@
       ],
       "description": "Add defensive handcannon slits to this structure and increases garrison arrow range by +1. Only one weapon emplacement can be added.",
       "classes": [
+        "chinese_ha_01_upgrade",
         "chinese_upgrade",
         "emplacement_upgrade",
+        "jin_upgrade",
         "military_upgrade",
         "scar_feudal_age_upgrade",
         "scar_military_upgrade",
@@ -150,7 +158,7 @@
       "displayClasses": [
         "Weapon Emplacement"
       ],
-      "unique": false,
+      "unique": true,
       "costs": {
         "food": 0,
         "wood": 0,

@@ -3,8 +3,8 @@
   "baseId": "royal-knight",
   "type": "unit",
   "name": "Veteran Royal Knight",
-  "pbgid": 132279,
-  "attribName": "unit_knight_3_fre",
+  "pbgid": 7075678,
+  "attribName": "unit_knight_3_fre_ha_01",
   "age": 3,
   "civs": [
     "je"
@@ -49,6 +49,7 @@
   "hitpoints": 230,
   "weapons": [
     {
+      "id": "sword",
       "name": "Sword",
       "type": "melee",
       "damage": 24,
@@ -72,6 +73,7 @@
       "pbgid": 106614
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,

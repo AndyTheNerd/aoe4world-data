@@ -58,6 +58,7 @@
       "hitpoints": 700,
       "weapons": [
         {
+          "id": "cannon",
           "name": "Cannon",
           "type": "siege",
           "damage": 45,
@@ -157,9 +158,10 @@
         "machine-workshop"
       ],
       "icon": "https://data.aoe4world.com/images/units/battering-ram-2.png",
-      "hitpoints": 370,
+      "hitpoints": 410,
       "weapons": [
         {
+          "id": "ram",
           "name": "Ram",
           "type": "siege",
           "damage": 200,
@@ -265,12 +267,13 @@
         "machine-workshop"
       ],
       "icon": "https://data.aoe4world.com/images/units/bed-crossbow-2.png",
-      "hitpoints": 85,
+      "hitpoints": 90,
       "weapons": [
         {
+          "id": "bed-crossbow",
           "name": "Bed Crossbow",
           "type": "ranged",
-          "damage": 7,
+          "damage": 10,
           "speed": 3.125,
           "range": {
             "min": 0,
@@ -288,7 +291,7 @@
                 ]
               },
               "effect": "change",
-              "value": 4,
+              "value": 6,
               "type": "passive"
             },
             {
@@ -385,9 +388,10 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "bed-crossbow",
           "name": "Bed Crossbow",
           "type": "ranged",
-          "damage": 9,
+          "damage": 11,
           "speed": 3.125,
           "range": {
             "min": 0,
@@ -405,7 +409,7 @@
                 ]
               },
               "effect": "change",
-              "value": 4,
+              "value": 6,
               "type": "passive"
             },
             {
@@ -440,7 +444,12 @@
           "pbgid": 9004145
         }
       ],
-      "armor": [],
+      "armor": [
+        {
+          "type": "melee",
+          "value": 1
+        }
+      ],
       "resistance": [
         {
           "type": "ranged",
@@ -499,12 +508,13 @@
         "machine-workshop"
       ],
       "icon": "https://data.aoe4world.com/images/units/bed-crossbow-4.png",
-      "hitpoints": 110,
+      "hitpoints": 115,
       "weapons": [
         {
+          "id": "bed-crossbow",
           "name": "Bed Crossbow",
           "type": "ranged",
-          "damage": 12,
+          "damage": 14,
           "speed": 3.125,
           "range": {
             "min": 0,
@@ -522,7 +532,7 @@
                 ]
               },
               "effect": "change",
-              "value": 5,
+              "value": 7,
               "type": "passive"
             },
             {
@@ -557,7 +567,12 @@
           "pbgid": 9004146
         }
       ],
-      "armor": [],
+      "armor": [
+        {
+          "type": "melee",
+          "value": 2
+        }
+      ],
       "resistance": [
         {
           "type": "ranged",
@@ -621,6 +636,7 @@
       "hitpoints": 210,
       "weapons": [
         {
+          "id": "cannon",
           "name": "Cannon",
           "type": "siege",
           "damage": 55,
@@ -766,6 +782,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 11,
@@ -803,6 +820,7 @@
           "pbgid": 108239
         },
         {
+          "id": "weapon-crossbow-3-library-upgrade-incendiary-chi-ha-01",
           "name": "(translation not found) (undefined)",
           "type": "ranged",
           "damage": 11,
@@ -905,6 +923,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "crossbow",
           "name": "Crossbow",
           "type": "ranged",
           "damage": 14,
@@ -957,52 +976,6 @@
       }
     },
     {
-      "id": "emissary-1",
-      "baseId": "emissary",
-      "type": "unit",
-      "name": "Emissary",
-      "pbgid": 9005656,
-      "attribName": "unit_free_dummy_emissary_jin",
-      "age": 1,
-      "civs": [
-        "jin"
-      ],
-      "description": "Support unit which can establish Tributaries at Trade Posts and Bribe enemy soldiers to revolt.\n+ Powerful Abilities\n- Expensive\n- Build limit of 3\n- Weak to all attacks",
-      "classes": [
-        "spawn_ignored_on_timeline"
-      ],
-      "displayClasses": [
-        "Worker"
-      ],
-      "unique": true,
-      "costs": {
-        "food": 0,
-        "wood": 0,
-        "stone": 0,
-        "gold": 0,
-        "total": 0,
-        "popcap": 0
-      },
-      "producedBy": [
-        "dragon-pavilion"
-      ],
-      "icon": "https://data.aoe4world.com/images/units/emissary-1.png",
-      "weapons": [],
-      "armor": [],
-      "sight": {
-        "inner_height": 0,
-        "inner_radius": 0,
-        "outer_height": 0,
-        "outer_radius": 0,
-        "base": 0,
-        "line": 0,
-        "height": 0
-      },
-      "movement": {
-        "speed": null
-      }
-    },
-    {
       "id": "emissary-3",
       "baseId": "emissary",
       "type": "unit",
@@ -1018,7 +991,8 @@
         "annihilation_condition",
         "emissary",
         "formational",
-        "human"
+        "human",
+        "scar_inflation_include"
       ],
       "displayClasses": [
         "Worker"
@@ -1053,7 +1027,21 @@
       },
       "movement": {
         "speed": 1.125
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "dragon-pavilion",
+          "costs": {
+            "food": 0,
+            "wood": 0,
+            "gold": 100,
+            "stone": 0,
+            "time": 20,
+            "popcap": 1,
+            "total": 100
+          }
+        }
+      ]
     },
     {
       "id": "eruptor-4",
@@ -1083,7 +1071,7 @@
         "ranged_infantry"
       ],
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "unique": true,
       "costs": {
@@ -1102,6 +1090,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "eruptor",
           "name": "Eruptor",
           "type": "ranged",
           "damage": 42,
@@ -1184,6 +1173,7 @@
       "hitpoints": 145,
       "weapons": [
         {
+          "id": "incendiaries",
           "name": "Incendiaries",
           "type": "siege",
           "damage": 95,
@@ -1351,6 +1341,7 @@
       "hitpoints": 125,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 9,
@@ -1401,6 +1392,7 @@
           "pbgid": 109275
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1490,6 +1482,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 11,
@@ -1540,6 +1533,7 @@
           "pbgid": 127820
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1629,6 +1623,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 13,
@@ -1679,6 +1674,7 @@
           "pbgid": 127821
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1769,12 +1765,13 @@
         "war-stable"
       ],
       "icon": "https://data.aoe4world.com/images/units/iron-pagoda-2.png",
-      "hitpoints": 200,
+      "hitpoints": 210,
       "weapons": [
         {
+          "id": "podao",
           "name": "Podao",
           "type": "melee",
-          "damage": 16,
+          "damage": 17,
           "speed": 1.5,
           "range": {
             "min": 0,
@@ -1783,18 +1780,19 @@
           "modifiers": [],
           "durations": {
             "aim": 0,
-            "windup": 0.75,
+            "windup": 0.5,
             "attack": 0.125,
             "winddown": 0,
             "reload": 0,
             "setup": 0,
             "teardown": 0,
-            "cooldown": 0.625
+            "cooldown": 0.875
           },
           "attribName": "weapon_iron_pagoda_2_jin",
           "pbgid": 9004737
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1818,9 +1816,10 @@
           "pbgid": 127935
         },
         {
+          "id": "lance",
           "name": "Lance",
           "type": "melee",
-          "damage": 24,
+          "damage": 25,
           "speed": 0.525,
           "range": {
             "min": 0,
@@ -1912,12 +1911,13 @@
         "war-stable"
       ],
       "icon": "https://data.aoe4world.com/images/units/iron-pagoda-3.png",
-      "hitpoints": 250,
+      "hitpoints": 255,
       "weapons": [
         {
+          "id": "podao",
           "name": "Podao",
           "type": "melee",
-          "damage": 20,
+          "damage": 21,
           "speed": 1.5,
           "range": {
             "min": 0,
@@ -1926,18 +1926,19 @@
           "modifiers": [],
           "durations": {
             "aim": 0,
-            "windup": 0.75,
+            "windup": 0.5,
             "attack": 0.125,
             "winddown": 0,
             "reload": 0,
             "setup": 0,
             "teardown": 0,
-            "cooldown": 0.625
+            "cooldown": 0.875
           },
           "attribName": "weapon_iron_pagoda_3_jin",
           "pbgid": 9004128
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -1961,9 +1962,10 @@
           "pbgid": 127935
         },
         {
+          "id": "lance",
           "name": "Lance",
           "type": "melee",
-          "damage": 30,
+          "damage": 31,
           "speed": 0.525,
           "range": {
             "min": 0,
@@ -2055,12 +2057,13 @@
         "war-stable"
       ],
       "icon": "https://data.aoe4world.com/images/units/iron-pagoda-4.png",
-      "hitpoints": 290,
+      "hitpoints": 295,
       "weapons": [
         {
+          "id": "podao",
           "name": "Podao",
           "type": "melee",
-          "damage": 23,
+          "damage": 24,
           "speed": 1.5,
           "range": {
             "min": 0,
@@ -2069,18 +2072,19 @@
           "modifiers": [],
           "durations": {
             "aim": 0,
-            "windup": 0.75,
+            "windup": 0.5,
             "attack": 0.125,
             "winddown": 0,
             "reload": 0,
             "setup": 0,
             "teardown": 0,
-            "cooldown": 0.625
+            "cooldown": 0.875
           },
           "attribName": "weapon_iron_pagoda_4_jin",
           "pbgid": 9004130
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2104,9 +2108,10 @@
           "pbgid": 127935
         },
         {
+          "id": "lance",
           "name": "Lance",
           "type": "melee",
-          "damage": 35,
+          "damage": 36,
           "speed": 0.525,
           "range": {
             "min": 0,
@@ -2194,6 +2199,7 @@
       "hitpoints": 300,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -2303,6 +2309,7 @@
       "hitpoints": 155,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 12,
@@ -2326,6 +2333,7 @@
           "pbgid": 109253
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2421,6 +2429,7 @@
       "hitpoints": 180,
       "weapons": [
         {
+          "id": "sword",
           "name": "Sword",
           "type": "melee",
           "damage": 14,
@@ -2444,6 +2453,7 @@
           "pbgid": 127823
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -2536,9 +2546,10 @@
       "hitpoints": 60,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
-          "damage": 4,
+          "damage": 5,
           "speed": 1.625,
           "range": {
             "min": 0,
@@ -2663,9 +2674,10 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
-          "damage": 6,
+          "damage": 7,
           "speed": 1.625,
           "range": {
             "min": 0,
@@ -2693,8 +2705,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2790,9 +2801,10 @@
       "hitpoints": 90,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
-          "damage": 7,
+          "damage": 8,
           "speed": 1.625,
           "range": {
             "min": 0,
@@ -2820,8 +2832,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -2972,6 +2983,7 @@
       "hitpoints": 85,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 6,
@@ -2995,6 +3007,7 @@
           "pbgid": 9006723
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3018,6 +3031,7 @@
           "pbgid": 123522
         },
         {
+          "id": "hunting-bow",
           "name": "Hunting Bow",
           "type": "ranged",
           "damage": 3,
@@ -3041,6 +3055,7 @@
           "pbgid": 173519
         },
         {
+          "id": "hunting-spear",
           "name": "Hunting Spear",
           "type": "melee",
           "damage": 12,
@@ -3122,6 +3137,7 @@
       "hitpoints": 120,
       "weapons": [
         {
+          "id": "rocket-arrow",
           "name": "Rocket Arrow",
           "type": "siege",
           "damage": 6,
@@ -3299,6 +3315,7 @@
       "hitpoints": 110,
       "weapons": [
         {
+          "id": "dao",
           "name": "Dao",
           "type": "melee",
           "damage": 1,
@@ -3486,6 +3503,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 7,
@@ -3551,6 +3569,7 @@
           "pbgid": 106762
         },
         {
+          "id": "storm-lance",
           "name": "Storm Lance",
           "type": "melee",
           "damage": 7,
@@ -3616,6 +3635,7 @@
           "pbgid": 9005945
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3702,6 +3722,7 @@
       "hitpoints": 90,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 8,
@@ -3767,6 +3788,7 @@
           "pbgid": 127825
         },
         {
+          "id": "storm-lance",
           "name": "Storm Lance",
           "type": "melee",
           "damage": 8,
@@ -3832,6 +3854,7 @@
           "pbgid": 9005947
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -3918,6 +3941,7 @@
       "hitpoints": 110,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 9,
@@ -3983,6 +4007,7 @@
           "pbgid": 127826
         },
         {
+          "id": "storm-lance",
           "name": "Storm Lance",
           "type": "melee",
           "damage": 9,
@@ -4048,6 +4073,7 @@
           "pbgid": 9005949
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -4134,6 +4160,7 @@
       "hitpoints": 140,
       "weapons": [
         {
+          "id": "spear",
           "name": "Spear",
           "type": "melee",
           "damage": 11,
@@ -4199,6 +4226,7 @@
           "pbgid": 127827
         },
         {
+          "id": "storm-lance",
           "name": "Storm Lance",
           "type": "melee",
           "damage": 11,
@@ -4264,6 +4292,7 @@
           "pbgid": 9005951
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -4344,6 +4373,7 @@
       "hitpoints": 125,
       "weapons": [
         {
+          "id": "trebuchet",
           "name": "Trebuchet",
           "type": "siege",
           "damage": 40,
@@ -4587,7 +4617,8 @@
           "siege",
           "monk",
           "khan",
-          "cavalry"
+          "cavalry",
+          "cattle"
         ]
       }
     },
@@ -4633,6 +4664,7 @@
       "hitpoints": 50,
       "weapons": [
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,
@@ -4656,6 +4688,7 @@
           "pbgid": 123522
         },
         {
+          "id": "knife",
           "name": "Knife",
           "type": "melee",
           "damage": 6,
@@ -4740,6 +4773,7 @@
       "hitpoints": 450,
       "weapons": [
         {
+          "id": "ballista",
           "name": "Ballista",
           "type": "ranged",
           "damage": 35,
@@ -4858,6 +4892,7 @@
       "hitpoints": 250,
       "weapons": [
         {
+          "id": "zhanmadao",
           "name": "Zhanmadao",
           "type": "melee",
           "damage": 20,
@@ -4895,6 +4930,7 @@
           "pbgid": 9004132
         },
         {
+          "id": "torch",
           "name": "Torch",
           "type": "fire",
           "damage": 10,

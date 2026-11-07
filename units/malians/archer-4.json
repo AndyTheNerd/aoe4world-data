@@ -45,6 +45,7 @@
   "hitpoints": 95,
   "weapons": [
     {
+      "id": "bow",
       "name": "Bow",
       "type": "ranged",
       "damage": 8,
@@ -75,8 +76,7 @@
             "class": [
               [
                 "light",
-                "gunpowder",
-                "infantry"
+                "gunpowder"
               ]
             ]
           },
@@ -99,6 +99,7 @@
       "pbgid": 127829
     },
     {
+      "id": "poisoned-arrows",
       "name": "Poisoned Arrows",
       "type": "ranged",
       "damage": 8,
@@ -129,8 +130,7 @@
             "class": [
               [
                 "light",
-                "gunpowder",
-                "infantry"
+                "gunpowder"
               ]
             ]
           },

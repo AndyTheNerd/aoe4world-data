@@ -1,7 +1,10 @@
 {
+  "id": "byzantines",
   "name": "Byzantines",
-  "description": "The Byzantines construct sprawling networks of life-giving Aqueducts and Cisterns. Leverage powerful unique abilities and hire Mercenaries with exquisite Olive Oil. Peasants work tirelessly to manufacture Olive Oil for the empire.",
+  "abbr": "by",
+  "slug": "byzantines",
   "classes": "City Planning, Mercenaries, Defense",
+  "description": "The Byzantines construct sprawling networks of life-giving Aqueducts and Cisterns. Leverage powerful unique abilities and hire Mercenaries with exquisite Olive Oil. Peasants work tirelessly to manufacture Olive Oil for the empire.",
   "overview": [
     {
       "title": "Civilization Bonuses",
@@ -19,7 +22,7 @@
     },
     {
       "title": "Olive Oil",
-      "description": "Collect a unique resource that is used to hire Mercenary units. Villagers gather Olive Oil equal to 50% of Food gathered from Berry Bushes, 20% from Olive Groves, and 10% from Shore Fish.\nFishing Boats generate Olive Oil equal to 20% of Food from Fish and Traders provide 20% Olive Oil based on the amount being traded."
+      "description": "Collect a unique resource that is used to hire Mercenary units. Villagers gather Olive Oil equal to 50% of Food gathered from Berry Bushes, 15% from Olive Groves, and 10% from Shore Fish.\nFishing Boats generate Olive Oil equal to 20% of Food from Fish and Traders provide 20% Olive Oil based on the amount being traded."
     },
     {
       "title": "Mercenaries",

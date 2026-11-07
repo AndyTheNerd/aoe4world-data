@@ -77,6 +77,7 @@
       "hitpoints": 75,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 4,
@@ -112,7 +113,21 @@
       },
       "movement": {
         "speed": 1.5625
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "archery-range",
+          "costs": {
+            "food": 0,
+            "wood": 30,
+            "gold": 30,
+            "stone": 60,
+            "time": 20,
+            "popcap": 1,
+            "total": 120
+          }
+        }
+      ]
     },
     {
       "id": "khans-hunter-3",
@@ -161,6 +176,7 @@
       "hitpoints": 90,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 5,
@@ -196,7 +212,21 @@
       },
       "movement": {
         "speed": 1.5625
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "archery-range",
+          "costs": {
+            "food": 0,
+            "wood": 30,
+            "gold": 30,
+            "stone": 60,
+            "time": 20,
+            "popcap": 1,
+            "total": 120
+          }
+        }
+      ]
     },
     {
       "id": "khans-hunter-4",
@@ -245,6 +275,7 @@
       "hitpoints": 110,
       "weapons": [
         {
+          "id": "bow",
           "name": "Bow",
           "type": "ranged",
           "damage": 6,
@@ -280,7 +311,21 @@
       },
       "movement": {
         "speed": 1.5625
-      }
+      },
+      "productionVariations": [
+        {
+          "venue": "archery-range",
+          "costs": {
+            "food": 0,
+            "wood": 30,
+            "gold": 30,
+            "stone": 60,
+            "time": 20,
+            "popcap": 1,
+            "total": 120
+          }
+        }
+      ]
     }
   ]
 }

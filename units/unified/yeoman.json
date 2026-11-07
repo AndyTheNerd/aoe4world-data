@@ -79,6 +79,7 @@
       "hitpoints": 70,
       "weapons": [
         {
+          "id": "longbow",
           "name": "Longbow",
           "type": "ranged",
           "damage": 5,
@@ -109,8 +110,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -195,6 +195,7 @@
       "hitpoints": 80,
       "weapons": [
         {
+          "id": "longbow",
           "name": "Longbow",
           "type": "ranged",
           "damage": 7,
@@ -225,8 +226,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },
@@ -311,6 +311,7 @@
       "hitpoints": 95,
       "weapons": [
         {
+          "id": "longbow",
           "name": "Longbow",
           "type": "ranged",
           "damage": 8,
@@ -341,8 +342,7 @@
                 "class": [
                   [
                     "light",
-                    "gunpowder",
-                    "infantry"
+                    "gunpowder"
                   ]
                 ]
               },

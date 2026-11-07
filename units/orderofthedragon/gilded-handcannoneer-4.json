@@ -25,7 +25,7 @@
     "ranged_infantry"
   ],
   "displayClasses": [
-    "Ranged Gunpowder Infantry"
+    "Medium Gunpowder Infantry"
   ],
   "unique": true,
   "costs": {
@@ -44,6 +44,7 @@
   "hitpoints": 250,
   "weapons": [
     {
+      "id": "handcannon",
       "name": "Handcannon",
       "type": "ranged",
       "damage": 41,

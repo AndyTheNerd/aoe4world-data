@@ -1,7 +1,10 @@
 {
+  "id": "mongols",
   "name": "Mongols",
-  "description": "Masters of mobility and mounted warfare, the Mongols can easily relocate their camps. They gain economic benefits from setting up near Stone Outcroppings and from raiding enemy buildings. Enemies must deal with cavalry attacks from the opening moments of play.",
+  "abbr": "mo",
+  "slug": "mongols",
   "classes": "Aggression, Cavalry, Nomadic",
+  "description": "Masters of mobility and mounted warfare, the Mongols can easily relocate their camps. They gain economic benefits from setting up near Stone Outcroppings and from raiding enemy buildings. Enemies must deal with cavalry attacks from the opening moments of play.",
   "overview": [
     {
       "title": "Civilization Bonuses",
@@ -47,7 +50,7 @@
     },
     {
       "title": "Influence",
-      "description": "Construct the Ovoo over Stone outcroppings to generate influence and harvest Stone without the need for Villagers. Ovoos harvest +70, 100, 130, 160 Stone per minute after each age up.\nBuildings within the influence of an Ovoo are able to double produce units or research improved versions of technologies using Stone."
+      "description": "Construct the Ovoo over Stone outcroppings to generate influence and harvest Stone without the need for Villagers. Ovoos harvest +70, 100, 140, 170 Stone per minute after each age up.\nBuildings within the influence of an Ovoo are able to double produce units or research improved versions of technologies using Stone."
     },
     {
       "title": "Unique Units",
@@ -305,6 +308,16 @@
       "traction-trebuchet-3": null,
       "bombard-4": null,
       "battering-ram-2": null
+    },
+    "prayer-tent-3": {
+      "herbal-medicine-3": null,
+      "piety-4": null,
+      "herbal-medicine-improved-3": null,
+      "piety-improved-4": null,
+      "monastic-shrines-3": null,
+      "tithe-barns-4": null,
+      "tithe-barns-improved-4": null,
+      "shaman-3": null
     },
     "khaganate-palace-3": {
       "huihui-pao-4": null,

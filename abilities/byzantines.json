@@ -107,7 +107,6 @@
           "property": "areaOfEffect",
           "select": {
             "id": [
-              "cannon",
               "royal-cannon"
             ]
           },
@@ -374,7 +373,10 @@
               "prelate",
               "shinto-priest",
               "buddhist-monk",
-              "shaolin-monk"
+              "shaolin-monk",
+              "kirkman",
+              "volur",
+              "ikko-ikki-monk"
             ]
           },
           "effect": "change",
@@ -596,7 +598,7 @@
       "civs": [
         "by"
       ],
-      "description": "Villager gathering rate increased by 5/10/15/20/25% (depening on water level)",
+      "description": "Improves the gather rate of nearby villagers by +10/14/18/22/26% depending on network level.",
       "classes": [],
       "displayClasses": [],
       "costs": {},
@@ -722,7 +724,7 @@
       "civs": [
         "by"
       ],
-      "description": "Traders provide +20% Olive Oil on trades.",
+      "description": "Byzantine Traders generate +20% Olive Oil on successful trades.",
       "classes": [],
       "displayClasses": [],
       "costs": {},
@@ -754,7 +756,7 @@
       "civs": [
         "by"
       ],
-      "description": "Villagers generate Olive Oil equal to 20% of Food gathered when farming.",
+      "description": "Villagers generate Olive Oil equal to 15% of Food gathered when farming.",
       "classes": [],
       "displayClasses": [],
       "costs": {},
@@ -789,7 +791,7 @@
       "icon": "https://data.aoe4world.com/images/abilities/ability-pilgrim-flask-1.png",
       "active": "manual",
       "auraRange": 0,
-      "cooldown": 45,
+      "cooldown": 30,
       "effects": [
         {
           "property": "unknown",
@@ -1120,7 +1122,7 @@
       "civs": [
         "by"
       ],
-      "description": "Charge through enemy units in your path, dealing 12 damage to each one.",
+      "description": "Charge through enemy units in your path, dealing 10 damage to each one.",
       "classes": [],
       "displayClasses": [],
       "costs": {
@@ -1146,7 +1148,7 @@
             ]
           },
           "effect": "change",
-          "value": 12,
+          "value": 10,
           "type": "ability"
         }
       ]
@@ -1162,7 +1164,7 @@
       "civs": [
         "by"
       ],
-      "description": "Consume all Supply Points to increase cavalry damage by +4, move speed by +10%, and health regeneration by +2. \nEach Supply Point increases Triumph's duration by 1 seconds. A maximum of 45 Supply Points can be collected.",
+      "description": "Consume all Supply Points to increase cavalry damage by +4, move speed by +10%, and health regeneration by +2.5. \nEach Supply Point increases Triumph's duration by 1 seconds. A maximum of 45 Supply Points can be collected.",
       "classes": [],
       "displayClasses": [],
       "costs": {
@@ -1218,7 +1220,7 @@
             ]
           },
           "effect": "change",
-          "value": 2,
+          "value": 2.5,
           "type": "ability"
         }
       ],

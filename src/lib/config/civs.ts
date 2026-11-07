@@ -159,6 +159,14 @@ const civilizations = {
     attribName: "rus",
     expansion: ["base"],
   },
+  sco: {
+    id: "scots",
+    name: "Scots",
+    abbr: "sco",
+    slug: "scots",
+    attribName: "scots",
+    expansion: ["raiders-of-the-north"],
+  },
   sen: {
     id: "sengoku_daimyo",
     name: "Sengoku Daimyo",
@@ -175,6 +183,14 @@ const civilizations = {
     attribName: "sultanate_ha_tug",
     expansion: ["dynasties-of-the-east"],
   },
+  vik: {
+    id: "vikings",
+    name: "Vikings",
+    abbr: "vik",
+    slug: "vikings",
+    attribName: "vikings",
+    expansion: ["raiders-of-the-north"],
+  },
   zx: {
     id: "zhu_xis_legacy",
     name: "Zhu Xi's Legacy",
@@ -189,6 +205,7 @@ export type CivAbbr = keyof typeof civilizations;
 export type CivSlug = typeof civilizations[CivAbbr]["slug"];
 
 export type CivConfig = {
+  id?: string;
   name: string;
   abbr: CivAbbr;
   slug: CivSlug;
@@ -198,3 +215,5 @@ export type CivConfig = {
 
 export const CIVILIZATIONS = civilizations satisfies Record<CivAbbr, CivConfig>;
 export const CIVILIZATION_BY_SLUG = Object.values(CIVILIZATIONS).reduce((acc, civ) => { acc[civ.slug] = civ; return acc; }, {} as any) as { [K in CivAbbr as (typeof civilizations)[K]["slug"]]: (typeof civilizations)[K] };
+
+export type { CivTranslation, CivOverviewItem, CivInfo } from "../../types/civs";

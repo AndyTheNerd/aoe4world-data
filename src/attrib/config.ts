@@ -128,6 +128,7 @@ export const hardcodedDiscovery = {
     // "abilities/always_on_abilities/french/keep_influence_fre",
     "abilities/modal_abilities/french/deploy_pavise_fre", //misses auto discovery
     "abilities/timed_abilities/french/cannon_swap_fre", //misses auto discovery
+    "abilities/timed_abilities/french/fortify_ribauld_fre",
   ],
   hre: [
     "abilities/always_on_abilities/hre/inspired_infantry_hre", //misses auto discovery; convert to ability from tech
@@ -204,6 +205,7 @@ export const hardcodedDiscovery = {
     "sbps/races/french_ha_01/unit_jeanne_d_arc_4_melee_monarch_fre_ha_01",
     "sbps/races/french_ha_01/unit_jeanne_d_arc_4_ranged_monarch_fre_ha_01",
     "info/buff_info/races/french/lancer_charge_bonus_damage",
+    "abilities/timed_abilities/french/fortify_ribauld_fre",
   ],
   zhuxi: [
     "abilities/always_on_abilities/shaolin_monk_ranged_damage_reduction",
@@ -212,6 +214,9 @@ export const hardcodedDiscovery = {
     "upgrade/races/chinese_ha_01/research/upgrade_dynasty_econ_bonus_chi_ha_01",
   ],
   lancaster: [
+    "sbps/races/lancaster/wynguard/unit_mounted_man_at_arm_2_lan", // only needed coz we don't handle dummy yet
+    "sbps/races/lancaster/wynguard/unit_mounted_man_at_arm_3_lan", // only needed coz we don't handle dummy yet
+    "sbps/races/lancaster/wynguard/unit_mounted_man_at_arm_4_lan", // only needed coz we don't handle dummy yet
   ],
   templar: [
   ],
@@ -224,6 +229,18 @@ export const hardcodedDiscovery = {
   macedonian: [
   ],
   jindynasty: [
+    "sbps/races/jin_dynasty/unit_emissary_2_jin", // only needed coz we don't handle dummy yet
+  ],
+  scots: [
+    "abilities/always_on_abilities/scots/tacksmen_damage_bonus_sco",
+    "abilities/timed_abilities/scots/activate_ghillie_stealth_sco",
+    "info/buff_info/races/scots/stone_of_destiny_bonus_sco",
+  ],
+  vikings: [
+    "ebps/races/vikings/buildings/misc/building_saga_totems_vik",
+    "abilities/modal_abilities/vikings/living_off_land_vik",
+    "info/buff_info/races/vikings/baugr_fort_production_vik",
+    "abilities/always_on_abilities/vikings/rikets_castle_behavior_vik",
   ],
 };
 
@@ -263,7 +280,6 @@ export const ignoreForNow: (string | ((file: string) => boolean))[] = [
   "unit_naval_scout_2_ott", // not actually available in game
   "_moving_mon", // packed version
   "_double_mon", // all double produced units
-  "building_unit_religious_district_mon", // Monasteric shrines version of prayer tent
 
   // Research variations available at landmarks, that do not differ
   "upgrade_landmark_cavalry_cantled_saddle_fre",
@@ -323,6 +339,7 @@ export const ignoreForNow: (string | ((file: string) => boolean))[] = [
   "proxy_placement_gristmill",
   "golden_age_passive_abb",
   "golden_age_bonus_", //ignore whichever is not as complete, the other is "golden_age_tier_"
+  "how_algebra_resource_generation_abb",
   // "abilities/always_on_abilities/abbasid/medical_centers_abb",
   // "tower_repair_nearby_walls_chi",
   "academy_influence_chi",
@@ -373,6 +390,7 @@ export const ignoreForNow: (string | ((file: string) => boolean))[] = [
   "unit_villager_free_chi_ha_01", // Placeholder vil that spawns unit_villager_1_chi_ha_01 as additional squad
   "unit_villager_free_jpn", // Placeholder vil
   "unit_free_dummy_yeoman_lan", // Free age 1 yeoman
+  "unit_free_dummy_mounted_manatarms_lan",
 
   // Golden horde always on abilities
   "always_on_abilities/mongol_ha_gol/golden_tent_rus_resources_mon_ha_gol",
@@ -394,6 +412,40 @@ export const ignoreForNow: (string | ((file: string) => boolean))[] = [
   "mengan_mouke_activation",
   "horse_grassland_horse_spawn",
   "pagoda_forest_spawn_jin",
+  "unit_free_dummy_emissary_jin",
+
+  // Scots & Vikings
+  "three_loch_spawn_behavior_sco",
+  "muster_hall_spawn_behavior_sco",
+  "muster_hall_influence_sco",
+  "passive_muster_hall_age_3_sco",
+  "passive_muster_hall_age_4_sco",
+  "monastery_fish_ponds_sco",
+  "kongens_cathedral_aura_range_vik",
+  "toggle_villager_production_hidden_vik",
+  "baugr_fort_behavior_vik",
+  "sacred_grove_regrowth_heal_vik",
+  "konungr_hall_feast_vik",
+  "longhouse_influence_vik",
+  "longhouse_boost_buff_vik",
+  "unit_shield_maiden_konungr_vik",
+  "timed_abilities/vikings/longhouse",
+  "longhouse_bee_skep_info_vik",
+  "longhouse_farmstead_info_vik",
+  "longhouse_loom_info_vik",
+  "longhouse_smithy_info_vik",
+  "timed_abilities/vikings/sagas",
+  "always_on_abilities/vikings/totem_info",
+  "no_delay_building_scuttle",
+
+  // Scots batch/toggle spawner loadouts
+  "snowdoun_gate_loadout_sco",
+  "snowdoun_gate/unit_toggle_",
+  "mustering_hall_loadouts_sco",
+  "muster_hall/unit_muster_",
+  "unit_highlanders_archers_sco",
+  "unit_highlanders_cateran_sco",
+  "unit_highlanders_gallowglass_sco",
 
   // Inspect later if it's addable
   "building_carts_mon_ha_gol", 

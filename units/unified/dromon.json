@@ -10,7 +10,7 @@
   ],
   "unique": true,
   "displayClasses": [
-    "Springald Ship"
+    "Massive Ship"
   ],
   "classes": [
     "annihilation_condition",
@@ -59,7 +59,7 @@
         "siegeable"
       ],
       "displayClasses": [
-        "Springald Ship"
+        "Massive Ship"
       ],
       "unique": true,
       "costs": {
@@ -79,6 +79,7 @@
       "hitpoints": 500,
       "weapons": [
         {
+          "id": "greek-fire",
           "name": "Greek Fire",
           "type": "siege",
           "damage": 7,
@@ -181,7 +182,7 @@
         "siegeable"
       ],
       "displayClasses": [
-        "Springald Ship"
+        "Massive Ship"
       ],
       "unique": true,
       "costs": {
@@ -201,6 +202,7 @@
       "hitpoints": 500,
       "weapons": [
         {
+          "id": "greek-fire",
           "name": "Greek Fire",
           "type": "siege",
           "damage": 7,

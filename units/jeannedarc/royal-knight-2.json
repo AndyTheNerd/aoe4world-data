@@ -3,8 +3,8 @@
   "baseId": "royal-knight",
   "type": "unit",
   "name": "Royal Knight",
-  "pbgid": 133147,
-  "attribName": "unit_knight_2_fre",
+  "pbgid": 2955885,
+  "attribName": "unit_knight_2_fre_ha_01",
   "age": 2,
   "civs": [
     "je"
@@ -49,6 +49,7 @@
   "hitpoints": 190,
   "weapons": [
     {
+      "id": "sword",
       "name": "Sword",
       "type": "melee",
       "damage": 19,
@@ -72,6 +73,7 @@
       "pbgid": 129602
     },
     {
+      "id": "torch",
       "name": "Torch",
       "type": "fire",
       "damage": 10,

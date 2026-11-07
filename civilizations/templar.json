@@ -1,7 +1,10 @@
 {
+  "id": "knights_templar",
   "name": "Knights Templar",
-  "description": "Founded to protect the meek and weary, the Knights Templar establish Commanderies throughout Europe to call on their allies. Fielding a spectacular array of heavy troops, the Templars lead the charge into battle with discipline and heart. Fortresses dot the carefully cultivated landscape, providing key defensive positions and safe haven to the pilgrims they protect.",
+  "abbr": "kt",
+  "slug": "templar",
   "classes": "Pilgrims, Commanderies, Knights",
+  "description": "Founded to protect the meek and weary, the Knights Templar establish Commanderies throughout Europe to call on their allies. Fielding a spectacular array of heavy troops, the Templars lead the charge into battle with discipline and heart. Fortresses dot the carefully cultivated landscape, providing key defensive positions and safe haven to the pilgrims they protect.",
   "overview": [
     {
       "title": "Civilization Bonuses",
@@ -35,7 +38,7 @@
     },
     {
       "title": "Landscape Preservation",
-      "description": "Villagers automatically deposit wood without a Lumber Camp.\nWood is gathered +20% faster in each Age and 20% of the wood gathered is produced as additional food."
+      "description": "Villagers automatically deposit wood without a Lumber Camp.\nWood is gathered +20%/+15%/+15% faster in each Age and 20% of the wood gathered is produced as additional food."
     },
     {
       "title": "Siege Experts",
@@ -145,6 +148,7 @@
       "shaft-mining-3": null,
       "cupellation-4": null
     },
+    "landscape-preservation-1": null,
     "blacksmith-2": {
       "bloomery-2": null,
       "decarbonization-3": null,

@@ -91,6 +91,7 @@
           "hitpoints": 70,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 5,
@@ -121,8 +122,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -145,6 +145,7 @@
               "pbgid": 106763
             },
             {
+              "id": "poisoned-arrows",
               "name": "Poisoned Arrows",
               "type": "ranged",
               "damage": 5,
@@ -175,8 +176,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -260,6 +260,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 7,
@@ -290,8 +291,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -314,6 +314,7 @@
               "pbgid": 127828
             },
             {
+              "id": "poisoned-arrows",
               "name": "Poisoned Arrows",
               "type": "ranged",
               "damage": 7,
@@ -344,8 +345,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -429,6 +429,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 8,
@@ -459,8 +460,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -483,6 +483,7 @@
               "pbgid": 127829
             },
             {
+              "id": "poisoned-arrows",
               "name": "Poisoned Arrows",
               "type": "ranged",
               "damage": 8,
@@ -513,8 +514,7 @@
                     "class": [
                       [
                         "light",
-                        "gunpowder",
-                        "infantry"
+                        "gunpowder"
                       ]
                     ]
                   },
@@ -619,9 +619,10 @@
             "siege-workshop"
           ],
           "icon": "https://data.aoe4world.com/images/units/battering-ram-3.png",
-          "hitpoints": 370,
+          "hitpoints": 410,
           "weapons": [
             {
+              "id": "ram",
               "name": "Ram",
               "type": "siege",
               "damage": 200,
@@ -761,6 +762,7 @@
           "hitpoints": 210,
           "weapons": [
             {
+              "id": "cannon",
               "name": "Cannon",
               "type": "siege",
               "damage": 55,
@@ -930,6 +932,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "trebuchet",
               "name": "Trebuchet",
               "type": "siege",
               "damage": 40,
@@ -1076,6 +1079,7 @@
           "hitpoints": 145,
           "weapons": [
             {
+              "id": "incendiaries",
               "name": "Incendiaries",
               "type": "siege",
               "damage": 95,
@@ -1221,6 +1225,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 7,
@@ -1286,6 +1291,7 @@
               "pbgid": 2072749
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1309,6 +1315,7 @@
               "pbgid": 123518
             },
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 5,
@@ -1413,6 +1420,7 @@
           "hitpoints": 100,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 8,
@@ -1478,6 +1486,7 @@
               "pbgid": 2072750
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1501,6 +1510,7 @@
               "pbgid": 123518
             },
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 7,
@@ -1605,6 +1615,7 @@
           "hitpoints": 120,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 9,
@@ -1670,6 +1681,7 @@
               "pbgid": 2072751
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1693,6 +1705,7 @@
               "pbgid": 123518
             },
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 8,
@@ -1797,6 +1810,7 @@
           "hitpoints": 150,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 11,
@@ -1862,6 +1876,7 @@
               "pbgid": 2072752
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -1885,6 +1900,7 @@
               "pbgid": 123518
             },
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 10,
@@ -2105,6 +2121,7 @@
           "hitpoints": 175,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 9,
@@ -2142,6 +2159,7 @@
               "pbgid": 9000352
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2232,6 +2250,7 @@
           "hitpoints": 205,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 12,
@@ -2269,6 +2288,7 @@
               "pbgid": 9000354
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -2384,6 +2404,7 @@
           "hitpoints": 300,
           "weapons": [
             {
+              "id": "bow",
               "name": "Bow",
               "type": "ranged",
               "damage": 6,
@@ -2517,6 +2538,7 @@
           "hitpoints": 90,
           "weapons": [
             {
+              "id": "weapon-dummy",
               "name": "(translation not found) (undefined)",
               "type": "ranged",
               "damage": 0,
@@ -2631,6 +2653,7 @@
           "hitpoints": 70,
           "weapons": [
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 8,
@@ -2666,29 +2689,6 @@
               },
               "attribName": "weapon_javelin_2",
               "pbgid": 2059094
-            },
-            {
-              "name": "Torch",
-              "type": "fire",
-              "damage": 10,
-              "speed": 2.125,
-              "range": {
-                "min": 0,
-                "max": 1.25
-              },
-              "modifiers": [],
-              "durations": {
-                "aim": 0,
-                "windup": 0.75,
-                "attack": 0.125,
-                "winddown": 0,
-                "reload": 0,
-                "setup": 0,
-                "teardown": 0,
-                "cooldown": 1.25
-              },
-              "attribName": "weapon_torch",
-              "pbgid": 123518
             }
           ],
           "armor": [
@@ -2756,6 +2756,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 10,
@@ -2791,29 +2792,6 @@
               },
               "attribName": "weapon_javelin_3",
               "pbgid": 2059095
-            },
-            {
-              "name": "Torch",
-              "type": "fire",
-              "damage": 10,
-              "speed": 2.125,
-              "range": {
-                "min": 0,
-                "max": 1.25
-              },
-              "modifiers": [],
-              "durations": {
-                "aim": 0,
-                "windup": 0.75,
-                "attack": 0.125,
-                "winddown": 0,
-                "reload": 0,
-                "setup": 0,
-                "teardown": 0,
-                "cooldown": 1.25
-              },
-              "attribName": "weapon_torch",
-              "pbgid": 123518
             }
           ],
           "armor": [
@@ -2881,6 +2859,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 13,
@@ -2916,29 +2895,6 @@
               },
               "attribName": "weapon_javelin_4",
               "pbgid": 2059096
-            },
-            {
-              "name": "Torch",
-              "type": "fire",
-              "damage": 10,
-              "speed": 2.125,
-              "range": {
-                "min": 0,
-                "max": 1.25
-              },
-              "modifiers": [],
-              "durations": {
-                "aim": 0,
-                "windup": 0.75,
-                "attack": 0.125,
-                "winddown": 0,
-                "reload": 0,
-                "setup": 0,
-                "teardown": 0,
-                "cooldown": 1.25
-              },
-              "attribName": "weapon_torch",
-              "pbgid": 123518
             }
           ],
           "armor": [
@@ -3031,6 +2987,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "mangonel",
               "name": "Mangonel",
               "type": "siege",
               "damage": 10,
@@ -3098,6 +3055,7 @@
               "pbgid": 127503
             },
             {
+              "id": "incendiary",
               "name": "Incendiary",
               "type": "fire",
               "damage": 2,
@@ -3152,6 +3110,7 @@
               "pbgid": 127724
             },
             {
+              "id": "adjustable-crossbars",
               "name": "Adjustable Crossbars",
               "type": "siege",
               "damage": 10,
@@ -3317,6 +3276,7 @@
           "hitpoints": 70,
           "weapons": [
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 8,
@@ -3352,29 +3312,6 @@
               },
               "attribName": "weapon_mansa_javelin_2",
               "pbgid": 9000371
-            },
-            {
-              "name": "Torch",
-              "type": "fire",
-              "damage": 10,
-              "speed": 2.125,
-              "range": {
-                "min": 0,
-                "max": 1.25
-              },
-              "modifiers": [],
-              "durations": {
-                "aim": 0,
-                "windup": 0.75,
-                "attack": 0.125,
-                "winddown": 0,
-                "reload": 0,
-                "setup": 0,
-                "teardown": 0,
-                "cooldown": 1.25
-              },
-              "attribName": "weapon_torch",
-              "pbgid": 123518
             }
           ],
           "armor": [
@@ -3443,6 +3380,7 @@
           "hitpoints": 80,
           "weapons": [
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 10,
@@ -3478,29 +3416,6 @@
               },
               "attribName": "weapon_mansa_javelin_3",
               "pbgid": 9000372
-            },
-            {
-              "name": "Torch",
-              "type": "fire",
-              "damage": 10,
-              "speed": 2.125,
-              "range": {
-                "min": 0,
-                "max": 1.25
-              },
-              "modifiers": [],
-              "durations": {
-                "aim": 0,
-                "windup": 0.75,
-                "attack": 0.125,
-                "winddown": 0,
-                "reload": 0,
-                "setup": 0,
-                "teardown": 0,
-                "cooldown": 1.25
-              },
-              "attribName": "weapon_torch",
-              "pbgid": 123518
             }
           ],
           "armor": [
@@ -3569,6 +3484,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 13,
@@ -3604,29 +3520,6 @@
               },
               "attribName": "weapon_mansa_javelin_4",
               "pbgid": 9000373
-            },
-            {
-              "name": "Torch",
-              "type": "fire",
-              "damage": 10,
-              "speed": 2.125,
-              "range": {
-                "min": 0,
-                "max": 1.25
-              },
-              "modifiers": [],
-              "durations": {
-                "aim": 0,
-                "windup": 0.75,
-                "attack": 0.125,
-                "winddown": 0,
-                "reload": 0,
-                "setup": 0,
-                "teardown": 0,
-                "cooldown": 1.25
-              },
-              "attribName": "weapon_torch",
-              "pbgid": 123518
             }
           ],
           "armor": [
@@ -3732,6 +3625,7 @@
           "hitpoints": 105,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 9,
@@ -3769,6 +3663,7 @@
               "pbgid": 9000346
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3861,6 +3756,7 @@
           "hitpoints": 125,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 10,
@@ -3898,6 +3794,7 @@
               "pbgid": 9000348
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -3990,6 +3887,7 @@
           "hitpoints": 150,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 13,
@@ -4027,6 +3925,7 @@
               "pbgid": 9000350
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4080,7 +3979,7 @@
       ],
       "unique": true,
       "displayClasses": [
-        "Ranged Gunpowder Infantry"
+        "Medium Gunpowder Infantry"
       ],
       "classes": [
         "annihilation_condition",
@@ -4129,7 +4028,7 @@
             "ranged_infantry"
           ],
           "displayClasses": [
-            "Ranged Gunpowder Infantry"
+            "Medium Gunpowder Infantry"
           ],
           "unique": true,
           "costs": {
@@ -4148,6 +4047,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "handcannon",
               "name": "Handcannon",
               "type": "ranged",
               "damage": 41,
@@ -4268,6 +4168,7 @@
           "hitpoints": 95,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 8,
@@ -4305,6 +4206,7 @@
               "pbgid": 2072969
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4391,6 +4293,7 @@
           "hitpoints": 115,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 9,
@@ -4428,6 +4331,7 @@
               "pbgid": 2072743
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4514,6 +4418,7 @@
           "hitpoints": 140,
           "weapons": [
             {
+              "id": "khanda",
               "name": "Khanda",
               "type": "melee",
               "damage": 12,
@@ -4551,6 +4456,7 @@
               "pbgid": 2072747
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -4673,6 +4579,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "tamba",
               "name": "Tamba",
               "type": "melee",
               "damage": 1,
@@ -4922,6 +4829,7 @@
           "hitpoints": 160,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 17,
@@ -4959,6 +4867,7 @@
               "pbgid": 2072970
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5053,6 +4962,7 @@
           "hitpoints": 195,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 20,
@@ -5090,6 +5000,7 @@
               "pbgid": 2072973
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5184,6 +5095,7 @@
           "hitpoints": 230,
           "weapons": [
             {
+              "id": "spear",
               "name": "Spear",
               "type": "melee",
               "damage": 25,
@@ -5221,6 +5133,7 @@
               "pbgid": 2072975
             },
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5336,6 +5249,7 @@
           "hitpoints": 85,
           "weapons": [
             {
+              "id": "springald",
               "name": "Springald",
               "type": "ranged",
               "damage": 15,
@@ -5644,6 +5558,7 @@
           "hitpoints": 400,
           "weapons": [
             {
+              "id": "javelin",
               "name": "Javelin",
               "type": "ranged",
               "damage": 7,
@@ -5689,7 +5604,8 @@
               "siege",
               "monk",
               "khan",
-              "cavalry"
+              "cavalry",
+              "cattle"
             ]
           }
         }
@@ -5761,6 +5677,7 @@
           "hitpoints": 50,
           "weapons": [
             {
+              "id": "torch",
               "name": "Torch",
               "type": "fire",
               "damage": 10,
@@ -5784,6 +5701,7 @@
               "pbgid": 123522
             },
             {
+              "id": "knife",
               "name": "Knife",
               "type": "melee",
               "damage": 6,
@@ -5900,6 +5818,7 @@
           "hitpoints": 450,
           "weapons": [
             {
+              "id": "ballista",
               "name": "Ballista",
               "type": "ranged",
               "damage": 35,
@@ -6055,6 +5974,7 @@
           "hitpoints": 110,
           "weapons": [
             {
+              "id": "tamba",
               "name": "Tamba",
               "type": "melee",
               "damage": 7,
@@ -6170,6 +6090,7 @@
           "hitpoints": 130,
           "weapons": [
             {
+              "id": "tamba",
               "name": "Tamba",
               "type": "melee",
               "damage": 9,
@@ -6298,6 +6219,7 @@
           "hitpoints": 155,
           "weapons": [
             {
+              "id": "tamba",
               "name": "Tamba",
               "type": "melee",
               "damage": 11,

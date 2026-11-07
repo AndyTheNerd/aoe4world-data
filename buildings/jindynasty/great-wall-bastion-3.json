@@ -48,6 +48,7 @@
   "hitpoints": 5000,
   "weapons": [
     {
+      "id": "handcannon",
       "name": "Handcannon",
       "type": "ranged",
       "damage": 25,
@@ -86,13 +87,14 @@
       "pbgid": 173756
     },
     {
+      "id": "bed-crossbow",
       "name": "Bed Crossbow",
       "type": "ranged",
-      "damage": 14,
+      "damage": 28,
       "speed": 4,
       "range": {
         "min": 0,
-        "max": 9
+        "max": 11
       },
       "modifiers": [
         {
@@ -137,10 +139,179 @@
       "burst": {
         "count": 2
       },
-      "attribName": "weapon_keep_bedcrossbow_jin",
-      "pbgid": 9004377
+      "attribName": "weapon_landmark_bedcrossbow_jin",
+      "pbgid": 9007101
     },
     {
+      "id": "bed-crossbow",
+      "name": "Bed Crossbow",
+      "type": "ranged",
+      "damage": 28,
+      "speed": 4,
+      "range": {
+        "min": 0,
+        "max": 11
+      },
+      "modifiers": [
+        {
+          "property": "rangedAttack",
+          "target": {
+            "class": [
+              [
+                "melee",
+                "infantry"
+              ]
+            ]
+          },
+          "effect": "change",
+          "value": 3,
+          "type": "passive"
+        },
+        {
+          "property": "rangedAttack",
+          "target": {
+            "class": [
+              [
+                "naval",
+                "unit"
+              ]
+            ]
+          },
+          "effect": "change",
+          "value": 15,
+          "type": "passive"
+        }
+      ],
+      "durations": {
+        "aim": 0,
+        "windup": 0.25,
+        "attack": 0.25,
+        "winddown": 0.5,
+        "reload": 3,
+        "setup": 0,
+        "teardown": 0,
+        "cooldown": 0
+      },
+      "burst": {
+        "count": 2
+      },
+      "attribName": "weapon_landmark_bedcrossbow_jin",
+      "pbgid": 9007101
+    },
+    {
+      "id": "bed-crossbow",
+      "name": "Bed Crossbow",
+      "type": "ranged",
+      "damage": 28,
+      "speed": 4,
+      "range": {
+        "min": 0,
+        "max": 11
+      },
+      "modifiers": [
+        {
+          "property": "rangedAttack",
+          "target": {
+            "class": [
+              [
+                "melee",
+                "infantry"
+              ]
+            ]
+          },
+          "effect": "change",
+          "value": 3,
+          "type": "passive"
+        },
+        {
+          "property": "rangedAttack",
+          "target": {
+            "class": [
+              [
+                "naval",
+                "unit"
+              ]
+            ]
+          },
+          "effect": "change",
+          "value": 15,
+          "type": "passive"
+        }
+      ],
+      "durations": {
+        "aim": 0,
+        "windup": 0.25,
+        "attack": 0.25,
+        "winddown": 0.5,
+        "reload": 3,
+        "setup": 0,
+        "teardown": 0,
+        "cooldown": 0
+      },
+      "burst": {
+        "count": 2
+      },
+      "attribName": "weapon_landmark_bedcrossbow_jin",
+      "pbgid": 9007101
+    },
+    {
+      "id": "bed-crossbow",
+      "name": "Bed Crossbow",
+      "type": "ranged",
+      "damage": 28,
+      "speed": 4,
+      "range": {
+        "min": 0,
+        "max": 11
+      },
+      "modifiers": [
+        {
+          "property": "rangedAttack",
+          "target": {
+            "class": [
+              [
+                "melee",
+                "infantry"
+              ]
+            ]
+          },
+          "effect": "change",
+          "value": 3,
+          "type": "passive"
+        },
+        {
+          "property": "rangedAttack",
+          "target": {
+            "class": [
+              [
+                "naval",
+                "unit"
+              ]
+            ]
+          },
+          "effect": "change",
+          "value": 15,
+          "type": "passive"
+        }
+      ],
+      "durations": {
+        "aim": 0,
+        "windup": 0.25,
+        "attack": 0.25,
+        "winddown": 0.5,
+        "reload": 3,
+        "setup": 0,
+        "teardown": 0,
+        "cooldown": 0
+      },
+      "burst": {
+        "count": 2
+      },
+      "attribName": "weapon_landmark_bedcrossbow_jin",
+      "pbgid": 9007101
+    },
+    {
+      "id": "cannon",
       "name": "Cannon",
       "type": "ranged",
       "damage": 70,
@@ -179,6 +350,7 @@
       "pbgid": 185624
     },
     {
+      "id": "grenade",
       "name": "Grenade",
       "type": "siege",
       "damage": 7,
@@ -205,6 +377,7 @@
       "pbgid": 9004759
     },
     {
+      "id": "handcannon",
       "name": "Handcannon",
       "type": "ranged",
       "damage": 11,
@@ -243,6 +416,7 @@
       "pbgid": 197197
     },
     {
+      "id": "handcannon",
       "name": "Handcannon",
       "type": "ranged",
       "damage": 25,
@@ -281,6 +455,7 @@
       "pbgid": 173756
     },
     {
+      "id": "handcannon",
       "name": "Handcannon",
       "type": "ranged",
       "damage": 25,
@@ -319,7 +494,8 @@
       "pbgid": 173756
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -357,7 +533,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -395,7 +572,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -433,7 +611,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -471,7 +650,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -509,7 +689,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -547,7 +728,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -585,7 +767,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -623,7 +806,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -661,7 +845,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -699,7 +884,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -737,7 +923,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -775,7 +962,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -813,7 +1001,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -851,7 +1040,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -889,7 +1079,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -927,7 +1118,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -965,7 +1157,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -1003,7 +1196,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,
@@ -1041,7 +1235,8 @@
       "pbgid": 171261
     },
     {
-      "name": "Bow",
+      "id": "garrison-bow",
+      "name": "Garrison Bow",
       "type": "ranged",
       "damage": 10,
       "speed": 2.625,

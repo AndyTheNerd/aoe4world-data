@@ -1,7 +1,10 @@
 {
+  "id": "french",
   "name": "French",
-  "description": "The French deploy powerful cavalry units and can boost production in fortified positions. Enemies must be prepared to withstand the charges of powerful Royal Knights and other armored units.",
+  "abbr": "fr",
+  "slug": "french",
   "classes": "Trade, Cavalry, Keeps",
+  "description": "The French deploy powerful cavalry units and can boost production in fortified positions. Enemies must be prepared to withstand the charges of powerful Royal Knights and other armored units.",
   "overview": [
     {
       "title": "Civilization Bonuses",
@@ -259,8 +262,7 @@
     "college-of-artillery-3": {
       "chemistry-4": null,
       "royal-cannon-3": null,
-      "royal-ribauldequin-3": null,
-      "royal-culverin-3": null
+      "royal-ribauldequin-3": null
     },
     "university-4": {
       "chemistry-4": null,
